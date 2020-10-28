@@ -2,6 +2,7 @@ baseURL = "https://pawka.notrollsallowed.com/"
 languageCode = "en-us"
 title = "Pawka's diary"
 theme = "cactus"
+Paginate = 100
 
 # Main menu which appears below site header.
 [[menu.main]]
