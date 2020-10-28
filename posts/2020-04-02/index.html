@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Fosdem 2020: Retrocomputing devroom apžvalga | Pawka&#39;s diary</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Fosdem 2020: Retrocomputing devroom apžvalga" />
+<meta property="og:description" content=":fosdem: :konferencija:
+BASICODE: the 8-bit programming API that crossed the Berlin Wall Įdomumas 3/5.
+Bičas pasakoja kaip senais 8-bitų kompiuterių laikais (apie 1981) kompiuteriai užsikraudavo BASIC aplinką vietoj operacinės sistemos. Kompiuteriai būdavo skirtingi, tad ir BASIC&rsquo;ų versijų būdavo įvairių. Programinė įranga tilpdavo į kelis žurnalio puslapius ir taip būdavo platinama. Tačiau kildavo problemų, nes BASIC&rsquo;ai visgi būdavo skirtingi.
+Galiausiai atsirado transliatoriai, kurie trūkstamas procedūras aprašydavo kode. Pvz CLS funkcijos nebuvimas būdavo pakeičiamas GOTO 100 kur 100-ojoje eilutėje būdavo talpinamas kodas, atitinkantis CLS funkciją." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2020-04-02/" />
+<meta property="article:published_time" content="2020-04-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-02T00:00:00+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Fosdem 2020: Retrocomputing devroom apžvalga"/>
+<meta name="twitter:description" content=":fosdem: :konferencija:
+BASICODE: the 8-bit programming API that crossed the Berlin Wall Įdomumas 3/5.
+Bičas pasakoja kaip senais 8-bitų kompiuterių laikais (apie 1981) kompiuteriai užsikraudavo BASIC aplinką vietoj operacinės sistemos. Kompiuteriai būdavo skirtingi, tad ir BASIC&rsquo;ų versijų būdavo įvairių. Programinė įranga tilpdavo į kelis žurnalio puslapius ir taip būdavo platinama. Tačiau kildavo problemų, nes BASIC&rsquo;ai visgi būdavo skirtingi.
+Galiausiai atsirado transliatoriai, kurie trūkstamas procedūras aprašydavo kode. Pvz CLS funkcijos nebuvimas būdavo pakeičiamas GOTO 100 kur 100-ojoje eilutėje būdavo talpinamas kodas, atitinkantis CLS funkciją."/>
+
+  
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://pawka.notrollsallowed.com/images/favicon.ico" />
+
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2019-12-31/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-04-20/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&text=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&title=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&is_video=false&description=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&title=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&title=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&title=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&title=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&name=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga&description=%3afosdem%3a%20%3akonferencija%3a%0aBASICODE%3a%20the%208-bit%20programming%20API%20that%20crossed%20the%20Berlin%20Wall%20%c4%aedomumas%203%2f5.%0aBi%c4%8das%20pasakoja%20kaip%20senais%208-bit%c5%b3%20kompiuteri%c5%b3%20laikais%20%28apie%201981%29%20kompiuteriai%20u%c5%besikraudavo%20BASIC%20aplink%c4%85%20vietoj%20operacin%c4%97s%20sistemos.%20Kompiuteriai%20b%c5%abdavo%20skirtingi%2c%20tad%20ir%20BASIC%26rsquo%3b%c5%b3%20versij%c5%b3%20b%c5%abdavo%20%c4%afvairi%c5%b3.%20Programin%c4%97%20%c4%afranga%20tilpdavo%20%c4%af%20kelis%20%c5%beurnalio%20puslapius%20ir%20taip%20b%c5%abdavo%20platinama.%20Ta%c4%8diau%20kildavo%20problem%c5%b3%2c%20nes%20BASIC%26rsquo%3bai%20visgi%20b%c5%abdavo%20skirtingi.%0aGaliausiai%20atsirado%20transliatoriai%2c%20kurie%20tr%c5%abkstamas%20proced%c5%abras%20apra%c5%a1ydavo%20kode.%20Pvz%20CLS%20funkcijos%20nebuvimas%20b%c5%abdavo%20pakei%c4%8diamas%20GOTO%20100%20kur%20100-ojoje%20eilut%c4%97je%20b%c5%abdavo%20talpinamas%20kodas%2c%20atitinkantis%20CLS%20funkcij%c4%85.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&t=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basicode-the-8-bit-programming-api-that-crossed-the-berlin-wallhttpsfosdemorg2020scheduleeventretro_basicode_8_bit_programming_api"><a href="https://fosdem.org/2020/schedule/event/retro_basicode_8_bit_programming_api/">BASICODE: the 8-bit programming API that crossed the Berlin Wall</a></a></li>
+    <li><a href="#reverse-engineering-a-vic-20-expansion-cartridgehttpsfosdemorg2020scheduleeventretro_reverse_engineering_vic_20_cartridge"><a href="https://fosdem.org/2020/schedule/event/retro_reverse_engineering_vic_20_cartridge/">Reverse engineering a VIC-20 expansion cartridge</a></a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Fosdem 2020: Retrocomputing devroom apžvalga
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-04-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-02</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <p>:fosdem: :konferencija:</p>
+<h2 id="basicode-the-8-bit-programming-api-that-crossed-the-berlin-wallhttpsfosdemorg2020scheduleeventretro_basicode_8_bit_programming_api"><a href="https://fosdem.org/2020/schedule/event/retro_basicode_8_bit_programming_api/">BASICODE: the 8-bit programming API that crossed the Berlin Wall</a></h2>
+<p>Įdomumas 3/5.</p>
+<p>Bičas pasakoja kaip senais 8-bitų kompiuterių laikais (apie 1981) kompiuteriai
+užsikraudavo BASIC aplinką vietoj operacinės sistemos. Kompiuteriai būdavo
+skirtingi, tad ir BASIC&rsquo;ų versijų būdavo įvairių. Programinė įranga tilpdavo į
+kelis žurnalio puslapius ir taip būdavo platinama. Tačiau kildavo problemų, nes
+BASIC&rsquo;ai visgi būdavo skirtingi.</p>
+<p>Galiausiai atsirado transliatoriai, kurie trūkstamas procedūras aprašydavo kode.
+Pvz <code>CLS</code> funkcijos nebuvimas būdavo pakeičiamas <code>GOTO 100</code> kur 100-ojoje
+eilutėje būdavo talpinamas kodas, atitinkantis CLS funkciją.</p>
+<p>Galiausiai žurnalus pakeitė radio bangomis siunčiami moduliuojami signalai.
+Didesnio dažnio garsas reikšdavo 1, o žemesnio - 0. Tam tikros sekos žymėdavo
+pradžią ir pabaigą.</p>
+<h2 id="reverse-engineering-a-vic-20-expansion-cartridgehttpsfosdemorg2020scheduleeventretro_reverse_engineering_vic_20_cartridge"><a href="https://fosdem.org/2020/schedule/event/retro_reverse_engineering_vic_20_cartridge/">Reverse engineering a VIC-20 expansion cartridge</a></h2>
+<p>Įdomumas: 2/5.</p>
+<p>Autorius sukonstravo savo VIC-20 atminties modulį senoviniam kompiuteriui pagal
+nuotraukas ir informaciją internete. Sumoje kainavo virš 100USD t.y. daugiau nei
+nusipirkt, bet konstravimas buvo vardan iššūkio.</p>
+<p>Įdomu tai, kad senovinę elektroniką būdavo įmanoma reverse-engineer&rsquo;int pagal
+nuotraukas. Reikiami CMOS komponentai ir takeliai aiškiai matomi.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basicode-the-8-bit-programming-api-that-crossed-the-berlin-wallhttpsfosdemorg2020scheduleeventretro_basicode_8_bit_programming_api"><a href="https://fosdem.org/2020/schedule/event/retro_basicode_8_bit_programming_api/">BASICODE: the 8-bit programming API that crossed the Berlin Wall</a></a></li>
+    <li><a href="#reverse-engineering-a-vic-20-expansion-cartridgehttpsfosdemorg2020scheduleeventretro_reverse_engineering_vic_20_cartridge"><a href="https://fosdem.org/2020/schedule/event/retro_reverse_engineering_vic_20_cartridge/">Reverse engineering a VIC-20 expansion cartridge</a></a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&text=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&title=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&is_video=false&description=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&title=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&title=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&title=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&title=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&name=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga&description=%3afosdem%3a%20%3akonferencija%3a%0aBASICODE%3a%20the%208-bit%20programming%20API%20that%20crossed%20the%20Berlin%20Wall%20%c4%aedomumas%203%2f5.%0aBi%c4%8das%20pasakoja%20kaip%20senais%208-bit%c5%b3%20kompiuteri%c5%b3%20laikais%20%28apie%201981%29%20kompiuteriai%20u%c5%besikraudavo%20BASIC%20aplink%c4%85%20vietoj%20operacin%c4%97s%20sistemos.%20Kompiuteriai%20b%c5%abdavo%20skirtingi%2c%20tad%20ir%20BASIC%26rsquo%3b%c5%b3%20versij%c5%b3%20b%c5%abdavo%20%c4%afvairi%c5%b3.%20Programin%c4%97%20%c4%afranga%20tilpdavo%20%c4%af%20kelis%20%c5%beurnalio%20puslapius%20ir%20taip%20b%c5%abdavo%20platinama.%20Ta%c4%8diau%20kildavo%20problem%c5%b3%2c%20nes%20BASIC%26rsquo%3bai%20visgi%20b%c5%abdavo%20skirtingi.%0aGaliausiai%20atsirado%20transliatoriai%2c%20kurie%20tr%c5%abkstamas%20proced%c5%abras%20apra%c5%a1ydavo%20kode.%20Pvz%20CLS%20funkcijos%20nebuvimas%20b%c5%abdavo%20pakei%c4%8diamas%20GOTO%20100%20kur%20100-ojoje%20eilut%c4%97je%20b%c5%abdavo%20talpinamas%20kodas%2c%20atitinkantis%20CLS%20funkcij%c4%85.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-02%2f&t=Fosdem%202020%3a%20Retrocomputing%20devroom%20ap%c5%bevalga">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Pawka&#39;s diary 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>
