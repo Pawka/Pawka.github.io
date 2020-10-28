@@ -200,13 +200,13 @@ Markdown turinio konvertavimą į HTML. Hugo - vienas iš statinių puslapių
 generatorių atliekantis šį darbą. Visgi Hugo įrašai reikalauja tam tikros meta
 informacijos - minimum datos ir pavadinimo:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
-<span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Pranešimo pavadinimas&#34;</span>
-<span style="color:#f92672">date</span>: <span style="color:#e6db74">2020-10-28</span>
-<span style="color:#f92672">tags</span>: <span style="color:#ae81ff">hugo</span>
+<span style="color:#66d9ef">title</span>: <span style="color:#e6db74">&#34;Pranešimo pavadinimas&#34;</span>
+<span style="color:#66d9ef">date</span>: <span style="color:#e6db74">2020-10-28</span>
+<span style="color:#66d9ef">tags</span>: hugo
 ---
-<span style="color:#ae81ff">Tekstas čia</span>
+Tekstas čia
 </code></pre></div><p>Vimwiki įrašo data yra failo pavadinimas. Na o antraštė - mano paties pridedama
-heading eilutė, dažniausiai pati pirma ir prasidedanti simboliu &ldquo;#&rdquo;. Visą šią
+heading eilutė, dažniausiai pati pirma ir prasidedanti simboliu &ldquo;#&quot;. Visą šią
 informaciją nesunku ištraukti su keliomis bash eilutėmis, sugeneruoti meta
 informacijos bloką, pašalinti pirmąją antraštės eilutę iš teksto ir prikabinti
 patį įrašo tekstą pranešimo apačioje.</p>
@@ -214,7 +214,7 @@ patį įrašo tekstą pranešimo apačioje.</p>
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e"># Script copies diary entries from vimwiki and converts to Hugo post format by</span>
 <span style="color:#75715e"># pre-pending post meta information to the post file.</span>
-<span style="color:#75715e">#</span>
+#
 <span style="color:#75715e"># - Post date is read from diary filename</span>
 <span style="color:#75715e"># - Post title is the first heading item.</span>
 <span style="color:#75715e"># - The first heading item is removed from post as it will be displayed as</span>
