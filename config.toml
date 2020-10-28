@@ -1,0 +1,23 @@
+baseURL = "https://pawka.notrollsallowed.com/"
+languageCode = "en-us"
+title = "Pawka's diary"
+theme = "cactus"
+
+# Main menu which appears below site header.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 3
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 4
+
+[params]
+showAllPostsOnHomePage = true

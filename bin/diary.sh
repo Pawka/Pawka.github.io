@@ -8,7 +8,7 @@
 # - The first heading item is removed from post as it will be displayed as
 #   title.
 
-set -xeuo pipefail
+set -euo pipefail
 
 readonly POST_HEADER="---
 title: \"{{TITLE}}\"
@@ -31,6 +31,8 @@ generate_post() {
 main() {
     local source_path=$1
     local dest_path=$2
+
+    mkdir -p "$dest_path"
 
     for entry in $source_path*.md
     do
