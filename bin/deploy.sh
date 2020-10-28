@@ -6,6 +6,8 @@ then
     exit 1;
 fi
 
+git fetch
+
 echo "Deleting old publication"
 rm -rf public
 mkdir public
