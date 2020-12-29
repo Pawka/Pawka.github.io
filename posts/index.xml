@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Pawka&#39;s diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://pawka.notrollsallowed.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mokau dukrą programuoti Scratch</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-12-29/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-12-29/</guid>
+      <description>Mano vyresnijąjai dukrai Ievai - 7 metai. Pirmokė. Kadangi COVID-o dėka vaikų atostogos pailgėjo viena savaite ir vietoj 2 tapo 3, galvojau kokia naudinga veikla reiktų užimti vaiką. Prisiminiau, kad egzistuoja programavimo aplinka Scratch. Pats Scratch&amp;rsquo;o niekada nebuvau bandęs ar naudojęs, tad tik teoriškai įsivaizdavau kas tai yra. Tiesa, dabar miglotai prisiminiau, kad pažįstamas Jurgis Pralgauskis prieš kokius 10 metų demonstravo per vieną iš Ubuntu release-party susitikimų.
+Scratch&amp;rsquo;as ant Windows&amp;rsquo;ų atrodo geriau, nei and Linux.</description>
+    </item>
     
     <item>
       <title>Advent of Code 2020</title>
