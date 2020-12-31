@@ -9,7 +9,9 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta property="og:title" content="Solving Advent of Code 2019" />
-<meta property="og:description" content="Links  https://dhconnelly.com/advent-of-code-2019-commentary.html  " />
+<meta property="og:description" content="After solving AoC 2020, it became so empty inside so I&rsquo;ve decided to look into tasks from 2019. But the real truth is that I&rsquo;ve heard AoC 2019 consist series of CPU-emulator problems named Intcode. This sounds very interesting for me and I wanted to check.
+I&rsquo;ll keep updating this while solving the problems.
+Problems  Day 1 (easy): Arithmetic. Day 2 (easy): Basic emulator (Intcode). I&rsquo;ve decided to build and reuse the same CPU class." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2020-12-31/" />
 <meta property="article:published_time" content="2020-12-31T00:00:00+00:00" />
@@ -17,7 +19,9 @@
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Solving Advent of Code 2019"/>
-<meta name="twitter:description" content="Links  https://dhconnelly.com/advent-of-code-2019-commentary.html  "/>
+<meta name="twitter:description" content="After solving AoC 2020, it became so empty inside so I&rsquo;ve decided to look into tasks from 2019. But the real truth is that I&rsquo;ve heard AoC 2019 consist series of CPU-emulator problems named Intcode. This sounds very interesting for me and I wanted to check.
+I&rsquo;ll keep updating this while solving the problems.
+Problems  Day 1 (easy): Arithmetic. Day 2 (easy): Basic emulator (Intcode). I&rsquo;ve decided to build and reuse the same CPU class."/>
 
   
   
@@ -136,7 +140,7 @@
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-31%2f&name=Solving%20Advent%20of%20Code%202019&description=Links%20%20https%3a%2f%2fdhconnelly.com%2fadvent-of-code-2019-commentary.html%20%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-31%2f&name=Solving%20Advent%20of%20Code%202019&description=After%20solving%20AoC%202020%2c%20it%20became%20so%20empty%20inside%20so%20I%26rsquo%3bve%20decided%20to%20look%20into%20tasks%20from%202019.%20But%20the%20real%20truth%20is%20that%20I%26rsquo%3bve%20heard%20AoC%202019%20consist%20series%20of%20CPU-emulator%20problems%20named%20Intcode.%20This%20sounds%20very%20interesting%20for%20me%20and%20I%20wanted%20to%20check.%0aI%26rsquo%3bll%20keep%20updating%20this%20while%20solving%20the%20problems.%0aProblems%20%20Day%201%20%28easy%29%3a%20Arithmetic.%20Day%202%20%28easy%29%3a%20Basic%20emulator%20%28Intcode%29.%20I%26rsquo%3bve%20decided%20to%20build%20and%20reuse%20the%20same%20CPU%20class.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -151,6 +155,7 @@
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
+    <li><a href="#problems">Problems</a></li>
     <li><a href="#links">Links</a></li>
   </ul>
 </nav>
@@ -178,7 +183,20 @@
 
   
     <div class="content" itemprop="articleBody">
-      <h2 id="links">Links</h2>
+      <p>After solving AoC 2020, it became so empty inside so I&rsquo;ve decided to look into
+tasks from 2019. But the real truth is that I&rsquo;ve heard AoC 2019 consist series
+of CPU-emulator problems named Intcode. This sounds very interesting for me and
+I wanted to check.</p>
+<p>I&rsquo;ll keep updating this while solving the problems.</p>
+<h2 id="problems">Problems</h2>
+<ul>
+<li><em>Day 1</em> (easy): Arithmetic.</li>
+<li><em>Day 2</em> (easy): Basic emulator (Intcode). I&rsquo;ve decided to build and reuse the
+same CPU class. Though not sure if that won&rsquo;t require introducing some hooks
+later to solve further problems.</li>
+<li><em>Day 3</em> (easy): Coordinates.</li>
+</ul>
+<h2 id="links">Links</h2>
 <ul>
 <li><a href="https://dhconnelly.com/advent-of-code-2019-commentary.html">https://dhconnelly.com/advent-of-code-2019-commentary.html</a></li>
 </ul>
@@ -211,6 +229,7 @@
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
+    <li><a href="#problems">Problems</a></li>
     <li><a href="#links">Links</a></li>
   </ul>
 </nav>
@@ -270,7 +289,7 @@
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-31%2f&name=Solving%20Advent%20of%20Code%202019&description=Links%20%20https%3a%2f%2fdhconnelly.com%2fadvent-of-code-2019-commentary.html%20%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-31%2f&name=Solving%20Advent%20of%20Code%202019&description=After%20solving%20AoC%202020%2c%20it%20became%20so%20empty%20inside%20so%20I%26rsquo%3bve%20decided%20to%20look%20into%20tasks%20from%202019.%20But%20the%20real%20truth%20is%20that%20I%26rsquo%3bve%20heard%20AoC%202019%20consist%20series%20of%20CPU-emulator%20problems%20named%20Intcode.%20This%20sounds%20very%20interesting%20for%20me%20and%20I%20wanted%20to%20check.%0aI%26rsquo%3bll%20keep%20updating%20this%20while%20solving%20the%20problems.%0aProblems%20%20Day%201%20%28easy%29%3a%20Arithmetic.%20Day%202%20%28easy%29%3a%20Basic%20emulator%20%28Intcode%29.%20I%26rsquo%3bve%20decided%20to%20build%20and%20reuse%20the%20same%20CPU%20class.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
