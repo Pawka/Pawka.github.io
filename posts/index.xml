@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Pawka&#39;s diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://pawka.notrollsallowed.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fosdem 2021 notes</title>
+      <link>https://pawka.notrollsallowed.com/posts/2021-02-06/</link>
+      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2021-02-06/</guid>
+      <description>:fosdem: :konferencija:
+Below are my personal notes of Fosdem 2021 talks I&amp;rsquo;ve watched. This page might be updated with additional insights after I&amp;rsquo;ll watch recordings. I&amp;rsquo;ve put personal interest score for every talk which represents my subjective experience but not necessary the quality of talk.
+Emulation 101: How anyone can do it Personal score: 4/5.
+Interesting intro talk on writing emulators. Not many technical details, quite abstract but nice to listen for.</description>
+    </item>
     
     <item>
       <title>Alaus Virimas: Galaxy IPA II</title>
