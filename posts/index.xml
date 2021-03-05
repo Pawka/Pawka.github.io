@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Pawka&#39;s diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://pawka.notrollsallowed.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TIL: Call bash function via xargs</title>
+      <link>https://pawka.notrollsallowed.com/posts/2021-03-05/</link>
+      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2021-03-05/</guid>
+      <description>:cli:
+To run cli tools there is xargs. But what if I want to run certain part of bash script (a function) in parallel? One option is to extract function to a separate file and feed it into xargs. Another way - make xargs to execute the function:
+#!/bin/bash  p() { echo &amp;#34;&amp;gt; $1&amp;#34; } main() { export -f p seq 10 | xargs -n 1 -I {} bash -c &amp;#34;p {}&amp;#34; } main &amp;#34;@$&amp;#34; Necesary line here is to export the function via export -f &amp;lt;function_name&amp;gt;.</description>
+    </item>
     
     <item>
       <title>Permigravau iš GMail</title>
