@@ -6,10 +6,20 @@
     <description>Recent content on Pawka&#39;s diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Nov 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://pawka.notrollsallowed.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Alaus Virimas: Nelson Sauvin Golden Ale</title>
+      <link>https://pawka.notrollsallowed.com/posts/2021-11-03/</link>
+      <pubDate>Wed, 03 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2021-11-03/</guid>
+      <description>Receptas: Nelson Sauvin Golden Ale
+Nuo paskutinio alaus virimo praėjo net 8 mėnesiai. Kažkaip sumažėjo alaus vartojimas - vasaros atsargos baiginėjasi tik dabar. Iš dalies dėl to kaltas COVID periodas - mažiau svečių apsilanko, rečiau pats ką nors aplankau ir lauktuvių nunešu. Ir šiaip rudens pradžioje labai tingėjau grįžti prie šio hobio, nes pirmasis virimas reiškia įrangos parsinešimą, visko išvalymą ir pilnai užgrūstą balkoną. Tempiau, tempiau, kol nebebuvo kur dėtis, nes alaus atsargos baigėsi.</description>
+    </item>
     
     <item>
       <title>TIL: Configure Pulseaudio to not switch output to hot-plugged devices</title>
