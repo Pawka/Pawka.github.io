@@ -6,10 +6,22 @@
     <description>Recent content on Pawka&#39;s diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://pawka.notrollsallowed.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TIL: Extract subdirectory with git history to another repository</title>
+      <link>https://pawka.notrollsallowed.com/posts/2022-01-19/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2022-01-19/</guid>
+      <description>:git:
+Today I needed to extract git history of particular subdirectory and move it to a separate repository. Source repository here contains original code from which we want to extract the history. Meanwhile target repo is new repository to which we want to import the history.
+Command below creates a branch named &amp;ldquo;kyria&amp;rdquo; on source repository with commits from specific path only:
+$ git subtree split --prefix=keyboards/kyria/pawka --branch=kyria Keep in mind that files in the new branch are displayed as those were created at the root of repository.</description>
+    </item>
     
     <item>
       <title>Ką nuveikiau 2021-aisiais</title>
