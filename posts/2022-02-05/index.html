@@ -161,10 +161,9 @@ This is the second time I&rsquo;m participating online conference and both times
     <li><a href="#go-mastering-your-error-domain">Go: Mastering Your Error Domain</a></li>
     <li><a href="#go-go-further-without-wires">Go: Go further without wires</a></li>
     <li><a href="#fun-with-finite-automata">Fun with Finite Automata</a></li>
-    <li><a href="#fuzzy-generics">Fuzzy generics</a></li>
+    <li><a href="#go-fuzzy-generics">Go: Fuzzy generics</a></li>
     <li><a href="#json-serialization---the-finite-print">JSON Serialization - The Finite Print</a></li>
     <li><a href="#implementing-the-ntfs-filesystem-in-rust">Implementing the NTFS filesystem in Rust</a></li>
-    <li><a href="#a-brief-history-of-spreadsheets">A Brief History of Spreadsheets</a></li>
   </ul>
 </nav>
     </div>
@@ -310,7 +309,7 @@ future compilers.</li>
 <li>Non-greedy matches are simpler &amp; faster. Use those when you can. Not only
 related with Golang.</li>
 </ul>
-<h2 id="fuzzy-generics">Fuzzy generics</h2>
+<h2 id="go-fuzzy-generics">Go: Fuzzy generics</h2>
 <p>Personal score: 4/5</p>
 <p>Presentation of two topics: Generics &amp; Fuzzing. Mostly focused what does not
 work well (which is great).</p>
@@ -319,7 +318,7 @@ work well (which is great).</p>
 if interface should be implemented if method contains type parameter or not.
 Functions can have those and can be used instead of methods.
 <a href="https://github.com/golang/go/issues/49085">More details</a>.</li>
-<li>For getters the code should know the type it is recieving. E.g.
+<li>For getters the code should know the type it is receiving. E.g.
 <code>Get[int](&quot;key&quot;)</code> which is not very convenient.</li>
 <li>Fuzzing is mutation testing. Arrives with go1.8. Some gotchas:
 <ul>
@@ -331,26 +330,44 @@ be removed.</li>
 </ul>
 </li>
 <li>But in general fuzzing helps detect multiple bugs. Especially useful for
-parsing input, binary log, protocols, etc.</li>
+parsing input, binary log, protocols, etc. Nice to test public libraries :-)</li>
 </ul>
 <h2 id="json-serialization---the-finite-print">JSON Serialization - The Finite Print</h2>
-<p>Personal score: ?/5</p>
+<p>Personal score: 2/5</p>
+<p>Marshaling &amp; unmarshaling tutorial with basic tips &amp; tricks.</p>
 <ul>
-<li></li>
+<li>JSON wastes memory &amp; is slow.</li>
+<li>Marshaling <code>int</code> value and unmarshaling it back to <code>interface{}</code> returns a
+<code>float64</code>.</li>
+<li>Adding <code>json:&quot;-&quot;</code> flag skips encoding for this struct field.</li>
+<li>To check if value was set when decoding - unmarshall to
+<code>map[string]interface{}</code> and check if key exists. Or just use default values.
+See <code>mapstructure</code>.</li>
+<li>Use anonymous structures to avoid type pollution and decode only what is
+needed.</li>
 </ul>
 <h2 id="implementing-the-ntfs-filesystem-in-rust">Implementing the NTFS filesystem in Rust</h2>
-<p>Personal score: ?/5</p>
+<p>Personal score: 5/5</p>
 <ul>
-<li></li>
+<li>Guy ported NTFS to Rust in several weekends! Insane.</li>
+<li>NTFS is &ldquo;New Technology File System&rdquo;. Most popular desktop file system.</li>
+<li>It is still proprietary and needed to be reverse engineered.</li>
+<li>NTFS supports Unicode. Windows NT was first major OS to support it.</li>
+<li>Timestamps in Windows epoch starts from 1601 year.</li>
+<li>Everything is file in this fs.</li>
+<li>The file record on file system is 1KiB at max. Then files gets fragmented.</li>
+<li>Data field of file record can&rsquo;t be read directly from disk because there might
+be required to fixup the data due bad sectors.</li>
+<li><code>ntfs-shell</code> for inspecting the file system.</li>
 </ul>
-<h2 id="a-brief-history-of-spreadsheets">A Brief History of Spreadsheets</h2>
-<p>Personal score: ?/5</p>
 <h1 id="todo">TODO</h1>
 <ul>
 <li>Made by Woz: how Apple-1 operating system works?</li>
+<li>A Brief History of Spreadsheets</li>
 <li>Plan 9 CPU command, in Go, for Linux</li>
 <li>The State of Go</li>
 <li>The road towards using regular Linux on ebook readers.</li>
+<li>Open Source Network Automation in 2022</li>
 </ul>
 
     </div>
@@ -389,10 +406,9 @@ parsing input, binary log, protocols, etc.</li>
     <li><a href="#go-mastering-your-error-domain">Go: Mastering Your Error Domain</a></li>
     <li><a href="#go-go-further-without-wires">Go: Go further without wires</a></li>
     <li><a href="#fun-with-finite-automata">Fun with Finite Automata</a></li>
-    <li><a href="#fuzzy-generics">Fuzzy generics</a></li>
+    <li><a href="#go-fuzzy-generics">Go: Fuzzy generics</a></li>
     <li><a href="#json-serialization---the-finite-print">JSON Serialization - The Finite Print</a></li>
     <li><a href="#implementing-the-ntfs-filesystem-in-rust">Implementing the NTFS filesystem in Rust</a></li>
-    <li><a href="#a-brief-history-of-spreadsheets">A Brief History of Spreadsheets</a></li>
   </ul>
 </nav>
     </div>
