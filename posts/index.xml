@@ -6,10 +6,23 @@
     <description>Recent content in Posts on Pawka&#39;s diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Feb 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://pawka.notrollsallowed.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fosdem 2022 notes</title>
+      <link>https://pawka.notrollsallowed.com/posts/2022-02-05/</link>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2022-02-05/</guid>
+      <description>:fosdem: :konferencija:
+This is the second time I&amp;rsquo;m participating online conference and both times are Fosdem. Below are my personal notes of Fosdem 2022. Some notes might not be completed which I was planning to do later. But it is possible the later never came.
+Getting 1K Chess for the ZX81 Personal score: ?/5
+   Let&amp;rsquo;s Get Serial! Personal score: ?/5
+   Tracking your time with Timewarrior Personal score: ?</description>
+    </item>
     
     <item>
       <title>Sidro gamyba: Mangrove Jack&#39;s Pear Cider</title>
