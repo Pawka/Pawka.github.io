@@ -156,10 +156,10 @@ This is the second time I&rsquo;m participating online conference and both times
     <li><a href="#getting-1k-chess-for-the-zx81">Getting 1K Chess for the ZX81</a></li>
     <li><a href="#lets-get-serial">Let&rsquo;s Get Serial!</a></li>
     <li><a href="#five-mysteries-in-embedded-linux">Five mysteries in Embedded Linux</a></li>
-    <li><a href="#tracking-your-time-with-timewarrior">Tracking your time with Timewarrior</a></li>
-    <li><a href="#dissecting-slices-maps-and-channels-in-go">Dissecting Slices, Maps and Channels in Go</a></li>
-    <li><a href="#revolution-of-open-source-cicd-tools">[R]Evolution of open source CI/CD tools</a></li>
-    <li><a href="#fun-with-finite-automata">Fun with Finite Automata</a></li>
+    <li><a href="#lightning-talks-tracking-your-time-with-timewarrior">Lightning talks: Tracking your time with Timewarrior</a></li>
+    <li><a href="#go-dissecting-slices-maps-and-channels-in-go">Go: Dissecting Slices, Maps and Channels in Go</a></li>
+    <li><a href="#go-mastering-your-error-domain">Go: Mastering Your Error Domain</a></li>
+    <li><a href="#go-go-further-without-wires">Go: Go further without wires</a></li>
     <li><a href="#fuzzy-generics">Fuzzy generics</a></li>
     <li><a href="#json-serialization---the-finite-print">JSON Serialization - The Finite Print</a></li>
     <li><a href="#a-brief-history-of-spreadsheets">A Brief History of Spreadsheets</a></li>
@@ -248,26 +248,40 @@ Linux might be out of sync.</li>
 </ul>
 </li>
 </ul>
-<h2 id="tracking-your-time-with-timewarrior">Tracking your time with Timewarrior</h2>
+<h2 id="lightning-talks-tracking-your-time-with-timewarrior">Lightning talks: Tracking your time with Timewarrior</h2>
 <p>Personal score: 4/5</p>
 <p>I&rsquo;ve tried to use Timewarrior a while ago but did not liked it too much.
 Probably because I&rsquo;ve tried to integrate it with Taskwarrior and results of
 integration were not those which I wanted. It was nice to see demo by the
 maintainer and I was convinced to try Timewarrior again.</p>
-<h2 id="dissecting-slices-maps-and-channels-in-go">Dissecting Slices, Maps and Channels in Go</h2>
-<p>Personal score: ?/5</p>
+<h2 id="go-dissecting-slices-maps-and-channels-in-go">Go: Dissecting Slices, Maps and Channels in Go</h2>
+<p>Personal score: 3/5</p>
+<p>Clear &amp; slow pace presentation on fundamentals of slices, maps &amp; channels
+internals. Good if you are not aware of those &amp; like data structures. Intro too
+long.</p>
+<h2 id="go-mastering-your-error-domain">Go: Mastering Your Error Domain</h2>
+<p>Personal score: 4/5</p>
+<p>I liked the Q&amp;A part even more than content. Raising the personal score for
+this.</p>
 <ul>
-<li></li>
+<li>Slides from documentation.</li>
+<li>See how exitcode error is implemented.</li>
+<li><code>resperr</code> for handling HTTP status code errors and user messages (two error
+interfaces).</li>
+<li>Use bitmaps to define &ldquo;this error &amp; that error&rdquo; things.</li>
+<li>Tip for decorating errors - say something positive to avoid duplicated
+statements in error message. Just mention what app is doing: &ldquo;opening url:
+(err)&quot;, &ldquo;running subcommand: (err)&quot;.</li>
 </ul>
-<h2 id="revolution-of-open-source-cicd-tools">[R]Evolution of open source CI/CD tools</h2>
-<p>Personal score: ?/5</p>
+<h2 id="go-go-further-without-wires">Go: Go further without wires</h2>
+<p>Personal score: 3/5</p>
+<p>Great presenter, not too much content.</p>
 <ul>
-<li></li>
-</ul>
-<h2 id="fun-with-finite-automata">Fun with Finite Automata</h2>
-<p>Personal score: ?/5</p>
-<ul>
-<li></li>
+<li>TL;DR Tiny-Go supports wireless: TCP, HTTP, MQTT, UDP. On multiple types on
+devices.</li>
+<li>On embedded systems there might not be OS. Hence using default <code>net/http</code>
+packages might not be possible. Tiny-Go has drivers to solve that.</li>
+<li>I want drone.</li>
 </ul>
 <h2 id="fuzzy-generics">Fuzzy generics</h2>
 <p>Personal score: ?/5</p>
@@ -286,6 +300,7 @@ maintainer and I was convinced to try Timewarrior again.</p>
 </ul>
 <h1 id="todo">TODO</h1>
 <ul>
+<li>Fun with Finite Automata</li>
 <li>Made by Woz: how Apple-1 operating system works?</li>
 <li>Plan 9 CPU command, in Go, for Linux</li>
 <li>The State of Go</li>
@@ -322,10 +337,10 @@ maintainer and I was convinced to try Timewarrior again.</p>
     <li><a href="#getting-1k-chess-for-the-zx81">Getting 1K Chess for the ZX81</a></li>
     <li><a href="#lets-get-serial">Let&rsquo;s Get Serial!</a></li>
     <li><a href="#five-mysteries-in-embedded-linux">Five mysteries in Embedded Linux</a></li>
-    <li><a href="#tracking-your-time-with-timewarrior">Tracking your time with Timewarrior</a></li>
-    <li><a href="#dissecting-slices-maps-and-channels-in-go">Dissecting Slices, Maps and Channels in Go</a></li>
-    <li><a href="#revolution-of-open-source-cicd-tools">[R]Evolution of open source CI/CD tools</a></li>
-    <li><a href="#fun-with-finite-automata">Fun with Finite Automata</a></li>
+    <li><a href="#lightning-talks-tracking-your-time-with-timewarrior">Lightning talks: Tracking your time with Timewarrior</a></li>
+    <li><a href="#go-dissecting-slices-maps-and-channels-in-go">Go: Dissecting Slices, Maps and Channels in Go</a></li>
+    <li><a href="#go-mastering-your-error-domain">Go: Mastering Your Error Domain</a></li>
+    <li><a href="#go-go-further-without-wires">Go: Go further without wires</a></li>
     <li><a href="#fuzzy-generics">Fuzzy generics</a></li>
     <li><a href="#json-serialization---the-finite-print">JSON Serialization - The Finite Print</a></li>
     <li><a href="#a-brief-history-of-spreadsheets">A Brief History of Spreadsheets</a></li>
