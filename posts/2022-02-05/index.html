@@ -160,8 +160,10 @@ This is the second time I&rsquo;m participating online conference and both times
     <li><a href="#go-dissecting-slices-maps-and-channels-in-go">Go: Dissecting Slices, Maps and Channels in Go</a></li>
     <li><a href="#go-mastering-your-error-domain">Go: Mastering Your Error Domain</a></li>
     <li><a href="#go-go-further-without-wires">Go: Go further without wires</a></li>
+    <li><a href="#fun-with-finite-automata">Fun with Finite Automata</a></li>
     <li><a href="#fuzzy-generics">Fuzzy generics</a></li>
     <li><a href="#json-serialization---the-finite-print">JSON Serialization - The Finite Print</a></li>
+    <li><a href="#implementing-the-ntfs-filesystem-in-rust">Implementing the NTFS filesystem in Rust</a></li>
     <li><a href="#a-brief-history-of-spreadsheets">A Brief History of Spreadsheets</a></li>
   </ul>
 </nav>
@@ -275,7 +277,8 @@ statements in error message. Just mention what app is doing: &ldquo;opening url:
 </ul>
 <h2 id="go-go-further-without-wires">Go: Go further without wires</h2>
 <p>Personal score: 3/5</p>
-<p>Great presenter, not too much content.</p>
+<p>Great presenter &amp; video, not much content. Basically connecting different boards
+and using different protocols.</p>
 <ul>
 <li>TL;DR Tiny-Go supports wireless: TCP, HTTP, MQTT, UDP. On multiple types on
 devices.</li>
@@ -283,27 +286,71 @@ devices.</li>
 packages might not be possible. Tiny-Go has drivers to solve that.</li>
 <li>I want drone.</li>
 </ul>
-<h2 id="fuzzy-generics">Fuzzy generics</h2>
-<p>Personal score: ?/5</p>
+<h2 id="fun-with-finite-automata">Fun with Finite Automata</h2>
+<p>Personal score: 5/5</p>
+<p>The guy created few performance related patched to Golang standard library and
+was telling the story of his workflow. Really liked!</p>
 <ul>
-<li></li>
+<li>Golang compiles regex into internal data structure. <code>Prog</code> is a list of
+<code>Inst</code>s. <code>Inst</code> is regex token.</li>
+<li><code>go test -run xxx -bench Regexp -cpuprofile cprof</code></li>
+<li>Three Regexp matchers in Go: One-Pass, Backtracking, NFA.
+<ul>
+<li>One-Pass - simple match. E.g. <code>^foo</code>.</li>
+<li>Stack of Backtracking can grow. Used to check different matches of the same
+pattern.</li>
+<li>NFA uses multiple threads.</li>
+</ul>
+</li>
+<li>Fun fact - Go devs use Gerrit to review the code. Github PRs are mirrored to
+Gerrit.</li>
+<li>Grafana has another regexp library focused on speed.</li>
+<li>Generics did not add any performance benefit on current compiler. Might add in
+future compilers.</li>
+<li>Non-greedy matches are simpler &amp; faster. Use those when you can. Not only
+related with Golang.</li>
+</ul>
+<h2 id="fuzzy-generics">Fuzzy generics</h2>
+<p>Personal score: 4/5</p>
+<p>Presentation of two topics: Generics &amp; Fuzzing. Mostly focused what does not
+work well (which is great).</p>
+<ul>
+<li>Generics: Methods can&rsquo;t have type parameters (yet?). Go team haven&rsquo;t decided
+if interface should be implemented if method contains type parameter or not.
+Functions can have those and can be used instead of methods.
+<a href="https://github.com/golang/go/issues/49085">More details</a>.</li>
+<li>For getters the code should know the type it is recieving. E.g.
+<code>Get[int](&quot;key&quot;)</code> which is not very convenient.</li>
+<li>Fuzzing is mutation testing. Arrives with go1.8. Some gotchas:
+<ul>
+<li>input might be larger than needed. Then <code>b2 != b</code>. Unread portion should
+be removed.</li>
+<li>No support of subtests. <a href="https://github.com/golang/go/issues/47413">PR</a></li>
+<li>Unnamed seed values - can&rsquo;t reproduce easily.
+<a href="https://github.com/golang/go/issues/50456">PR</a></li>
+</ul>
+</li>
+<li>But in general fuzzing helps detect multiple bugs. Especially useful for
+parsing input, binary log, protocols, etc.</li>
 </ul>
 <h2 id="json-serialization---the-finite-print">JSON Serialization - The Finite Print</h2>
 <p>Personal score: ?/5</p>
 <ul>
 <li></li>
 </ul>
-<h2 id="a-brief-history-of-spreadsheets">A Brief History of Spreadsheets</h2>
+<h2 id="implementing-the-ntfs-filesystem-in-rust">Implementing the NTFS filesystem in Rust</h2>
 <p>Personal score: ?/5</p>
 <ul>
 <li></li>
 </ul>
+<h2 id="a-brief-history-of-spreadsheets">A Brief History of Spreadsheets</h2>
+<p>Personal score: ?/5</p>
 <h1 id="todo">TODO</h1>
 <ul>
-<li>Fun with Finite Automata</li>
 <li>Made by Woz: how Apple-1 operating system works?</li>
 <li>Plan 9 CPU command, in Go, for Linux</li>
 <li>The State of Go</li>
+<li>The road towards using regular Linux on ebook readers.</li>
 </ul>
 
     </div>
@@ -341,8 +388,10 @@ packages might not be possible. Tiny-Go has drivers to solve that.</li>
     <li><a href="#go-dissecting-slices-maps-and-channels-in-go">Go: Dissecting Slices, Maps and Channels in Go</a></li>
     <li><a href="#go-mastering-your-error-domain">Go: Mastering Your Error Domain</a></li>
     <li><a href="#go-go-further-without-wires">Go: Go further without wires</a></li>
+    <li><a href="#fun-with-finite-automata">Fun with Finite Automata</a></li>
     <li><a href="#fuzzy-generics">Fuzzy generics</a></li>
     <li><a href="#json-serialization---the-finite-print">JSON Serialization - The Finite Print</a></li>
+    <li><a href="#implementing-the-ntfs-filesystem-in-rust">Implementing the NTFS filesystem in Rust</a></li>
     <li><a href="#a-brief-history-of-spreadsheets">A Brief History of Spreadsheets</a></li>
   </ul>
 </nav>
