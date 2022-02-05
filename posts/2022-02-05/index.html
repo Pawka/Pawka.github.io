@@ -155,12 +155,13 @@ This is the second time I&rsquo;m participating online conference and both times
   <ul>
     <li><a href="#getting-1k-chess-for-the-zx81">Getting 1K Chess for the ZX81</a></li>
     <li><a href="#lets-get-serial">Let&rsquo;s Get Serial!</a></li>
+    <li><a href="#five-mysteries-in-embedded-linux">Five mysteries in Embedded Linux</a></li>
     <li><a href="#tracking-your-time-with-timewarrior">Tracking your time with Timewarrior</a></li>
     <li><a href="#dissecting-slices-maps-and-channels-in-go">Dissecting Slices, Maps and Channels in Go</a></li>
     <li><a href="#revolution-of-open-source-cicd-tools">[R]Evolution of open source CI/CD tools</a></li>
     <li><a href="#fun-with-finite-automata">Fun with Finite Automata</a></li>
     <li><a href="#fuzzy-generics">Fuzzy generics</a></li>
-    <li><a href="#json-serialization---te-finite-print">JSON SErialization - Te Finite Print</a></li>
+    <li><a href="#json-serialization---the-finite-print">JSON Serialization - The Finite Print</a></li>
     <li><a href="#a-brief-history-of-spreadsheets">A Brief History of Spreadsheets</a></li>
   </ul>
 </nav>
@@ -207,7 +208,7 @@ two debuggers from JS emulators.</li>
 <li>Replaced player actions to NOP so those could be injected from web interface.</li>
 </ul>
 <h2 id="lets-get-serial">Let&rsquo;s Get Serial!</h2>
-<p>Kudos for LaTeX Beamer slides :-) History &amp; present of Serial port.</p>
+<p>Kudos for LaTeX Beamer slides :-) History &amp; present of Serial port connection.</p>
 <p>Personal score: 3/5</p>
 <ul>
 <li>point-to-point, binary, async, half duplex or full-duplex.</li>
@@ -222,6 +223,30 @@ anything.</li>
 software for it, easy to debug.</li>
 <li>chat comment: Does not require much from hardware: couple of wires (2-3) and
 easy software stack.</li>
+</ul>
+<h2 id="five-mysteries-in-embedded-linux">Five mysteries in Embedded Linux</h2>
+<p>Personal score: 4/5</p>
+<p>Though topic is for embedded Linux these tips also work for packaging pretty
+well. Main focus is on reproducible builds system and not reinventing the wheel
+(e.g. updates system).</p>
+<ul>
+<li>&ldquo;Do not tinker with powers you don not fully understand.&rdquo;</li>
+<li>Do not manually complie. There are many dependencies such as libraries,
+variables etc. Fragile, unreproducible build.</li>
+<li>Always use a build system what integrates all application stack.</li>
+<li>Golden image does not work well. Don&rsquo;t create images manually, use build
+system.</li>
+<li>Don&rsquo;t rely on package repositories (e.g. apt). Don&rsquo;t use packages from
+different distributions.</li>
+<li>Some HW devices requires manual steps to setup or solve some problems (e.g.
+entering commands manually). Automate if possible. Document, write down &amp;
+maintain a list of MAC addresses to identify which devices are updated.</li>
+<li>Updates are difficult, can brick devices. Don&rsquo;t build your own update process
+<ul>
+<li>better pick existing solution: OStree, SWupdate, RAUC. E.g. time in embedded
+Linux might be out of sync.</li>
+</ul>
+</li>
 </ul>
 <h2 id="tracking-your-time-with-timewarrior">Tracking your time with Timewarrior</h2>
 <p>Personal score: ?/5</p>
@@ -245,7 +270,7 @@ easy software stack.</li>
 <ul>
 <li></li>
 </ul>
-<h2 id="json-serialization---te-finite-print">JSON SErialization - Te Finite Print</h2>
+<h2 id="json-serialization---the-finite-print">JSON Serialization - The Finite Print</h2>
 <p>Personal score: ?/5</p>
 <ul>
 <li></li>
@@ -257,6 +282,7 @@ easy software stack.</li>
 </ul>
 <h1 id="todo">TODO</h1>
 <ul>
+<li>Made by Woz: how Apple-1 operating system works?</li>
 <li>Plan 9 CPU command, in Go, for Linux</li>
 <li>The State of Go</li>
 </ul>
@@ -291,12 +317,13 @@ easy software stack.</li>
   <ul>
     <li><a href="#getting-1k-chess-for-the-zx81">Getting 1K Chess for the ZX81</a></li>
     <li><a href="#lets-get-serial">Let&rsquo;s Get Serial!</a></li>
+    <li><a href="#five-mysteries-in-embedded-linux">Five mysteries in Embedded Linux</a></li>
     <li><a href="#tracking-your-time-with-timewarrior">Tracking your time with Timewarrior</a></li>
     <li><a href="#dissecting-slices-maps-and-channels-in-go">Dissecting Slices, Maps and Channels in Go</a></li>
     <li><a href="#revolution-of-open-source-cicd-tools">[R]Evolution of open source CI/CD tools</a></li>
     <li><a href="#fun-with-finite-automata">Fun with Finite Automata</a></li>
     <li><a href="#fuzzy-generics">Fuzzy generics</a></li>
-    <li><a href="#json-serialization---te-finite-print">JSON SErialization - Te Finite Print</a></li>
+    <li><a href="#json-serialization---the-finite-print">JSON Serialization - The Finite Print</a></li>
     <li><a href="#a-brief-history-of-spreadsheets">A Brief History of Spreadsheets</a></li>
   </ul>
 </nav>
