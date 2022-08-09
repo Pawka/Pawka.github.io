@@ -22,6 +22,19 @@ convert -resize 30% *.jpg convert-resize 200x200 *.jpg </description>
     </item>
     
     <item>
+      <title>May Contain Hackers 2022 notes</title>
+      <link>https://pawka.notrollsallowed.com/posts/2022-08-08/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2022-08-08/</guid>
+      <description>:konferencija:
+I did not got a chance to participate in MCH2022 but they have published records of presentations which are available here. Below are some notes of presentations I&amp;rsquo;ve watched.
+Signal: you were the chosen one! Personal score: 3/5
+Ideas how Signal could be better chat app.
+ Signal is the best chat app for now. Protocol can be federated (and should be) but it is not by design. Signal does not want other client apps would be using their servers.</description>
+    </item>
+    
+    <item>
       <title>404 Retrospektya</title>
       <link>https://pawka.notrollsallowed.com/posts/2022-08-01/</link>
       <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
