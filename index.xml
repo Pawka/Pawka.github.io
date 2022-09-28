@@ -53,9 +53,8 @@ convert -resize 30% *.jpg convert-resize 200x200 *.jpg </description>
       <guid>https://pawka.notrollsallowed.com/posts/2022-08-08/</guid>
       <description>:konferencija:
 I did not got a chance to participate in MCH2022 but they have published records of presentations which are available here. Below are some notes of presentations I&amp;rsquo;ve watched.
-Signal: you were the chosen one! Personal score: 3/5
-Ideas how Signal could be better chat app.
- Signal is the best chat app for now. Protocol can be federated (and should be) but it is not by design. Signal does not want other client apps would be using their servers.</description>
+Electronic Locks: Bumping and Other Mischief Personal score: 4/5
+Gem. Live demo unlocking multiple electronic locks. Basically all electronic locks sucks because of solenoid (magnets in locks are bad idea), mechanical issues (springs, freely moving parts are bad idea too). Basically all these locks were unlocked with virbations, magnets or torque.</description>
     </item>
     
     <item>
