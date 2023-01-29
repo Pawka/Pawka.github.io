@@ -6,7 +6,29 @@
     <description>Recent content in linux on Pawka&#39;s diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL: Configure Pulseaudio to not switch output to hot-plugged devices</title>
+      <link>https://pawka.notrollsallowed.com/posts/2021-05-07/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2021-05-07/</guid>
+      <description>:linux:
+Motivation I have Blue Yeti USB microphone which also has an audio output for monitoring. I do not use the output but once pluged-in - Ubuntu recognize it as new sound card and switch output to the microphone immediatelly. This drives me nuts because I always need to switch back audio output manually to previous device.
+Pulseaudio config Pulseaudio has a feature automatically switch to hot-plugged devices which is enabled by default.</description>
+    </item>
+    
+    <item>
+      <title>Linux RAM kompresija su zram</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-11-10/</link>
+      <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-11-10/</guid>
+      <description>:linux:
+Darbinis kompiuteris vargsta dėl atminties trūkumo. Mat turi tik 16G RAM&amp;rsquo;o. Dirbame su monorepo ir tam tikri monolitinės repozitorijos įrankiai kaip gazelle arba gopls reikalauja nemažai atminties ir kartais skubiai. Jei dar fone paleistas koks Spotify, Goole Chrome, Slack&amp;rsquo;as - visas RAM&amp;rsquo;o valgytojų elitas - tai kažkas turi pasitraukti.
+Būna, paleidus gazelle kompas pakimba ir atsigauna po kažkiek laiko. Būna atsigauna su baltu Slack&amp;rsquo;o langu (nes tam pritrūko atminties kažką sukramtyt).</description>
+    </item>
+    
     <item>
       <title>TIL: Spotify media keys on Linux</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-09-07/</link>

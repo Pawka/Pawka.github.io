@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>diy</title>
+      <link>https://pawka.notrollsallowed.com/tags/diy/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/diy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>siuvimas</title>
       <link>https://pawka.notrollsallowed.com/tags/siuvimas/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
@@ -40,6 +49,15 @@
       <pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/tags/hamradio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cli</title>
+      <link>https://pawka.notrollsallowed.com/tags/cli/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/cli/</guid>
       <description></description>
     </item>
     
@@ -80,11 +98,92 @@
     </item>
     
     <item>
-      <title>cli</title>
-      <link>https://pawka.notrollsallowed.com/tags/cli/</link>
+      <title>linux</title>
+      <link>https://pawka.notrollsallowed.com/tags/linux/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ergodox</title>
+      <link>https://pawka.notrollsallowed.com/tags/ergodox/</link>
+      <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/ergodox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keyboards</title>
+      <link>https://pawka.notrollsallowed.com/tags/keyboards/</link>
+      <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/keyboards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://pawka.notrollsallowed.com/tags/bash/</link>
       <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://pawka.notrollsallowed.com/tags/cli/</guid>
+      <guid>https://pawka.notrollsallowed.com/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>coding</title>
+      <link>https://pawka.notrollsallowed.com/tags/coding/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vilniusphp</title>
+      <link>https://pawka.notrollsallowed.com/tags/vilniusphp/</link>
+      <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/vilniusphp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chrome</title>
+      <link>https://pawka.notrollsallowed.com/tags/chrome/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>firefox</title>
+      <link>https://pawka.notrollsallowed.com/tags/firefox/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/firefox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>book</title>
+      <link>https://pawka.notrollsallowed.com/tags/book/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://pawka.notrollsallowed.com/tags/blog/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/blog/</guid>
       <description></description>
     </item>
     
@@ -98,11 +197,11 @@
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://pawka.notrollsallowed.com/tags/linux/</link>
-      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      <title>kelione</title>
+      <link>https://pawka.notrollsallowed.com/tags/kelione/</link>
+      <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://pawka.notrollsallowed.com/tags/linux/</guid>
+      <guid>https://pawka.notrollsallowed.com/tags/kelione/</guid>
       <description></description>
     </item>
     
@@ -116,11 +215,47 @@
     </item>
     
     <item>
+      <title>3d-printing</title>
+      <link>https://pawka.notrollsallowed.com/tags/3d-printing/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/3d-printing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>marlin</title>
+      <link>https://pawka.notrollsallowed.com/tags/marlin/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/marlin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>curl</title>
       <link>https://pawka.notrollsallowed.com/tags/curl/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/tags/curl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>https://pawka.notrollsallowed.com/tags/ffmpeg/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>//www.thingiverse.com/thing</title>
+      <link>https://pawka.notrollsallowed.com/tags/www.thingiverse.com/thing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/www.thingiverse.com/thing/</guid>
       <description></description>
     </item>
     
