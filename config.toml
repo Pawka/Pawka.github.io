@@ -22,3 +22,6 @@ weight = 4
 
 [params]
 showAllPostsOnHomePage = true
+
+[taxonomies]
+tag = "tags"

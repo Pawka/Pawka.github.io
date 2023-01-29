@@ -1,5 +1,5 @@
-VIMWIKI_DIARY_PATH=~/Documents/Apps/vimwiki/diary/
-POSTS_PATH=./content/posts/
+VIMWIKI_DIARY_PATH=~/Documents/Apps/vimwiki/diary
+POSTS_PATH=./content/posts
 
 .PHONY: diary
 diary: content commit
