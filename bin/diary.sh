@@ -57,6 +57,7 @@ main() {
     local source_path=$1
     local dest_path=$2
 
+    rm -rf "$dest_path/*"
     mkdir -p "$dest_path"
 
     for path in $(get_content_files)
