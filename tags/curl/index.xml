@@ -13,7 +13,7 @@
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/posts/2020-05-04/</guid>
-      <description>:curl: :cli:
+      <description>:til: :curl: :cli:
 curl can read data from STDIN when --data @- is provided as parameter:
 $ echo &amp;#34;Hi&amp;#34; | curl http://theurl.com -d @- </description>
     </item>

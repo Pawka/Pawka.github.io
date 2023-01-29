@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>til on Pawka&#39;s diary</title>
+    <link>https://pawka.notrollsallowed.com/tags/til/</link>
+    <description>Recent content in til on Pawka&#39;s diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL: Open URL in VIM</title>
+      <link>https://pawka.notrollsallowed.com/posts/2022-08-31/</link>
+      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2022-08-31/</guid>
+      <description>:til: :vim:
+Move cursor on the URL and type gx to open the URL in browser.
+The gx actually calls open or OS equivalent command for given resource (it can be URL, image, other type of file). Then open command decides what to do with the object, e.g. if it is URL - open it in a browser.
+I often use VIM to format text, e.g. generate multiple URLs and wanted to open all of them in a browser.</description>
+    </item>
+    
+    <item>
+      <title>TIL: List of Family Radio Service (FRS) channels</title>
+      <link>https://pawka.notrollsallowed.com/posts/2022-08-12/</link>
+      <pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2022-08-12/</guid>
+      <description>:til: :hamradio:
+I have a few Baofeng BF-T3 walkie talkies purchased to my kids but always struggle to remember which frequencies they operate when I want to configure those to work with my personal radios.
+List of FRC channels Stolen from Wikipedia page &amp;ldquo;Family Radio Service&amp;rdquo;.
+Channel Frequency (MHz) FRS EIRP Restriction GMRS EIRP Restriction 1 462.5625 Up to 2 watt Up to 5 watts 2 462.5875 Up to 2 watt Up to 5 watts 3 462.</description>
+    </item>
+    
+    <item>
+      <title>TIL: Scale images in command line</title>
+      <link>https://pawka.notrollsallowed.com/posts/2022-08-09/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2022-08-09/</guid>
+      <description>:til: :cli:
+To resize images in commandline imagemagick package is required. With the package convert command becomes available which could be used to resize or scale images.
+convert -resize 30% *.jpg convert-resize 200x200 *.jpg </description>
+    </item>
+    
+    <item>
+      <title>TIL: Extract subdirectory with git history to another repository</title>
+      <link>https://pawka.notrollsallowed.com/posts/2022-01-19/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2022-01-19/</guid>
+      <description>:til: :git:
+Today I needed to extract git history of particular subdirectory and move it to a separate repository. Source repository here contains original code from which we want to extract the history. Meanwhile target repo is new repository to which we want to import the history.
+Command below creates a branch named &amp;ldquo;kyria&amp;rdquo; on source repository with commits from specific path only:
+$ git subtree split --prefix=keyboards/kyria/pawka --branch=kyria Keep in mind that files in the new branch are displayed as those were created at the root of repository.</description>
+    </item>
+    
+    <item>
+      <title>TIL: Configure Pulseaudio to not switch output to hot-plugged devices</title>
+      <link>https://pawka.notrollsallowed.com/posts/2021-05-07/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2021-05-07/</guid>
+      <description>:til: :linux:
+Motivation I have Blue Yeti USB microphone which also has an audio output for monitoring. I do not use the output but once pluged-in - Ubuntu recognize it as new sound card and switch output to the microphone immediatelly. This drives me nuts because I always need to switch back audio output manually to previous device.
+Pulseaudio config Pulseaudio has a feature automatically switch to hot-plugged devices which is enabled by default.</description>
+    </item>
+    
+    <item>
+      <title>TIL: Replace string across multiple files in VIM</title>
+      <link>https://pawka.notrollsallowed.com/posts/2021-03-16/</link>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2021-03-16/</guid>
+      <description>:til: :vim:
+Only files which are in currently opened buffers are affected. Buffers can be populated in many ways what is out of scope of this post.
+Replace what to result in all currently opened buffers:
+:bufdo %s/what/result/g Write changes written to the disk:
+:bufdo w </description>
+    </item>
+    
+    <item>
+      <title>TIL: Call bash function via xargs</title>
+      <link>https://pawka.notrollsallowed.com/posts/2021-03-05/</link>
+      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2021-03-05/</guid>
+      <description>:til: :cli: :bash:
+To run cli tools there is xargs. But what if I want to run certain part of bash script (a function) in parallel? One option is to extract function to a separate file and feed it into xargs. Another way - make xargs to execute the function:
+#!/bin/bash p() { echo &amp;#34;&amp;gt; $1&amp;#34; } main() { export -f p seq 10 | xargs -n 1 -I {} bash -c &amp;#34;p {}&amp;#34; } main &amp;#34;@$&amp;#34; Necesary line here is to export the function via export -f &amp;lt;function_name&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>TIL: Copy any request as CURL command from Chrome or Firefox</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-12-04/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-12-04/</guid>
+      <description>:til: :firefox: :chrome:
+Any HTTP request performed by Friefox or Chrome can be copied as CURL command. It is possible other browsers this supports too but I had a chance to test it with those two.
+Open &amp;ldquo;Network&amp;rdquo; tab on Developer tools or equivalent. Load the page. Right click on desired request and select &amp;ldquo;Copy &amp;gt; &amp;ldquo;Copy as CURL&amp;rdquo; or similar command. This will give you CURL with parameters included. Can be useful to debug some requests.</description>
+    </item>
+    
+    <item>
+      <title>TIL: Spotify media keys on Linux</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-09-07/</link>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-09-07/</guid>
+      <description>:til: :linux:
+It seems Chrome is capturing media keys handling and Spotify can not be controlled with the keys. This can be solved by visiting chrome://flags/#hardware-media-key-handling and disabling &amp;ldquo;Hardware Media Key Handling&amp;rdquo; option.</description>
+    </item>
+    
+    <item>
+      <title>TIL: column -t command to format output</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-09-04/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-09-04/</guid>
+      <description>:til: :cli:
+column -t command can be used to pretty print output of files (e.g. database exports) by aligning columns nicely.
+Original content:
+pawka@kyloren &amp;gt; cat file.txt aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2nx 6154 bb/bbbbbb PHID-REPO-bampn53k6a7zwzr76rez 3235 cccc/ccccc-cccc-ccccccccc PHID-REPO-scvhcxnrs4nyrzrs64jc 2433 ddd-dddd PHID-REPO-uexvk77yeovy63fhokqw 1269 eeeeee/eee PHID-REPO-hmdgak5gad4rxiter65h 1266 Formatted content:
+pawka@kyloren &amp;gt; cat file.txt | column -t aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2nx 6154 bb/bbbbbb PHID-REPO-bampn53k6a7zwzr76rez 3235 cccc/ccccc-cccc-ccccccccc PHID-REPO-scvhcxnrs4nyrzrs64jc 2433 ddd-dddd PHID-REPO-uexvk77yeovy63fhokqw 1269 eeeeee/eee PHID-REPO-hmdgak5gad4rxiter65h 1266 `` </description>
+    </item>
+    
+    <item>
+      <title>TIL: Swap panes on TMUX</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-07-15/</link>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-07-15/</guid>
+      <description>:til: :tmux:
+To move pane left or right &amp;lt;prefix&amp;gt; { or &amp;lt;prefix&amp;gt; } key sequence can be used.</description>
+    </item>
+    
+    <item>
+      <title>TIL: Delete lines matching pattern in VIM</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-06-15/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-06-15/</guid>
+      <description>:til: :vim:
+To remove lines of oppened file which contains the pattern run following command:
+:g/pattern/d The g! can be used to remove lines which do not match the pattern:
+:g!/pattern/d g! is the same as v:
+:v/pattern/d Source: https://vim.fandom.com/wiki/Delete_all_lines_containing_a_pattern</description>
+    </item>
+    
+    <item>
+      <title>TIL: =QUERY function on Google Spreadsheets</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-05-05/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-05-05/</guid>
+      <description>:til:
+I&amp;rsquo;ve found Google Spreadsheets has =QUERY function which accepts SQL-like query and can produce grouped results. This is especially useful form summary tabes For example having following data on the spreadsheet:
+A 10 B 5 A 5 C 1 Function =QUERY(A1:B4,&amp;quot;select A, sum(B) group by A&amp;quot;) will produce:
+A 15 B 5 C 1 </description>
+    </item>
+    
+    <item>
+      <title>TIL: Forward data to CURL from STDIN</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-05-04/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-05-04/</guid>
+      <description>:til: :curl: :cli:
+curl can read data from STDIN when --data @- is provided as parameter:
+$ echo &amp;#34;Hi&amp;#34; | curl http://theurl.com -d @- </description>
+    </item>
+    
+    <item>
+      <title>TIL: Make timelapse video with ffmpeg</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-04-24/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-04-24/</guid>
+      <description>:til: :ffmpeg: :cli:
+Jau kažkadaise esu su ffmpeg gaminęs video iš paveiksliukų ir atvirkščiai, tad šis būdas manęs nenustebino. Tiesiog ffmpeg turi krūvą parametrų kurių tikrai neįmanoma prisiminti dažnai neredaguojant vaizdinės medžiagos.
+Sukūriau tokį Makefile, kuris iš paveikslų sudėlioja geros kokybės video:
+# Build timelapse video from images timelapse.mp4: ffmpeg -r 24 -pattern_type glob -i &amp;#39;*.JPG&amp;#39; -s hd1080 -vcodec libx264 \ -crf 18 -preset slow timelapse.mp4 To list available encoders run ffmpeg -encoders.</description>
+    </item>
+    
+    <item>
+      <title>TIL: Jump to previous directory on bash/zsh</title>
+      <link>https://pawka.notrollsallowed.com/posts/2019-12-31/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2019-12-31/</guid>
+      <description>:til: :cli:
+$ cd - </description>
+    </item>
+    
+    <item>
+      <title>TIL: Create and apply git patch</title>
+      <link>https://pawka.notrollsallowed.com/posts/2019-12-30/</link>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2019-12-30/</guid>
+      <description>:til: :git:
+To create git patch execute git format-patch HEAD^. To apply patch run git apply file.patch. </description>
+    </item>
+    
+    <item>
+      <title>TIL: TMUX pane management</title>
+      <link>https://pawka.notrollsallowed.com/posts/2019-09-25/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2019-09-25/</guid>
+      <description>:til: :tmux:
+Inside any pane, press &amp;lt;Prefix&amp;gt;! and tmux will create a new window from your pane, removing the original pane.
+Now, to move the first window into a pane in the second window, press &amp;lt;Prefix&amp;gt;: to enter Command mode, and type this:
+:join-pane -s panes:1 or
+:join-pane -s :1 You can use this technique to move panes around as well. If your first window had two panes, you could specify the source pane like this:</description>
+    </item>
+    
+    <item>
+      <title>TIL: Copy TMUX pane contents to buffer</title>
+      <link>https://pawka.notrollsallowed.com/posts/2019-09-24/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2019-09-24/</guid>
+      <description>:til: :tmux:
+Tmux has a handy shortcut that copies the entire visible contents of a pane to a paste buffer. Enter tmux’s Command mode with &amp;lt;Prefix&amp;gt;:capture-pane. The contents of the pane will be in a paste buffer. You can then paste that content into another pane or window by pressing &amp;lt;Prefix&amp;gt;].</description>
+    </item>
+    
+    <item>
+      <title>TIL: What .editorconfig is?</title>
+      <link>https://pawka.notrollsallowed.com/posts/2019-09-15/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2019-09-15/</guid>
+      <description>:til:
+.editorconfig is almost defacto standard to store project configuration settings such as indentation, encoding etc. It is supposed to be supported by multiple editors (including VIM via plugins). Settings in .editorconfig file will take a precedence over any settings in vim configuration.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,7 +13,7 @@
       <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/posts/2021-05-07/</guid>
-      <description>:linux:
+      <description>:til: :linux:
 Motivation I have Blue Yeti USB microphone which also has an audio output for monitoring. I do not use the output but once pluged-in - Ubuntu recognize it as new sound card and switch output to the microphone immediatelly. This drives me nuts because I always need to switch back audio output manually to previous device.
 Pulseaudio config Pulseaudio has a feature automatically switch to hot-plugged devices which is enabled by default.</description>
     </item>
@@ -35,7 +35,7 @@ Būna, paleidus gazelle kompas pakimba ir atsigauna po kažkiek laiko. Būna ats
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/posts/2020-09-07/</guid>
-      <description>:linux:
+      <description>:til: :linux:
 It seems Chrome is capturing media keys handling and Spotify can not be controlled with the keys. This can be solved by visiting chrome://flags/#hardware-media-key-handling and disabling &amp;ldquo;Hardware Media Key Handling&amp;rdquo; option.</description>
     </item>
     

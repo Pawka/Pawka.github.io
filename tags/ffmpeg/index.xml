@@ -13,7 +13,7 @@
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/posts/2020-04-24/</guid>
-      <description>:ffmpeg: :cli:
+      <description>:til: :ffmpeg: :cli:
 Jau kažkadaise esu su ffmpeg gaminęs video iš paveiksliukų ir atvirkščiai, tad šis būdas manęs nenustebino. Tiesiog ffmpeg turi krūvą parametrų kurių tikrai neįmanoma prisiminti dažnai neredaguojant vaizdinės medžiagos.
 Sukūriau tokį Makefile, kuris iš paveikslų sudėlioja geros kokybės video:
 # Build timelapse video from images timelapse.mp4: ffmpeg -r 24 -pattern_type glob -i &amp;#39;*.JPG&amp;#39; -s hd1080 -vcodec libx264 \ -crf 18 -preset slow timelapse.mp4 To list available encoders run ffmpeg -encoders.</description>

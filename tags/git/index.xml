@@ -13,7 +13,7 @@
       <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/posts/2022-01-19/</guid>
-      <description>:git:
+      <description>:til: :git:
 Today I needed to extract git history of particular subdirectory and move it to a separate repository. Source repository here contains original code from which we want to extract the history. Meanwhile target repo is new repository to which we want to import the history.
 Command below creates a branch named &amp;ldquo;kyria&amp;rdquo; on source repository with commits from specific path only:
 $ git subtree split --prefix=keyboards/kyria/pawka --branch=kyria Keep in mind that files in the new branch are displayed as those were created at the root of repository.</description>
@@ -25,7 +25,7 @@ $ git subtree split --prefix=keyboards/kyria/pawka --branch=kyria Keep in mind t
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/posts/2019-12-30/</guid>
-      <description>:git:
+      <description>:til: :git:
 To create git patch execute git format-patch HEAD^. To apply patch run git apply file.patch. </description>
     </item>
     

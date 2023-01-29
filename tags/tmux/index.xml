@@ -13,7 +13,7 @@
       <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/posts/2020-07-15/</guid>
-      <description>:tmux:
+      <description>:til: :tmux:
 To move pane left or right &amp;lt;prefix&amp;gt; { or &amp;lt;prefix&amp;gt; } key sequence can be used.</description>
     </item>
     
@@ -23,7 +23,7 @@ To move pane left or right &amp;lt;prefix&amp;gt; { or &amp;lt;prefix&amp;gt; } 
       <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/posts/2019-09-25/</guid>
-      <description>:tmux:
+      <description>:til: :tmux:
 Inside any pane, press &amp;lt;Prefix&amp;gt;! and tmux will create a new window from your pane, removing the original pane.
 Now, to move the first window into a pane in the second window, press &amp;lt;Prefix&amp;gt;: to enter Command mode, and type this:
 :join-pane -s panes:1 or
@@ -36,7 +36,7 @@ Now, to move the first window into a pane in the second window, press &amp;lt;Pr
       <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/posts/2019-09-24/</guid>
-      <description>:tmux:
+      <description>:til: :tmux:
 Tmux has a handy shortcut that copies the entire visible contents of a pane to a paste buffer. Enter tmux’s Command mode with &amp;lt;Prefix&amp;gt;:capture-pane. The contents of the pane will be in a paste buffer. You can then paste that content into another pane or window by pressing &amp;lt;Prefix&amp;gt;].</description>
     </item>
     

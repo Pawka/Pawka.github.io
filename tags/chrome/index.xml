@@ -13,7 +13,7 @@
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/posts/2020-12-04/</guid>
-      <description>:firefox: :chrome:
+      <description>:til: :firefox: :chrome:
 Any HTTP request performed by Friefox or Chrome can be copied as CURL command. It is possible other browsers this supports too but I had a chance to test it with those two.
 Open &amp;ldquo;Network&amp;rdquo; tab on Developer tools or equivalent. Load the page. Right click on desired request and select &amp;ldquo;Copy &amp;gt; &amp;ldquo;Copy as CURL&amp;rdquo; or similar command. This will give you CURL with parameters included. Can be useful to debug some requests.</description>
     </item>
