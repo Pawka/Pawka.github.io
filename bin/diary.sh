@@ -18,7 +18,7 @@ date: {{DATE}}
 generate_post() {
     local content=$1
 
-    date=$(basename "$entry" | sed 's/\.md$//')
+    date=$(basename "$content" | sed 's/\.md$//')
     title=$(grep -m 1 "^# " "$content" | sed 's/^# \+//')
     text=$(sed '0,/^# /{/^# /d;}' "$content")
 
@@ -28,19 +28,42 @@ generate_post() {
     echo "$text"
 }
 
+
+# TBA_TAG is used to discard posts from diary. If such tag is found in
+# content, the post is not included into the blog.
+readonly TBA_TAG=":tba:"
+
+get_content_files() {
+    for entry in "$source_path"*.md
+    do
+        local filename
+        filename=$(basename "$entry")
+
+        # Skip vimwiki index page.
+        if [[ "$filename" == "diary.md" ]]; then
+            continue
+        fi
+
+        # Skip TBA posts.
+        if [[ $(grep "$TBA_TAG" "$entry" -c) != 0 ]]; then
+            continue
+        fi
+
+        echo "$entry"
+    done
+}
+
 main() {
     local source_path=$1
     local dest_path=$2
 
     mkdir -p "$dest_path"
 
-    for entry in $source_path*.md
+    for path in $(get_content_files)
     do
-        filename=$(basename "$entry")
-        if [[ "$filename" == "diary.md" ]]; then
-            continue
-        fi
-        generate_post "$entry" > "$dest_path/$filename"
+        local filename
+        filename=$(basename "$path")
+        generate_post "$path" > "$dest_path/$filename"
     done
 
 }
