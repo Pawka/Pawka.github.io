@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cli on Pawka&#39;s diary</title>
+    <link>https://pawka.notrollsallowed.com/tags/cli/</link>
+    <description>Recent content in cli on Pawka&#39;s diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL: Call bash function via xargs</title>
+      <link>https://pawka.notrollsallowed.com/posts/2021-03-05/</link>
+      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2021-03-05/</guid>
+      <description>:cli:
+To run cli tools there is xargs. But what if I want to run certain part of bash script (a function) in parallel? One option is to extract function to a separate file and feed it into xargs. Another way - make xargs to execute the function:
+#!/bin/bash p() { echo &amp;#34;&amp;gt; $1&amp;#34; } main() { export -f p seq 10 | xargs -n 1 -I {} bash -c &amp;#34;p {}&amp;#34; } main &amp;#34;@$&amp;#34; Necesary line here is to export the function via export -f &amp;lt;function_name&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>TIL: column -t command to format output</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-09-04/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-09-04/</guid>
+      <description>:cli:
+column -t command can be used to pretty print output of files (e.g. database exports) by aligning columns nicely.
+Original content:
+pawka@kyloren &amp;gt; cat file.txt aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2nx 6154 bb/bbbbbb PHID-REPO-bampn53k6a7zwzr76rez 3235 cccc/ccccc-cccc-ccccccccc PHID-REPO-scvhcxnrs4nyrzrs64jc 2433 ddd-dddd PHID-REPO-uexvk77yeovy63fhokqw 1269 eeeeee/eee PHID-REPO-hmdgak5gad4rxiter65h 1266 Formatted content:
+pawka@kyloren &amp;gt; cat file.txt | column -t aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2nx 6154 bb/bbbbbb PHID-REPO-bampn53k6a7zwzr76rez 3235 cccc/ccccc-cccc-ccccccccc PHID-REPO-scvhcxnrs4nyrzrs64jc 2433 ddd-dddd PHID-REPO-uexvk77yeovy63fhokqw 1269 eeeeee/eee PHID-REPO-hmdgak5gad4rxiter65h 1266 `` </description>
+    </item>
+    
+    <item>
+      <title>TIL: Jump to previous directory on bash/zsh</title>
+      <link>https://pawka.notrollsallowed.com/posts/2019-12-31/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2019-12-31/</guid>
+      <description>:cli:
+$ cd - </description>
+    </item>
+    
+  </channel>
+</rss>

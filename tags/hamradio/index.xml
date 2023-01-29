@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hamradio on Pawka&#39;s diary</title>
+    <link>https://pawka.notrollsallowed.com/tags/hamradio/</link>
+    <description>Recent content in hamradio on Pawka&#39;s diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/hamradio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL: List of Family Radio Service (FRS) channels</title>
+      <link>https://pawka.notrollsallowed.com/posts/2022-08-12/</link>
+      <pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2022-08-12/</guid>
+      <description>:hamradio:
+I have a few Baofeng BF-T3 walkie talkies purchased to my kids but always struggle to remember which frequencies they operate when I want to configure those to work with my personal radios.
+List of FRC channels Stolen from Wikipedia page &amp;ldquo;Family Radio Service&amp;rdquo;.
+Channel Frequency (MHz) FRS EIRP Restriction GMRS EIRP Restriction 1 462.5625 Up to 2 watt Up to 5 watts 2 462.5875 Up to 2 watt Up to 5 watts 3 462.</description>
+    </item>
+    
+  </channel>
+</rss>

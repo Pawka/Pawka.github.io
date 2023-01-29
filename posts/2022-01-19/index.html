@@ -14,7 +14,7 @@ Today I needed to extract git history of particular subdirectory and move it to 
 Command below creates a branch named &ldquo;kyria&rdquo; on source repository with commits from specific path only:
 $ git subtree split --prefix=keyboards/kyria/pawka --branch=kyria Keep in mind that files in the new branch are displayed as those were created at the root of repository." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2022-01-19/" />
+<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2022-01-19/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-01-19T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-01-19T00:00:00+00:00" />
 
@@ -181,6 +181,14 @@ $ git subtree split --prefix=keyboards/kyria/pawka --branch=kyria Keep in mind t
         </div>
         
         
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/git" rel="tag">git</a>
+            
+        </div> 
+        
       </div>
     </header>
 
@@ -193,7 +201,7 @@ we want to extract the history. Meanwhile target repo is new repository to which
 we want to import the history.</p>
 <p>Command below creates a branch named &ldquo;kyria&rdquo; on source repository with commits
 from specific path only:</p>
-<pre><code>$ git subtree split --prefix=keyboards/kyria/pawka --branch=kyria
+<pre tabindex="0"><code>$ git subtree split --prefix=keyboards/kyria/pawka --branch=kyria
 </code></pre><p>Keep in mind that files in the new branch are displayed as those were created at
 the root of repository. Let&rsquo;s say if we had a file on source repo
 <code>keyboards/kyria/pawka/config.h</code>. On the <code>kyria</code> branch it will be placed on the
@@ -201,7 +209,7 @@ root as <code>config.h</code> only (no <code>keyboards/kyria/pawka/</code> prefi
 treat a subdirectory as completely new repo if needed. But I needed to create a
 new repo and place all files on specific path.</p>
 <p>Let&rsquo;s create a new repo:</p>
-<pre><code>$ cd ~/
+<pre tabindex="0"><code>$ cd ~/
 $ mkdir target_repo
 $ cd target_repo
 </code></pre><p>Command below must be executed on the new repository to import history from the
@@ -209,7 +217,7 @@ $ cd target_repo
 <ul>
 <li>make sure there is one.</li>
 </ul>
-<pre><code>$ git subtree add --preffix=qmk/keyboards/kyria/ ../source_repo kyria
+<pre tabindex="0"><code>$ git subtree add --preffix=qmk/keyboards/kyria/ ../source_repo kyria
 </code></pre><p>This will clone all files from the <code>kyria</code> branch on <code>source_repo</code> to the
 <code>qmk/keyboards/kyria/</code> path on the <code>target_repo</code>.</p>
 <p>In this way I&rsquo;ve successfully imported history of couple paths from the original

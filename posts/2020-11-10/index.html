@@ -12,7 +12,7 @@
 <meta property="og:description" content="Darbinis kompiuteris vargsta dėl atminties trūkumo. Mat turi tik 16G RAM&rsquo;o. Dirbame su monorepo ir tam tikri monolitinės repozitorijos įrankiai kaip gazelle arba gopls reikalauja nemažai atminties ir kartais skubiai. Jei dar fone paleistas koks Spotify, Goole Chrome, Slack&rsquo;as - visas RAM&rsquo;o valgytojų elitas - tai kažkas turi pasitraukti.
 Būna, paleidus gazelle kompas pakimba ir atsigauna po kažkiek laiko. Būna atsigauna su baltu Slack&rsquo;o langu (nes tam pritrūko atminties kažką sukramtyt)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2020-11-10/" />
+<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2020-11-10/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-11-10T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-11-10T00:00:00+00:00" />
 
@@ -196,10 +196,10 @@ perkrauti. Kokius 5 kartus per dieną.</p>
 išgyventi. Kolega parodė, kad egzistuoja toks <a href="https://www.cnx-software.com/2018/05/14/running-out-of-ram-in-ubuntu-enable-zram/">dalykas kaip RAM
 kompersija.</a>.</p>
 <p>Instaliavimas labai paprastas:</p>
-<pre><code>$ sudo apt install zram-config
+<pre tabindex="0"><code>$ sudo apt install zram-config
 </code></pre><p>Tada perkraunam kompiuterį (būtina užkrauti zram Kernel moduliui) ir
 pasitikrinam:</p>
-<pre><code>$ cat /proc/swaps
+<pre tabindex="0"><code>$ cat /proc/swaps
 Filename                                Type            Size    Used    Priority
 /dev/dm-2                               partition       1003516 0       -2
 /dev/zram0                              partition       1016968 68304   5

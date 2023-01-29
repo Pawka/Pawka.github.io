@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Pawka&#39;s diary</title>
+    <link>https://pawka.notrollsallowed.com/tags/linux/</link>
+    <description>Recent content in linux on Pawka&#39;s diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL: Spotify media keys on Linux</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-09-07/</link>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-09-07/</guid>
+      <description>:linux:
+It seems Chrome is capturing media keys handling and Spotify can not be controlled with the keys. This can be solved by visiting chrome://flags/#hardware-media-key-handling and disabling &amp;ldquo;Hardware Media Key Handling&amp;rdquo; option.</description>
+    </item>
+    
+    <item>
+      <title>XKB and keyboard layouts on Linux</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-08-31/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-08-31/</guid>
+      <description>:linux:
+For a while I was looking for an efficient way to deal with Lithuanian letters and english keyboard at the same time. I have noticed that switching between keyboard layouts with Super+Space (or any other keys combination) is not efficient. Sometimes I even do not recognize when I switch to different layout and start typing code. Or jump from chat to vim and instead of special symbols lithuanian letters are written.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,7 +13,7 @@
 Sukūriau tokį Makefile, kuris iš paveikslų sudėlioja geros kokybės video:
 # Build timelapse video from images timelapse.mp4: ffmpeg -r 24 -pattern_type glob -i &#39;*.JPG&#39; -s hd1080 -vcodec libx264 \ -crf 18 -preset slow timelapse.mp4 To list available encoders run ffmpeg -encoders." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2020-04-24/" />
+<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2020-04-24/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-04-24T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-04-24T00:00:00+00:00" />
 
@@ -146,7 +146,7 @@ Sukūriau tokį Makefile, kuris iš paveikslų sudėlioja geros kokybės video:
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-24%2f&name=TIL%3a%20Make%20timelapse%20video%20with%20ffmpeg&description=Jau%20ka%c5%bekadaise%20esu%20su%20ffmpeg%20gamin%c4%99s%20video%20i%c5%a1%20paveiksliuk%c5%b3%20ir%20atvirk%c5%a1%c4%8diai%2c%20tad%20%c5%a1is%20b%c5%abdas%20man%c4%99s%20nenustebino.%20Tiesiog%20ffmpeg%20turi%20kr%c5%abv%c4%85%20parametr%c5%b3%20kuri%c5%b3%20tikrai%20ne%c4%afmanoma%20prisiminti%20da%c5%benai%20neredaguojant%20vaizdin%c4%97s%20med%c5%beiagos.%0aSuk%c5%abriau%20tok%c4%af%20Makefile%2c%20kuris%20i%c5%a1%20paveiksl%c5%b3%20sud%c4%97lioja%20geros%20kokyb%c4%97s%20video%3a%0a%23%20Build%20timelapse%20video%20from%20images%20timelapse.mp4%3a%20ffmpeg%20-r%2024%20-pattern_type%20glob%20-i%20%27%2a.JPG%27%20-s%20hd1080%20-vcodec%20libx264%20%5c%20-crf%2018%20-preset%20slow%20timelapse.mp4%20To%20list%20available%20encoders%20run%20ffmpeg%20-encoders.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-24%2f&name=TIL%3a%20Make%20timelapse%20video%20with%20ffmpeg&description=Jau%20ka%c5%bekadaise%20esu%20su%20ffmpeg%20gamin%c4%99s%20video%20i%c5%a1%20paveiksliuk%c5%b3%20ir%20atvirk%c5%a1%c4%8diai%2c%20tad%20%c5%a1is%20b%c5%abdas%20man%c4%99s%20nenustebino.%20Tiesiog%20ffmpeg%20turi%20kr%c5%abv%c4%85%20parametr%c5%b3%20kuri%c5%b3%20tikrai%20ne%c4%afmanoma%20prisiminti%20da%c5%benai%20neredaguojant%20vaizdin%c4%97s%20med%c5%beiagos.%0aSuk%c5%abriau%20tok%c4%af%20Makefile%2c%20kuris%20i%c5%a1%20paveiksl%c5%b3%20sud%c4%97lioja%20geros%20kokyb%c4%97s%20video%3a%0a%23%20Build%20timelapse%20video%20from%20images%20timelapse.mp4%3a%20ffmpeg%20-r%2024%20-pattern_type%20glob%20-i%20%26%2339%3b%2a.JPG%26%2339%3b%20-s%20hd1080%20-vcodec%20libx264%20%5c%20-crf%2018%20-preset%20slow%20timelapse.mp4%20To%20list%20available%20encoders%20run%20ffmpeg%20-encoders.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -188,9 +188,9 @@ Sukūriau tokį Makefile, kuris iš paveikslų sudėlioja geros kokybės video:
 šis būdas manęs nenustebino. Tiesiog <code>ffmpeg</code> turi krūvą parametrų kurių tikrai
 neįmanoma prisiminti dažnai neredaguojant vaizdinės medžiagos.</p>
 <p>Sukūriau tokį <code>Makefile</code>, kuris iš paveikslų sudėlioja geros kokybės video:</p>
-<pre><code># Build timelapse video from images
+<pre tabindex="0"><code># Build timelapse video from images
 timelapse.mp4:
-        ffmpeg -r 24 -pattern_type glob -i '*.JPG' -s hd1080 -vcodec libx264 \
+        ffmpeg -r 24 -pattern_type glob -i &#39;*.JPG&#39; -s hd1080 -vcodec libx264 \
         -crf 18 -preset slow timelapse.mp4
 </code></pre><p>To list available encoders run <code>ffmpeg -encoders</code>.</p>
 <p>Resources:</p>
@@ -281,7 +281,7 @@ timelapse.mp4:
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-24%2f&name=TIL%3a%20Make%20timelapse%20video%20with%20ffmpeg&description=Jau%20ka%c5%bekadaise%20esu%20su%20ffmpeg%20gamin%c4%99s%20video%20i%c5%a1%20paveiksliuk%c5%b3%20ir%20atvirk%c5%a1%c4%8diai%2c%20tad%20%c5%a1is%20b%c5%abdas%20man%c4%99s%20nenustebino.%20Tiesiog%20ffmpeg%20turi%20kr%c5%abv%c4%85%20parametr%c5%b3%20kuri%c5%b3%20tikrai%20ne%c4%afmanoma%20prisiminti%20da%c5%benai%20neredaguojant%20vaizdin%c4%97s%20med%c5%beiagos.%0aSuk%c5%abriau%20tok%c4%af%20Makefile%2c%20kuris%20i%c5%a1%20paveiksl%c5%b3%20sud%c4%97lioja%20geros%20kokyb%c4%97s%20video%3a%0a%23%20Build%20timelapse%20video%20from%20images%20timelapse.mp4%3a%20ffmpeg%20-r%2024%20-pattern_type%20glob%20-i%20%27%2a.JPG%27%20-s%20hd1080%20-vcodec%20libx264%20%5c%20-crf%2018%20-preset%20slow%20timelapse.mp4%20To%20list%20available%20encoders%20run%20ffmpeg%20-encoders.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-24%2f&name=TIL%3a%20Make%20timelapse%20video%20with%20ffmpeg&description=Jau%20ka%c5%bekadaise%20esu%20su%20ffmpeg%20gamin%c4%99s%20video%20i%c5%a1%20paveiksliuk%c5%b3%20ir%20atvirk%c5%a1%c4%8diai%2c%20tad%20%c5%a1is%20b%c5%abdas%20man%c4%99s%20nenustebino.%20Tiesiog%20ffmpeg%20turi%20kr%c5%abv%c4%85%20parametr%c5%b3%20kuri%c5%b3%20tikrai%20ne%c4%afmanoma%20prisiminti%20da%c5%benai%20neredaguojant%20vaizdin%c4%97s%20med%c5%beiagos.%0aSuk%c5%abriau%20tok%c4%af%20Makefile%2c%20kuris%20i%c5%a1%20paveiksl%c5%b3%20sud%c4%97lioja%20geros%20kokyb%c4%97s%20video%3a%0a%23%20Build%20timelapse%20video%20from%20images%20timelapse.mp4%3a%20ffmpeg%20-r%2024%20-pattern_type%20glob%20-i%20%26%2339%3b%2a.JPG%26%2339%3b%20-s%20hd1080%20-vcodec%20libx264%20%5c%20-crf%2018%20-preset%20slow%20timelapse.mp4%20To%20list%20available%20encoders%20run%20ffmpeg%20-encoders.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>

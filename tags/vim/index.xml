@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on Pawka&#39;s diary</title>
+    <link>https://pawka.notrollsallowed.com/tags/vim/</link>
+    <description>Recent content in vim on Pawka&#39;s diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL: Open URL in VIM</title>
+      <link>https://pawka.notrollsallowed.com/posts/2022-08-31/</link>
+      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2022-08-31/</guid>
+      <description>:vim:
+Move cursor on the URL and type gx to open the URL in browser.
+The gx actually calls open or OS equivalent command for given resource (it can be URL, image, other type of file). Then open command decides what to do with the object, e.g. if it is URL - open it in a browser.
+I often use VIM to format text, e.g. generate multiple URLs and wanted to open all of them in a browser.</description>
+    </item>
+    
+    <item>
+      <title>TIL: Replace string across multiple files in VIM</title>
+      <link>https://pawka.notrollsallowed.com/posts/2021-03-16/</link>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2021-03-16/</guid>
+      <description>:vim:
+Only files which are in currently opened buffers are affected. Buffers can be populated in many ways what is out of scope of this post.
+Replace what to result in all currently opened buffers:
+:bufdo %s/what/result/g Write changes written to the disk:
+:bufdo w </description>
+    </item>
+    
+    <item>
+      <title>TIL: Delete lines matching pattern in VIM</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-06-15/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-06-15/</guid>
+      <description>:vim:
+To remove lines of oppened file which contains the pattern run following command:
+:g/pattern/d The g! can be used to remove lines which do not match the pattern:
+:g!/pattern/d g! is the same as v:
+:v/pattern/d Source: https://vim.fandom.com/wiki/Delete_all_lines_containing_a_pattern</description>
+    </item>
+    
+  </channel>
+</rss>
