@@ -34,7 +34,7 @@ generate_post() {
 get_tags() {
     local file=$1
     # Tag pattern.
-    readonly pattern=":[^ :]+:"
+    readonly pattern=":[-0-9a-z]+:"
     # How many lines to check from the beginning of file. Used to reduce false
     # positives from the content such as URLs, etc.
     readonly tags_offset=5
@@ -42,9 +42,9 @@ get_tags() {
     local header
     header=$(head -n"$tags_offset" "$file")
     if [ -f "$file" ]; then
-        if [[ $( echo "$header" | grep -cE "$pattern" || true) != "0" ]]; then
+        if [[ $( echo "$header" | grep -icE "$pattern" || true) != "0" ]]; then
             echo "$header" \
-                | grep -oE "$pattern" "$file" \
+                | grep -ioE "$pattern" "$file" \
                 | sed "s/://g" \
                 | xargs \
                 | sed "s/ /,/g"
