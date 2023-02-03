@@ -14,7 +14,7 @@
       
       <guid>https://pawka.notrollsallowed.com/posts/2023-02-03/</guid>
       <description>:til: :youtube-dl:
-youtube-dl usually easily detects which and how to download media content from given URL. But if webpage contains embeded videos from Vimeo it might not work. I&amp;rsquo;m not sure if this is an issue for any embeded video or just for restricted. Because I needed to download some media from members-only area so I could watch those on a plane but was struggling.
+youtube-dl usually easily detects which content and how to download it from given URL. But if webpage contains embeded videos from Vimeo it might not work. I&amp;rsquo;m not sure if this is an issue for any embeded video or just for restricted ones. I needed to download some media from members-only area so I could watch those on a plane but was struggling.
 There is a workaround:
 Open &amp;ldquo;Network&amp;rdquo; tab on &amp;ldquo;Developers Tools&amp;rdquo; in a browser.</description>
     </item>
