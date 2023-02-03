@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> TIL: Download embeded Vimeo video with youtube-dl | Pawka&#39;s diary</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="TIL: Download embeded Vimeo video with youtube-dl" />
+<meta property="og:description" content=":til: :youtube-dl:
+youtube-dl usually easily detects which and how to download media content from given URL. But if webpage contains embeded videos from Vimeo it might not work. I&rsquo;m not sure if this is an issue for any embeded video or just for restricted. Because I needed to download some media from members-only area so I could watch those on a plane but was struggling.
+There is a workaround:
+Open &ldquo;Network&rdquo; tab on &ldquo;Developers Tools&rdquo; in a browser." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2023-02-03/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-02-03T00:00:00+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TIL: Download embeded Vimeo video with youtube-dl"/>
+<meta name="twitter:description" content=":til: :youtube-dl:
+youtube-dl usually easily detects which and how to download media content from given URL. But if webpage contains embeded videos from Vimeo it might not work. I&rsquo;m not sure if this is an issue for any embeded video or just for restricted. Because I needed to download some media from members-only area so I could watch those on a plane but was struggling.
+There is a workaround:
+Open &ldquo;Network&rdquo; tab on &ldquo;Developers Tools&rdquo; in a browser."/>
+
+  
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://pawka.notrollsallowed.com/images/favicon.ico" />
+
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/tags/til">TIL</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2023-01-22/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&text=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&title=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&is_video=false&description=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&title=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&title=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&title=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&title=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&name=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl&description=%3atil%3a%20%3ayoutube-dl%3a%0ayoutube-dl%20usually%20easily%20detects%20which%20and%20how%20to%20download%20media%20content%20from%20given%20URL.%20But%20if%20webpage%20contains%20embeded%20videos%20from%20Vimeo%20it%20might%20not%20work.%20I%26rsquo%3bm%20not%20sure%20if%20this%20is%20an%20issue%20for%20any%20embeded%20video%20or%20just%20for%20restricted.%20Because%20I%20needed%20to%20download%20some%20media%20from%20members-only%20area%20so%20I%20could%20watch%20those%20on%20a%20plane%20but%20was%20struggling.%0aThere%20is%20a%20workaround%3a%0aOpen%20%26ldquo%3bNetwork%26rdquo%3b%20tab%20on%20%26ldquo%3bDevelopers%20Tools%26rdquo%3b%20in%20a%20browser.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&t=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        TIL: Download embeded Vimeo video with youtube-dl
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2023-02-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">2023-02-03</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/til" rel="tag">til</a>
+            
+            
+            <a class="tag-link" href="/tags/youtube-dl" rel="tag">youtube-dl</a>
+            
+        </div> 
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <p>:til: :youtube-dl:</p>
+<p><code>youtube-dl</code> usually easily detects which and how to download media content from
+given URL. But if webpage contains embeded videos from Vimeo it might not work.
+I&rsquo;m not sure if this is an issue for any embeded video or just for restricted.
+Because I needed to download some media from members-only area so I could watch
+those on a plane but was struggling.</p>
+<p>There is a workaround:</p>
+<ol>
+<li>Open &ldquo;Network&rdquo; tab on &ldquo;Developers Tools&rdquo; in a browser.</li>
+<li>Click video to play and pause it.</li>
+<li>New network request will appear wich contains <code>.json?base64_init=1</code> in part
+of URL. This is the request we need.</li>
+<li>Modify URL to replace the mentioned part to <code>.mpd</code>. For example:
+<code>https://site.com/something.json?base64_init=1&amp;param=val</code> should become
+<code>https://site.com/something.mpd?param=val</code></li>
+<li>Use <code>youtube-dl &lt;URL&gt;</code> to download video where <code>&lt;URL&gt;</code> is modified URL.</li>
+</ol>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/tags/til">TIL</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&text=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&title=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&is_video=false&description=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&title=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&title=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&title=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&title=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&name=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl&description=%3atil%3a%20%3ayoutube-dl%3a%0ayoutube-dl%20usually%20easily%20detects%20which%20and%20how%20to%20download%20media%20content%20from%20given%20URL.%20But%20if%20webpage%20contains%20embeded%20videos%20from%20Vimeo%20it%20might%20not%20work.%20I%26rsquo%3bm%20not%20sure%20if%20this%20is%20an%20issue%20for%20any%20embeded%20video%20or%20just%20for%20restricted.%20Because%20I%20needed%20to%20download%20some%20media%20from%20members-only%20area%20so%20I%20could%20watch%20those%20on%20a%20plane%20but%20was%20struggling.%0aThere%20is%20a%20workaround%3a%0aOpen%20%26ldquo%3bNetwork%26rdquo%3b%20tab%20on%20%26ldquo%3bDevelopers%20Tools%26rdquo%3b%20in%20a%20browser.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-03%2f&t=TIL%3a%20Download%20embeded%20Vimeo%20video%20with%20youtube-dl">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2023  Pawka&#39;s diary 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/tags/til">TIL</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

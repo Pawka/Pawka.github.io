@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://pawka.notrollsallowed.com/</loc>
+    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pawka.notrollsallowed.com/posts/</loc>
+    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pawka.notrollsallowed.com/tags/</loc>
+    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pawka.notrollsallowed.com/tags/til/</loc>
+    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pawka.notrollsallowed.com/posts/2023-02-03/</loc>
+    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pawka.notrollsallowed.com/tags/youtube-dl/</loc>
+    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://pawka.notrollsallowed.com/tags/diy/</loc>
     <lastmod>2023-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2023-01-22/</loc>
     <lastmod>2023-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://pawka.notrollsallowed.com/</loc>
-    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pawka.notrollsallowed.com/posts/</loc>
-    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pawka.notrollsallowed.com/tags/siuvimas/</loc>
-    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pawka.notrollsallowed.com/tags/</loc>
     <lastmod>2023-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2022-12-31/</loc>
@@ -34,9 +43,6 @@
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2022-11-10/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pawka.notrollsallowed.com/tags/til/</loc>
-    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2022-08-31/</loc>
     <lastmod>2022-08-31T00:00:00+00:00</lastmod>
@@ -271,7 +277,5 @@
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2019-09-15/</loc>
     <lastmod>2019-09-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pawka.notrollsallowed.com/tags/www.thingiverse.com/thing/</loc>
   </url>
 </urlset>
