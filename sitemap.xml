@@ -2,7 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://pawka.notrollsallowed.com/tags/fosdem/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2023-02-11/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pawka.notrollsallowed.com/tags/konferencija/</loc>
     <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/</loc>
@@ -12,7 +18,7 @@
     <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/tags/</loc>
-    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/tags/til/</loc>
     <lastmod>2023-02-03T00:00:00+00:00</lastmod>
@@ -65,9 +71,6 @@
     <loc>https://pawka.notrollsallowed.com/posts/2022-08-09/</loc>
     <lastmod>2022-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://pawka.notrollsallowed.com/tags/konferencija/</loc>
-    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2022-08-08/</loc>
     <lastmod>2022-08-08T00:00:00+00:00</lastmod>
   </url><url>
@@ -76,9 +79,6 @@
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2022-02-17/</loc>
     <lastmod>2022-02-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pawka.notrollsallowed.com/tags/fosdem/</loc>
-    <lastmod>2022-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2022-02-05/</loc>
     <lastmod>2022-02-05T00:00:00+00:00</lastmod>

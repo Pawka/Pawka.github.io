@@ -9,8 +9,9 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta property="og:title" content="Fosdem 2023 notes" />
-<meta property="og:description" content="Finally Fosdem is live again! Unfortunatelly there was no direct flight from Vilnius, since Brussels Airlines have stopped direct flights until spring. Anyway, Fosdem was great this year!
-Building a CI pipeline with Dagger in Go Personal score: 2/5
+<meta property="og:description" content=":fosdem: :konferencija:
+Finally Fosdem is live again! Unfortunately there was no direct flight from Vilnius, since Brussels Airlines have stopped direct flights until spring. Anyway, Fosdem was great this year!
+Building a CI pipeline with Dagger in Go Personal score: 2/5, URL
 Speaker did a short intro what Dagger is and then tried to launch demo for 20 mins but failed. I&rsquo;ve got the main idea what Dagger actually is but nothing special from this talk." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2023-02-11/" /><meta property="article:section" content="posts" />
@@ -19,8 +20,9 @@ Speaker did a short intro what Dagger is and then tried to launch demo for 20 mi
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Fosdem 2023 notes"/>
-<meta name="twitter:description" content="Finally Fosdem is live again! Unfortunatelly there was no direct flight from Vilnius, since Brussels Airlines have stopped direct flights until spring. Anyway, Fosdem was great this year!
-Building a CI pipeline with Dagger in Go Personal score: 2/5
+<meta name="twitter:description" content=":fosdem: :konferencija:
+Finally Fosdem is live again! Unfortunately there was no direct flight from Vilnius, since Brussels Airlines have stopped direct flights until spring. Anyway, Fosdem was great this year!
+Building a CI pipeline with Dagger in Go Personal score: 2/5, URL
 Speaker did a short intro what Dagger is and then tried to launch demo for 20 mins but failed. I&rsquo;ve got the main idea what Dagger actually is but nothing special from this talk."/>
 
   
@@ -140,7 +142,7 @@ Speaker did a short intro what Dagger is and then tried to launch demo for 20 mi
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-11%2f&name=Fosdem%202023%20notes&description=Finally%20Fosdem%20is%20live%20again%21%20Unfortunatelly%20there%20was%20no%20direct%20flight%20from%20Vilnius%2c%20since%20Brussels%20Airlines%20have%20stopped%20direct%20flights%20until%20spring.%20Anyway%2c%20Fosdem%20was%20great%20this%20year%21%0aBuilding%20a%20CI%20pipeline%20with%20Dagger%20in%20Go%20Personal%20score%3a%202%2f5%0aSpeaker%20did%20a%20short%20intro%20what%20Dagger%20is%20and%20then%20tried%20to%20launch%20demo%20for%2020%20mins%20but%20failed.%20I%26rsquo%3bve%20got%20the%20main%20idea%20what%20Dagger%20actually%20is%20but%20nothing%20special%20from%20this%20talk.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-11%2f&name=Fosdem%202023%20notes&description=%3afosdem%3a%20%3akonferencija%3a%0aFinally%20Fosdem%20is%20live%20again%21%20Unfortunately%20there%20was%20no%20direct%20flight%20from%20Vilnius%2c%20since%20Brussels%20Airlines%20have%20stopped%20direct%20flights%20until%20spring.%20Anyway%2c%20Fosdem%20was%20great%20this%20year%21%0aBuilding%20a%20CI%20pipeline%20with%20Dagger%20in%20Go%20Personal%20score%3a%202%2f5%2c%20URL%0aSpeaker%20did%20a%20short%20intro%20what%20Dagger%20is%20and%20then%20tried%20to%20launch%20demo%20for%2020%20mins%20but%20failed.%20I%26rsquo%3bve%20got%20the%20main%20idea%20what%20Dagger%20actually%20is%20but%20nothing%20special%20from%20this%20talk.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -155,8 +157,16 @@ Speaker did a short intro what Dagger is and then tried to launch demo for 20 mi
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#building-a-ci-pipeline-with-dagger-in-gohttpsfosdemorg2023scheduleeventgocidagger"><a href="https://fosdem.org/2023/schedule/event/gocidagger/">Building a CI pipeline with Dagger in Go</a></a></li>
-    <li><a href="#debugging-concurrency-programs-in-gohttpsfosdemorg2023scheduleeventgodebugconcurrency"><a href="https://fosdem.org/2023/schedule/event/godebugconcurrency/">Debugging concurrency programs in Go</a></a></li>
+    <li><a href="#building-a-ci-pipeline-with-dagger-in-go">Building a CI pipeline with Dagger in Go</a></li>
+    <li><a href="#debugging-concurrency-programs-in-go">Debugging concurrency programs in Go</a></li>
+    <li><a href="#whats-new-in-delve--tracing-go-programs-with-ebpf">What&rsquo;s new in Delve / Tracing Go programs with eBPF</a></li>
+    <li><a href="#go-even-further-without-wires">Go Even Further Without Wires</a></li>
+    <li><a href="#optimizing-string-usage-in-go-programs">Optimizing string usage in Go programs</a></li>
+    <li><a href="#squeezing-a-go-function">Squeezing a go function</a></li>
+    <li><a href="#neovim-and-rust-analyzer-are-best-friends">Neovim and rust-analyzer are best friends</a></li>
+    <li><a href="#passwordless-linux----where-are-we">Passwordless Linux &ndash; where are we?</a></li>
+    <li><a href="#winners-and-losers-in-foss">Winners and Losers in FOSS</a></li>
+    <li><a href="#the-polyvent-floss-ventilator">The PolyVent FLOSS Ventilator</a></li>
   </ul>
 </nav>
     </div>
@@ -178,30 +188,42 @@ Speaker did a short intro what Dagger is and then tried to launch demo for 20 mi
         </div>
         
         
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/fosdem" rel="tag">fosdem</a>
+            
+            
+            <a class="tag-link" href="/tags/konferencija" rel="tag">konferencija</a>
+            
+        </div> 
+        
       </div>
     </header>
 
   
     <div class="content" itemprop="articleBody">
-      <p>Finally Fosdem is live again! Unfortunatelly there was no direct flight from
+      <p>:fosdem: :konferencija:</p>
+<p>Finally Fosdem is live again! Unfortunately there was no direct flight from
 Vilnius, since Brussels Airlines have stopped direct flights until spring.
 Anyway, Fosdem was great this year!</p>
-<h2 id="building-a-ci-pipeline-with-dagger-in-gohttpsfosdemorg2023scheduleeventgocidagger"><a href="https://fosdem.org/2023/schedule/event/gocidagger/">Building a CI pipeline with Dagger in Go</a></h2>
-<p>Personal score: 2/5</p>
+<h2 id="building-a-ci-pipeline-with-dagger-in-go">Building a CI pipeline with Dagger in Go</h2>
+<p>Personal score: 2/5, <a href="https://fosdem.org/2023/schedule/event/gocidagger/">URL</a></p>
 <p>Speaker did a short intro what Dagger is and then tried to launch demo for 20
 mins but failed. I&rsquo;ve got the main idea what Dagger actually is but nothing
 special from this talk.</p>
 <ul>
 <li>Dagger allows to write pipelines in any language (Golang in this case was an
 example).</li>
-<li>From examples these pippelines are mostly creating Docker containers and
+<li>From examples these pipelines are mostly creating Docker containers and
 running them.</li>
-<li>Pipelines can run anywehere (including locally which is good thing).</li>
+<li>Pipelines can run anywhere (including locally which is good thing).</li>
 <li>SDK is GraphQL API hence a client can be created for any language.</li>
 <li><a href="https://magefile.org/">Magefile</a> - library to implement Makefile-like files in Golang.</li>
 </ul>
-<h2 id="debugging-concurrency-programs-in-gohttpsfosdemorg2023scheduleeventgodebugconcurrency"><a href="https://fosdem.org/2023/schedule/event/godebugconcurrency/">Debugging concurrency programs in Go</a></h2>
-<p>Personal score: 4/5</p>
+<h2 id="debugging-concurrency-programs-in-go">Debugging concurrency programs in Go</h2>
+<p>Personal score: 4/5, <a href="https://fosdem.org/2023/schedule/event/godebugconcurrency/">URL</a></p>
 <ul>
 <li>Debugging can be done via <code>fmt.Print</code>, <code>dlv</code>, <code>strace</code>.</li>
 <li>Use different colours for output from different goroutines.</li>
@@ -215,6 +237,91 @@ whole application stops working but not when separate parts are locked (e.g.
 few goroutines out of multiple).</li>
 <li>Use conditional breakpoints!</li>
 </ul>
+<h2 id="whats-new-in-delve--tracing-go-programs-with-ebpf">What&rsquo;s new in Delve / Tracing Go programs with eBPF</h2>
+<p>Personal score: 4/5, <a href="https://fosdem.org/2023/schedule/event/godelve/">URL</a></p>
+<ul>
+<li>Delve is released once Golang RC for new version is released. Hence <code>dlv</code> is
+compatible with new versions of Golang.</li>
+<li>Can generate coredumps for running process.</li>
+<li>Added support for hardware watchpoints.</li>
+<li>Goroutines: support for filtering &amp; grouping.</li>
+<li>Experimental eBPF support:
+<ul>
+<li><code>ptrace</code> is slow because of multiple context switch operations. Usually
+context switch is executed at least 2 times for one function. Solution is
+eBPF.</li>
+<li>eBPF programs are triggered by events. Those run in kernel so context
+switch is not required.</li>
+<li>Written in C.</li>
+</ul>
+</li>
+</ul>
+<h2 id="go-even-further-without-wires">Go Even Further Without Wires</h2>
+<p>Personal score: 4/5, <a href="https://fosdem.org/2023/schedule/event/goevenfurtherwithoutwires/">URL</a></p>
+<ul>
+<li>Not much personal value for myself but fun to listen. Great speaker!</li>
+<li>LoRa support is now available on TinyGO.</li>
+</ul>
+<h2 id="optimizing-string-usage-in-go-programs">Optimizing string usage in Go programs</h2>
+<p>Personal score: 4/5</p>
+<ul>
+<li>Strings are used everywhere and can consume huge amount of memory. Imagine
+amount of labels used in Prometheus.</li>
+<li>Implemented as struct under the hood with pointer to data and length. So the
+string always brings 16 bytes of overhead due to header.</li>
+<li>^This made me underhand why &ldquo;Stringer&rdquo; (the generator) adds all constant names
+to a single string and keeps integer indexes.</li>
+<li>Strings are immutable. Copying creates a shallow copy, but adds new header
+(and overhead). Multiple copies leads to multiple headers.</li>
+<li>String interning can help: keep repeated strings in <code>map[string]string</code> and
+reuse those. Requires to delete unused strings manually because GC won&rsquo;t
+release memory.</li>
+<li>Constants can be used as keys so strings stored in <code>map[int]string</code>. This also
+reduces network traffic since <code>int</code> is sent instead of <code>string</code>.</li>
+</ul>
+<h2 id="squeezing-a-go-function">Squeezing a go function</h2>
+<p>Personal score: 4/5, <a href="https://fosdem.org/2023/schedule/event/gosqueezingfunction/">URL</a></p>
+<ul>
+<li>Optimizing not necessary means less allocations, etc. Author gave great
+examples when more allocations led to faster code and vice versa.</li>
+<li>Measure everything, run benchmarks, do not guess.</li>
+<li>Add <code>b.ReportAllocs()</code> to print memory allocations in the benchmark (!!!).</li>
+<li><a href="https://itnext.io/structure-size-optimization-in-golang-alignment-padding-more-effective-memory-layout-linters-fffdcba27c61">Struct alignment</a>.</li>
+</ul>
+<p>Profiling:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ go test -bench . -memprofile memprofile.out
+</span></span><span style="display:flex;"><span>$ go tool pprof -text memprofile.out
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>$ go tool pprof -svg memprofile.out
+</span></span><span style="display:flex;"><span>Generating report in profile001.svg
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># List specific function from profile file.</span>
+</span></span><span style="display:flex;"><span>$ go tool pprof -list os.newFile memprofile.out
+</span></span></code></pre></div><p>Same with CPU profile:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ go test -bench . -cpuprofile cpuprofile.out
+</span></span></code></pre></div><h2 id="neovim-and-rust-analyzer-are-best-friends">Neovim and rust-analyzer are best friends</h2>
+<p>Personal score: 2/5, <a href="https://fosdem.org/2023/schedule/event/rust_neovim_and_rust_analyzer_are_best_friends/">URL</a></p>
+<p>As I understood the talk supposed to be longer but was cut because of some
+reasons which are unknown to me. So it was just short history of Neovim, few
+plugins and native LSP support.</p>
+<h2 id="passwordless-linux----where-are-we">Passwordless Linux &ndash; where are we?</h2>
+<p>Personal score: 1/5, <a href="https://fosdem.org/2023/schedule/event/passwordless/">URL</a></p>
+<p>Not my field. Can&rsquo;t rate without bias. Was quite boring. Might be because I&rsquo;ve
+brought 9.6% ABV beer instead of ~6% and was drank 1.5 bottles :|</p>
+<h2 id="winners-and-losers-in-foss">Winners and Losers in FOSS</h2>
+<p>Personal score: 4/5, <a href="https://fosdem.org/2023/schedule/event/foss_winners_losers/">URL</a></p>
+<p>Great talk (and research) on state of FOSS.</p>
+<ul>
+<li>FOSS does not compete with proprietary software anymore.</li>
+<li>Most open source contributors work for corporations which dictate direction of
+the software.</li>
+<li>FOSS job is unsafe - Google &amp; Twitter just laid off bunch of OSS developers.</li>
+</ul>
+<h2 id="the-polyvent-floss-ventilator">The PolyVent FLOSS Ventilator</h2>
+<p>Personal score: 4/5, <a href="https://fosdem.org/2023/schedule/event/polyvent/">URL</a></p>
+<p>Nice story about open source ventilator which was developed &amp; created for COVID
+treatment. Tool is modular so each component can be replaced easily or
+additional components can be added. Also access to components is easy.</p>
 
     </div>
   </article>
@@ -244,8 +351,16 @@ few goroutines out of multiple).</li>
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#building-a-ci-pipeline-with-dagger-in-gohttpsfosdemorg2023scheduleeventgocidagger"><a href="https://fosdem.org/2023/schedule/event/gocidagger/">Building a CI pipeline with Dagger in Go</a></a></li>
-    <li><a href="#debugging-concurrency-programs-in-gohttpsfosdemorg2023scheduleeventgodebugconcurrency"><a href="https://fosdem.org/2023/schedule/event/godebugconcurrency/">Debugging concurrency programs in Go</a></a></li>
+    <li><a href="#building-a-ci-pipeline-with-dagger-in-go">Building a CI pipeline with Dagger in Go</a></li>
+    <li><a href="#debugging-concurrency-programs-in-go">Debugging concurrency programs in Go</a></li>
+    <li><a href="#whats-new-in-delve--tracing-go-programs-with-ebpf">What&rsquo;s new in Delve / Tracing Go programs with eBPF</a></li>
+    <li><a href="#go-even-further-without-wires">Go Even Further Without Wires</a></li>
+    <li><a href="#optimizing-string-usage-in-go-programs">Optimizing string usage in Go programs</a></li>
+    <li><a href="#squeezing-a-go-function">Squeezing a go function</a></li>
+    <li><a href="#neovim-and-rust-analyzer-are-best-friends">Neovim and rust-analyzer are best friends</a></li>
+    <li><a href="#passwordless-linux----where-are-we">Passwordless Linux &ndash; where are we?</a></li>
+    <li><a href="#winners-and-losers-in-foss">Winners and Losers in FOSS</a></li>
+    <li><a href="#the-polyvent-floss-ventilator">The PolyVent FLOSS Ventilator</a></li>
   </ul>
 </nav>
     </div>
@@ -304,7 +419,7 @@ few goroutines out of multiple).</li>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-11%2f&name=Fosdem%202023%20notes&description=Finally%20Fosdem%20is%20live%20again%21%20Unfortunatelly%20there%20was%20no%20direct%20flight%20from%20Vilnius%2c%20since%20Brussels%20Airlines%20have%20stopped%20direct%20flights%20until%20spring.%20Anyway%2c%20Fosdem%20was%20great%20this%20year%21%0aBuilding%20a%20CI%20pipeline%20with%20Dagger%20in%20Go%20Personal%20score%3a%202%2f5%0aSpeaker%20did%20a%20short%20intro%20what%20Dagger%20is%20and%20then%20tried%20to%20launch%20demo%20for%2020%20mins%20but%20failed.%20I%26rsquo%3bve%20got%20the%20main%20idea%20what%20Dagger%20actually%20is%20but%20nothing%20special%20from%20this%20talk.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-02-11%2f&name=Fosdem%202023%20notes&description=%3afosdem%3a%20%3akonferencija%3a%0aFinally%20Fosdem%20is%20live%20again%21%20Unfortunately%20there%20was%20no%20direct%20flight%20from%20Vilnius%2c%20since%20Brussels%20Airlines%20have%20stopped%20direct%20flights%20until%20spring.%20Anyway%2c%20Fosdem%20was%20great%20this%20year%21%0aBuilding%20a%20CI%20pipeline%20with%20Dagger%20in%20Go%20Personal%20score%3a%202%2f5%2c%20URL%0aSpeaker%20did%20a%20short%20intro%20what%20Dagger%20is%20and%20then%20tried%20to%20launch%20demo%20for%2020%20mins%20but%20failed.%20I%26rsquo%3bve%20got%20the%20main%20idea%20what%20Dagger%20actually%20is%20but%20nothing%20special%20from%20this%20talk.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
