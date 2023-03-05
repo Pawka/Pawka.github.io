@@ -105,7 +105,6 @@ copy_static_files() {
 
     local static_source
     static_source=${source_path%.*}
-    echo "${static_source}"
 
     if [[ ! -d "${static_source}" ]]; then
         return
