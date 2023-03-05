@@ -1,5 +1,6 @@
 VIMWIKI_DIARY_PATH=~/Documents/Apps/vimwiki/diary
 POSTS_PATH=./content/posts
+STATIC_PATH=./static
 
 .PHONY: diary
 diary: content commit
@@ -10,7 +11,7 @@ content:
 
 .PHONY: commit
 commit:
-	git add $(POSTS_PATH)
+	git add $(POSTS_PATH) $(STATIC_PATH)
 	git commit -m "Updated content" || true
 
 
