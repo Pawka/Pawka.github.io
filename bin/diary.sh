@@ -10,11 +10,22 @@
 
 set -euo pipefail
 
+# Directory where Hugo static files are stored.
+readonly STATIC_DIR="static"
+
 readonly POST_HEADER="---
 title: \"{{TITLE}}\"
 date: {{DATE}}
 tags: [{{TAGS}}]
 ---"
+
+error() {
+    echo >&2 "ERROR: $*"
+}
+
+log() {
+    echo >&2 "INFO: $*"
+}
 
 generate_post() {
     local file=$1
@@ -81,6 +92,43 @@ get_content_files() {
     done
 }
 
+# Copy static files for post. It is expected static files are placed in
+# subdirectory which match the filename (date) of the post. This directory with
+# static files is copied to the `static/` directory in Hugo.
+copy_static_files() {
+    local source_path=$1
+
+    if [[ -z "${source_path}" ]]; then
+        error "copy_static_files function expects source path as first argument."
+        return 1
+    fi
+
+    local static_source
+    static_source=${source_path%.*}
+    echo "${static_source}"
+
+    if [[ ! -d "${static_source}" ]]; then
+        return
+    fi
+
+    log "Static files found on ${static_source}"
+    local filename
+    filename=$(basename "$path")
+    local base
+    base=${filename%.*}
+    local static_dest
+    static_dest="${STATIC_DIR}/$base"
+
+    rm -rf "${static_dest}"
+    cp -r "${static_source}" "${static_dest}"
+}
+
+post_hook() {
+    log "Cleaning EXIF data from static files."
+    exiftool -recurse -all= "${STATIC_DIR}"
+    find "${STATIC_DIR}" -type f -name "*_original" -delete
+}
+
 main() {
     local source_path=$1
     local dest_path=$2
@@ -92,7 +140,10 @@ main() {
         local filename
         filename=$(basename "$path")
         generate_post "$path" > "$dest_path/$filename"
+        copy_static_files "${path}"
     done
+
+    post_hook
 }
 
 main "$@"
