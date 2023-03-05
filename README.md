@@ -1,5 +1,5 @@
 # Personal blog
 
 ## TODO
-- [ ] Add vim tags support.
-- [ ] Separate TIL posts on an own list.
+- [X] Add vim tags support.
+- [X] Separate TIL posts on an own list.
