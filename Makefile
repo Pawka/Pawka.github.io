@@ -17,3 +17,7 @@ commit:
 .PHONY: deploy
 deploy: diary
 	bin/deploy.sh
+
+.PHONY: deps
+deps:
+	sudo apt-get install -y imagemagick exiftool

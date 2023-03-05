@@ -125,8 +125,22 @@ copy_static_files() {
 
 post_hook() {
     log "Cleaning EXIF data from static files."
-    exiftool -recurse -all= "${STATIC_DIR}"
-    find "${STATIC_DIR}" -type f -name "*_original" -delete
+    exiftool \
+        -overwrite_original \
+        -LensIDNumber= \
+        -SerialNumber= \
+        -LensSerialNumber= \
+        -ShutterCount= \
+        -Keywords= \
+        -Subject= \
+        -ThumbnailImage= \
+        -PhotoshopThumbnail= \
+        -XMP:All= \
+        -GPS:All= \
+        -recurse "${STATIC_DIR}"
+
+    log "Reducing sizes of images."
+    find "${STATIC_DIR}" -name "*.jpg" -exec mogrify -resize %40 {} \;
 }
 
 main() {
