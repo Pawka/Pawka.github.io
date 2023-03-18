@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://pawka.notrollsallowed.com/tags/generative/</loc>
+    <lastmod>2023-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pawka.notrollsallowed.com/tags/maps/</loc>
+    <lastmod>2023-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pawka.notrollsallowed.com/posts/2023-03-18/</loc>
+    <lastmod>2023-03-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://pawka.notrollsallowed.com/</loc>
-    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/</loc>
-    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pawka.notrollsallowed.com/tags/programavimas/</loc>
+    <lastmod>2023-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pawka.notrollsallowed.com/tags/</loc>
+    <lastmod>2023-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/tags/siuvimas/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2023-03-03/</loc>
-    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pawka.notrollsallowed.com/tags/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/tags/fosdem/</loc>
