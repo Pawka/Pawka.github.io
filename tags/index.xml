@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Pawka&#39;s diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>homebrewing</title>
+      <link>https://pawka.notrollsallowed.com/tags/homebrewing/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/homebrewing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sidras</title>
+      <link>https://pawka.notrollsallowed.com/tags/sidras/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/tags/sidras/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>generative</title>
       <link>https://pawka.notrollsallowed.com/tags/generative/</link>
@@ -89,15 +107,6 @@
     </item>
     
     <item>
-      <title>homebrewing</title>
-      <link>https://pawka.notrollsallowed.com/tags/homebrewing/</link>
-      <pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://pawka.notrollsallowed.com/tags/homebrewing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>vim</title>
       <link>https://pawka.notrollsallowed.com/tags/vim/</link>
       <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
@@ -121,15 +130,6 @@
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/tags/cli/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sidras</title>
-      <link>https://pawka.notrollsallowed.com/tags/sidras/</link>
-      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://pawka.notrollsallowed.com/tags/sidras/</guid>
       <description></description>
     </item>
     
