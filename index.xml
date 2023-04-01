@@ -13,7 +13,8 @@
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://pawka.notrollsallowed.com/posts/2023-04-01/</guid>
-      <description>The --pid flag for tail command can be used to run tail untill particular process exits. It works with -f flag only. Example:
+      <description>:til: :bash:
+The --pid flag for tail command can be used to run tail untill particular process exits. It works with -f flag only. Example:
 tail --pid &amp;lt;process_id&amp;gt; -f &amp;lt;file.txt&amp;gt; I have been in situation when particular tool was able to write contents to file only but not stdout. Of course it was possible to provide /dev/stdout instead of file but then piping started to fail with &amp;ldquo;Permission denied&amp;rdquo; error. I&amp;rsquo;ve solved problem in a such way:</description>
     </item>
     

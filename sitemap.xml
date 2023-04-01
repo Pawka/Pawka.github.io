@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://pawka.notrollsallowed.com/tags/bash/</loc>
+    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://pawka.notrollsallowed.com/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/</loc>
+    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pawka.notrollsallowed.com/tags/</loc>
+    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pawka.notrollsallowed.com/tags/til/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2023-04-01/</loc>
@@ -18,9 +27,6 @@
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2023-03-31/</loc>
-    <lastmod>2023-03-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pawka.notrollsallowed.com/tags/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/tags/generative/</loc>
@@ -49,9 +55,6 @@
   </url><url>
     <loc>https://pawka.notrollsallowed.com/tags/konferencija/</loc>
     <lastmod>2023-02-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pawka.notrollsallowed.com/tags/til/</loc>
-    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2023-02-03/</loc>
     <lastmod>2023-02-03T00:00:00+00:00</lastmod>
@@ -142,9 +145,6 @@
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2021-03-16/</loc>
     <lastmod>2021-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pawka.notrollsallowed.com/tags/bash/</loc>
-    <lastmod>2021-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pawka.notrollsallowed.com/posts/2021-03-05/</loc>
     <lastmod>2021-03-05T00:00:00+00:00</lastmod>
