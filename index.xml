@@ -6,7 +6,17 @@
     <description>Recent content on Pawka&#39;s diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIL: tail log until process exit</title>
+      <link>https://pawka.notrollsallowed.com/posts/2023-04-01/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2023-04-01/</guid>
+      <description>The --pid flag for tail command can be used to run tail untill particular process exits. It works with -f flag only. Example:
+tail --pid &amp;lt;process_id&amp;gt; -f &amp;lt;file.txt&amp;gt; I have been in situation when particular tool was able to write contents to file only but not stdout. Of course it was possible to provide /dev/stdout instead of file but then piping started to fail with &amp;ldquo;Permission denied&amp;rdquo; error. I&amp;rsquo;ve solved problem in a such way:</description>
+    </item>
+    
     <item>
       <title>Sidro gamyba: Mangrove Jack&#39;s Pear Cider</title>
       <link>https://pawka.notrollsallowed.com/posts/2023-03-31/</link>

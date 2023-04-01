@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> TIL: tail log until process exit | Pawka&#39;s diary</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="TIL: tail log until process exit" />
+<meta property="og:description" content="The --pid flag for tail command can be used to run tail untill particular process exits. It works with -f flag only. Example:
+tail --pid &lt;process_id&gt; -f &lt;file.txt&gt; I have been in situation when particular tool was able to write contents to file only but not stdout. Of course it was possible to provide /dev/stdout instead of file but then piping started to fail with &ldquo;Permission denied&rdquo; error. I&rsquo;ve solved problem in a such way:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2023-04-01/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-01T00:00:00+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TIL: tail log until process exit"/>
+<meta name="twitter:description" content="The --pid flag for tail command can be used to run tail untill particular process exits. It works with -f flag only. Example:
+tail --pid &lt;process_id&gt; -f &lt;file.txt&gt; I have been in situation when particular tool was able to write contents to file only but not stdout. Of course it was possible to provide /dev/stdout instead of file but then piping started to fail with &ldquo;Permission denied&rdquo; error. I&rsquo;ve solved problem in a such way:"/>
+
+  
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://pawka.notrollsallowed.com/images/favicon.ico" />
+
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/tags/til">TIL</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2023-03-31/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&text=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&title=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&is_video=false&description=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=TIL%3a%20tail%20log%20until%20process%20exit&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&title=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&title=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&title=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&title=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&name=TIL%3a%20tail%20log%20until%20process%20exit&description=The%20--pid%20flag%20for%20tail%20command%20can%20be%20used%20to%20run%20tail%20untill%20particular%20process%20exits.%20It%20works%20with%20-f%20flag%20only.%20Example%3a%0atail%20--pid%20%26lt%3bprocess_id%26gt%3b%20-f%20%26lt%3bfile.txt%26gt%3b%20I%20have%20been%20in%20situation%20when%20particular%20tool%20was%20able%20to%20write%20contents%20to%20file%20only%20but%20not%20stdout.%20Of%20course%20it%20was%20possible%20to%20provide%20%2fdev%2fstdout%20instead%20of%20file%20but%20then%20piping%20started%20to%20fail%20with%20%26ldquo%3bPermission%20denied%26rdquo%3b%20error.%20I%26rsquo%3bve%20solved%20problem%20in%20a%20such%20way%3a">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&t=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        TIL: tail log until process exit
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2023-04-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">2023-04-01</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <p>The <code>--pid</code> flag for <code>tail</code> command can be used to run <code>tail</code> untill particular
+process exits. It works with <code>-f</code> flag only. Example:</p>
+<pre tabindex="0"><code>tail --pid &lt;process_id&gt; -f &lt;file.txt&gt;
+</code></pre><p>I have been in situation when particular tool was able to write contents to file
+only but not stdout. Of course it was possible to provide <code>/dev/stdout</code> instead
+of file but then piping started to fail with &ldquo;Permission denied&rdquo; error. I&rsquo;ve
+solved problem in a such way:</p>
+<ol>
+<li>Run process in the background &amp; capture pid.</li>
+<li>Tail from the file, until previous process exists. Also in the background.</li>
+<li>Wait for exit of the 1st process.</li>
+</ol>
+<p>This looks like following:</p>
+<pre tabindex="0"><code># Tail command is failing if there is no file. Need to ensure the file exists.
+echo &#34;&#34; &gt; file.txt
+
+# Run the_tool in the background, write output to file.txt.
+(the_tool --output file.txt) &amp;
+
+# Capture pid of process
+pid=$!
+
+# Run tail in the background, output can be piped to another tool.
+(tail -f --pid &#34;$pid&#34; -n +1 | other_tool ) &amp;
+
+# Wait for process to exit.
+wait &#34;$pid&#34;
+</code></pre><p>I think it might be required to wait for <code>tail</code> process too, to make sure all
+contents are dumped to stdout. But I haven&rsquo;t faced this problem.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/tags/til">TIL</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&text=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&title=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&is_video=false&description=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=TIL%3a%20tail%20log%20until%20process%20exit&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&title=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&title=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&title=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&title=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&name=TIL%3a%20tail%20log%20until%20process%20exit&description=The%20--pid%20flag%20for%20tail%20command%20can%20be%20used%20to%20run%20tail%20untill%20particular%20process%20exits.%20It%20works%20with%20-f%20flag%20only.%20Example%3a%0atail%20--pid%20%26lt%3bprocess_id%26gt%3b%20-f%20%26lt%3bfile.txt%26gt%3b%20I%20have%20been%20in%20situation%20when%20particular%20tool%20was%20able%20to%20write%20contents%20to%20file%20only%20but%20not%20stdout.%20Of%20course%20it%20was%20possible%20to%20provide%20%2fdev%2fstdout%20instead%20of%20file%20but%20then%20piping%20started%20to%20fail%20with%20%26ldquo%3bPermission%20denied%26rdquo%3b%20error.%20I%26rsquo%3bve%20solved%20problem%20in%20a%20such%20way%3a">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-04-01%2f&t=TIL%3a%20tail%20log%20until%20process%20exit">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2023  Pawka&#39;s diary 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/tags/til">TIL</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>
