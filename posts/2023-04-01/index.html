@@ -192,8 +192,8 @@ tail --pid &lt;process_id&gt; -f &lt;file.txt&gt; I have been in situation when 
       <p>:til: :bash:</p>
 <p>The <code>--pid</code> flag for <code>tail</code> command can be used to run <code>tail</code> untill particular
 process exits. It works with <code>-f</code> flag only. Example:</p>
-<pre tabindex="0"><code>tail --pid &lt;process_id&gt; -f &lt;file.txt&gt;
-</code></pre><p>I have been in situation when particular tool was able to write contents to file
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tail --pid &lt;process_id&gt; -f &lt;file.txt&gt;
+</span></span></code></pre></div><p>I have been in situation when particular tool was able to write contents to file
 only but not stdout. Of course it was possible to provide <code>/dev/stdout</code> instead
 of file but then piping started to fail with &ldquo;Permission denied&rdquo; error. I&rsquo;ve
 solved problem in a such way:</p>
@@ -203,21 +203,21 @@ solved problem in a such way:</p>
 <li>Wait for exit of the 1st process.</li>
 </ol>
 <p>This looks like following:</p>
-<pre tabindex="0"><code># Tail command is failing if there is no file. Need to ensure the file exists.
-echo &#34;&#34; &gt; file.txt
-
-# Run the_tool in the background, write output to file.txt.
-(the_tool --output file.txt) &amp;
-
-# Capture pid of process
-pid=$!
-
-# Run tail in the background, output can be piped to another tool.
-(tail -f --pid &#34;$pid&#34; -n +1 | other_tool ) &amp;
-
-# Wait for process to exit.
-wait &#34;$pid&#34;
-</code></pre><p>I think it might be required to wait for <code>tail</code> process too, to make sure all
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Tail command is failing if there is no file. Need to ensure the file exists.</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;&#34;</span> &gt; file.txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Run the_tool in the background, write output to file.txt.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>the_tool --output file.txt<span style="color:#f92672">)</span> &amp;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Capture pid of process</span>
+</span></span><span style="display:flex;"><span>pid<span style="color:#f92672">=</span>$!
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Run tail in the background, output can be piped to another tool.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>tail -f --pid <span style="color:#e6db74">&#34;</span>$pid<span style="color:#e6db74">&#34;</span> -n +1 | other_tool <span style="color:#f92672">)</span> &amp;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Wait for process to exit.</span>
+</span></span><span style="display:flex;"><span>wait <span style="color:#e6db74">&#34;</span>$pid<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>I think it might be required to wait for <code>tail</code> process too, to make sure all
 contents are dumped to stdout. But I haven&rsquo;t faced this problem.</p>
 
     </div>
