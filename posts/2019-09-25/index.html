@@ -8,24 +8,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="TIL: TMUX pane management" />
-<meta property="og:description" content=":til: :tmux:
+  <meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2019-09-25/">
+  <meta property="og:site_name" content="Pawka&#39;s diary">
+  <meta property="og:title" content="TIL: TMUX pane management">
+  <meta property="og:description" content=":til: :tmux:
 Inside any pane, press &lt;Prefix&gt;! and tmux will create a new window from your pane, removing the original pane.
 Now, to move the first window into a pane in the second window, press &lt;Prefix&gt;: to enter Command mode, and type this:
 :join-pane -s panes:1 or
-:join-pane -s :1 You can use this technique to move panes around as well. If your first window had two panes, you could specify the source pane like this:" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2019-09-25/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2019-09-25T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-09-25T00:00:00+00:00" />
+:join-pane -s :1 You can use this technique to move panes around as well. If your first window had two panes, you could specify the source pane like this:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2019-09-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2019-09-25T00:00:00+00:00">
+    <meta property="article:tag" content="Til">
+    <meta property="article:tag" content="Tmux">
 
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TIL: TMUX pane management"/>
-<meta name="twitter:description" content=":til: :tmux:
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TIL: TMUX pane management">
+  <meta name="twitter:description" content=":til: :tmux:
 Inside any pane, press &lt;Prefix&gt;! and tmux will create a new window from your pane, removing the original pane.
 Now, to move the first window into a pane in the second window, press &lt;Prefix&gt;: to enter Command mode, and type this:
 :join-pane -s panes:1 or
-:join-pane -s :1 You can use this technique to move panes around as well. If your first window had two panes, you could specify the source pane like this:"/>
+:join-pane -s :1 You can use this technique to move panes around as well. If your first window had two panes, you could specify the source pane like this:">
 
   
   
@@ -204,13 +210,13 @@ Now, to move the first window into a pane in the second window, press &lt;Prefix
 pane, removing the original pane.</p>
 <p>Now, to move the first window into a pane in the second window, press
 <code>&lt;Prefix&gt;:</code> to enter Command mode, and type this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-viml" data-lang="viml"><span style="display:flex;"><span>:<span style="color:#a6e22e">join</span>-<span style="color:#a6e22e">pane</span> -<span style="color:#a6e22e">s</span> <span style="color:#a6e22e">panes</span>:<span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><p>or</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-viml" data-lang="viml"><span style="display:flex;"><span>:<span style="color:#a6e22e">join</span>-<span style="color:#a6e22e">pane</span> -<span style="color:#a6e22e">s</span> :<span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><p>You can use this technique to move panes around as well. If your first window
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-viml" data-lang="viml"><span style="display:flex;"><span>:<span style="color:#a6e22e">join</span>-<span style="color:#a6e22e">pane</span> -<span style="color:#a6e22e">s</span> <span style="color:#a6e22e">panes</span>:<span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>or</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-viml" data-lang="viml"><span style="display:flex;"><span>:<span style="color:#a6e22e">join</span>-<span style="color:#a6e22e">pane</span> -<span style="color:#a6e22e">s</span> :<span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>You can use this technique to move panes around as well. If your first window
 had two panes, you could specify the source pane like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-viml" data-lang="viml"><span style="display:flex;"><span>:<span style="color:#a6e22e">join</span>-<span style="color:#a6e22e">pane</span> -<span style="color:#a6e22e">s</span> <span style="color:#a6e22e">panes</span>:<span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><p>The resize-pane command accepts the -Z option for zooming a pane. Best of all,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-viml" data-lang="viml"><span style="display:flex;"><span>:<span style="color:#a6e22e">join</span>-<span style="color:#a6e22e">pane</span> -<span style="color:#a6e22e">s</span> <span style="color:#a6e22e">panes</span>:<span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>The resize-pane command accepts the -Z option for zooming a pane. Best of all,
 it’s already mapped to <code>&lt;Prefix&gt;z</code>, and pressing it again restores the pane to
 its original size.</p>
 

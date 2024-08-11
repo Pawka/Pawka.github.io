@@ -8,20 +8,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="TIL: Call bash function via xargs" />
-<meta property="og:description" content=":til: :cli: :bash:
+  <meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2021-03-05/">
+  <meta property="og:site_name" content="Pawka&#39;s diary">
+  <meta property="og:title" content="TIL: Call bash function via xargs">
+  <meta property="og:description" content=":til: :cli: :bash:
 To run cli tools there is xargs. But what if I want to run certain part of bash script (a function) in parallel? One option is to extract function to a separate file and feed it into xargs. Another way - make xargs to execute the function:
-#!/bin/bash p() { echo &#34;&gt; $1&#34; } main() { export -f p seq 10 | xargs -n 1 -I {} bash -c &#34;p {}&#34; } main &#34;@$&#34; Necesary line here is to export the function via export -f &lt;function_name&gt;." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2021-03-05/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-03-05T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-03-05T00:00:00+00:00" />
+#!/bin/bash p() { echo &#34;&gt; $1&#34; } main() { export -f p seq 10 | xargs -n 1 -I {} bash -c &#34;p {}&#34; } main &#34;@$&#34; Necesary line here is to export the function via export -f &lt;function_name&gt;.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-03-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-03-05T00:00:00+00:00">
+    <meta property="article:tag" content="Til">
+    <meta property="article:tag" content="Cli">
+    <meta property="article:tag" content="Bash">
 
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TIL: Call bash function via xargs"/>
-<meta name="twitter:description" content=":til: :cli: :bash:
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TIL: Call bash function via xargs">
+  <meta name="twitter:description" content=":til: :cli: :bash:
 To run cli tools there is xargs. But what if I want to run certain part of bash script (a function) in parallel? One option is to extract function to a separate file and feed it into xargs. Another way - make xargs to execute the function:
-#!/bin/bash p() { echo &#34;&gt; $1&#34; } main() { export -f p seq 10 | xargs -n 1 -I {} bash -c &#34;p {}&#34; } main &#34;@$&#34; Necesary line here is to export the function via export -f &lt;function_name&gt;."/>
+#!/bin/bash p() { echo &#34;&gt; $1&#34; } main() { export -f p seq 10 | xargs -n 1 -I {} bash -c &#34;p {}&#34; } main &#34;@$&#34; Necesary line here is to export the function via export -f &lt;function_name&gt;.">
 
   
   
