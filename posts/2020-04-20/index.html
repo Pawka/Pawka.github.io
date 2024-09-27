@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Asmeninis puslapis naudojant Vimwiki | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2020-04-20/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -24,17 +30,12 @@ Išsaugojus straipsnį kodas (tekstas) turėtų būti išsaugomas kodo versijavi
     <meta property="article:tag" content="Blog">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Asmeninis puslapis naudojant Vimwiki">
-  <meta name="twitter:description" content=":vim: :blog:
-Jau kurį laiką galvoju apie asmeninį puslapį, kuriam atnaujint pakaktų išsaugoti tekstą Markdown formatu. Vartotojui neturėtų rūpėti:
-Kaip ir kur prisijungti Koks prisijungimo slaptažodis Puslapio sistemos atnaujinimai Ar yra prisijungimas prie interneto Naršyklės paleidimas Idealiu atveju šovus idėjai apie ką rašyt - pakaktų redaktoriuje sukurti irašą ir jį išsaugoti. Baigus rašyti - toliau testi programavimo darbus.
-Išsaugojus straipsnį kodas (tekstas) turėtų būti išsaugomas kodo versijavimo sistemoje, sukeliamas į repozitoriją, sugeneruojamas statinis HTML ir atnaujinamas puslapis. Daugiau nieko. Viskas vyksta automatiškai be vartotojo įsikišimo. Tiesa, kartais netyčia įkėlus jautrią informaciją taip galima išpublikuoti ją visiems. Tokiu atveju pravartu susikonfigūruoti kelis git hook’us, kurie neleistų saugoti bent jau slaptažodžių ir raktų. Taip pat publikavimas galėtų būti rankinis vykdant git push komandą.">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -47,13 +48,14 @@ Išsaugojus straipsnį kodas (tekstas) turėtų būti išsaugomas kodo versijavi
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -71,25 +73,25 @@ Išsaugojus straipsnį kodas (tekstas) turėtų būti išsaugomas kodo versijavi
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-04-02/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-04-02/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-04-24/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-04-24/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -109,66 +111,58 @@ Išsaugojus straipsnį kodas (tekstas) turėtų būti išsaugomas kodo versijavi
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&text=Asmeninis%20puslapis%20naudojant%20Vimwiki">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&text=Asmeninis%20puslapis%20naudojant%20Vimwiki" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&is_video=false&description=Asmeninis%20puslapis%20naudojant%20Vimwiki">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&is_video=false&description=Asmeninis%20puslapis%20naudojant%20Vimwiki" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Asmeninis%20puslapis%20naudojant%20Vimwiki&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f">
+    <a class="icon" href="mailto:?subject=Asmeninis%20puslapis%20naudojant%20Vimwiki&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&name=Asmeninis%20puslapis%20naudojant%20Vimwiki&description=%3cp%3e%3avim%3a%20%3ablog%3a%3c%2fp%3e%0a%3cp%3eJau%20kur%c4%af%20laik%c4%85%20galvoju%20apie%20asmenin%c4%af%20puslap%c4%af%2c%20kuriam%20atnaujint%20pakakt%c5%b3%20i%c5%a1saugoti%0atekst%c4%85%20Markdown%20formatu.%20Vartotojui%20netur%c4%97t%c5%b3%20r%c5%abp%c4%97ti%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3eKaip%20ir%20kur%20prisijungti%3c%2fli%3e%0a%3cli%3eKoks%20prisijungimo%20slapta%c5%beodis%3c%2fli%3e%0a%3cli%3ePuslapio%20sistemos%20atnaujinimai%3c%2fli%3e%0a%3cli%3eAr%20yra%20prisijungimas%20prie%20interneto%3c%2fli%3e%0a%3cli%3eNar%c5%a1ykl%c4%97s%20paleidimas%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eIdealiu%20atveju%20%c5%a1ovus%20id%c4%97jai%20apie%20k%c4%85%20ra%c5%a1yt%20-%20pakakt%c5%b3%20redaktoriuje%20sukurti%20ira%c5%a1%c4%85%0air%20j%c4%af%20i%c5%a1saugoti.%20Baigus%20ra%c5%a1yti%20-%20toliau%20testi%20programavimo%20darbus.%3c%2fp%3e%0a%3cp%3eI%c5%a1saugojus%20straipsn%c4%af%20kodas%20%28tekstas%29%20tur%c4%97t%c5%b3%20b%c5%abti%20i%c5%a1saugomas%20kodo%20versijavimo%0asistemoje%2c%20sukeliamas%20%c4%af%20repozitorij%c4%85%2c%20sugeneruojamas%20statinis%20HTML%20ir%0aatnaujinamas%20puslapis.%20Daugiau%20nieko.%20Viskas%20vyksta%20automati%c5%a1kai%20be%20vartotojo%0a%c4%afsiki%c5%a1imo.%20Tiesa%2c%20kartais%20nety%c4%8dia%20%c4%afk%c4%97lus%20jautri%c4%85%20informacij%c4%85%20taip%20galima%0ai%c5%a1publikuoti%20j%c4%85%20visiems.%20Tokiu%20atveju%20pravartu%20susikonfig%c5%abruoti%20kelis%20git%0ahook%26rsquo%3bus%2c%20kurie%20neleist%c5%b3%20saugoti%20bent%20jau%20slapta%c5%beod%c5%bei%c5%b3%20ir%20rakt%c5%b3.%20Taip%20pat%0apublikavimas%20gal%c4%97t%c5%b3%20b%c5%abti%20rankinis%20vykdant%20%3ccode%3egit%20push%3c%2fcode%3e%20komand%c4%85.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&name=Asmeninis%20puslapis%20naudojant%20Vimwiki&description=%3cp%3e%3avim%3a%20%3ablog%3a%3c%2fp%3e%0a%3cp%3eJau%20kur%c4%af%20laik%c4%85%20galvoju%20apie%20asmenin%c4%af%20puslap%c4%af%2c%20kuriam%20atnaujint%20pakakt%c5%b3%20i%c5%a1saugoti%0atekst%c4%85%20Markdown%20formatu.%20Vartotojui%20netur%c4%97t%c5%b3%20r%c5%abp%c4%97ti%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3eKaip%20ir%20kur%20prisijungti%3c%2fli%3e%0a%3cli%3eKoks%20prisijungimo%20slapta%c5%beodis%3c%2fli%3e%0a%3cli%3ePuslapio%20sistemos%20atnaujinimai%3c%2fli%3e%0a%3cli%3eAr%20yra%20prisijungimas%20prie%20interneto%3c%2fli%3e%0a%3cli%3eNar%c5%a1ykl%c4%97s%20paleidimas%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eIdealiu%20atveju%20%c5%a1ovus%20id%c4%97jai%20apie%20k%c4%85%20ra%c5%a1yt%20-%20pakakt%c5%b3%20redaktoriuje%20sukurti%20ira%c5%a1%c4%85%0air%20j%c4%af%20i%c5%a1saugoti.%20Baigus%20ra%c5%a1yti%20-%20toliau%20testi%20programavimo%20darbus.%3c%2fp%3e%0a%3cp%3eI%c5%a1saugojus%20straipsn%c4%af%20kodas%20%28tekstas%29%20tur%c4%97t%c5%b3%20b%c5%abti%20i%c5%a1saugomas%20kodo%20versijavimo%0asistemoje%2c%20sukeliamas%20%c4%af%20repozitorij%c4%85%2c%20sugeneruojamas%20statinis%20HTML%20ir%0aatnaujinamas%20puslapis.%20Daugiau%20nieko.%20Viskas%20vyksta%20automati%c5%a1kai%20be%20vartotojo%0a%c4%afsiki%c5%a1imo.%20Tiesa%2c%20kartais%20nety%c4%8dia%20%c4%afk%c4%97lus%20jautri%c4%85%20informacij%c4%85%20taip%20galima%0ai%c5%a1publikuoti%20j%c4%85%20visiems.%20Tokiu%20atveju%20pravartu%20susikonfig%c5%abruoti%20kelis%20git%0ahook%26rsquo%3bus%2c%20kurie%20neleist%c5%b3%20saugoti%20bent%20jau%20slapta%c5%beod%c5%bei%c5%b3%20ir%20rakt%c5%b3.%20Taip%20pat%0apublikavimas%20gal%c4%97t%c5%b3%20b%c5%abti%20rankinis%20vykdant%20%3ccode%3egit%20push%3c%2fcode%3e%20komand%c4%85.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&t=Asmeninis%20puslapis%20naudojant%20Vimwiki">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&t=Asmeninis%20puslapis%20naudojant%20Vimwiki" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents"></nav>
     </div>
+    
   </span>
 </div>
 
@@ -187,21 +181,24 @@ Išsaugojus straipsnį kodas (tekstas) turėtų būti išsaugomas kodo versijavi
         </div>
         
         
+        
+        
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             
             
             <a class="tag-link" href="/tags/vim" rel="tag">vim</a>
             
-            
+             ,  
             <a class="tag-link" href="/tags/blog" rel="tag">blog</a>
             
-        </div> 
+        </div>
         
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>:vim: :blog:</p>
 <p>Jau kurį laiką galvoju apie asmeninį puslapį, kuriam atnaujint pakaktų išsaugoti
@@ -238,6 +235,7 @@ publikavimas galėtų būti rankinis vykdant <code>git push</code> komandą.</p>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -253,9 +251,11 @@ publikavimas galėtų būti rankinis vykdant <code>git push</code> komandą.</p>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents"></nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -266,57 +266,47 @@ publikavimas galėtų būti rankinis vykdant <code>git push</code> komandą.</p>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&text=Asmeninis%20puslapis%20naudojant%20Vimwiki">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&text=Asmeninis%20puslapis%20naudojant%20Vimwiki" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&is_video=false&description=Asmeninis%20puslapis%20naudojant%20Vimwiki">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&is_video=false&description=Asmeninis%20puslapis%20naudojant%20Vimwiki" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Asmeninis%20puslapis%20naudojant%20Vimwiki&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f">
+    <a class="icon" href="mailto:?subject=Asmeninis%20puslapis%20naudojant%20Vimwiki&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&title=Asmeninis%20puslapis%20naudojant%20Vimwiki">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&name=Asmeninis%20puslapis%20naudojant%20Vimwiki&description=%3cp%3e%3avim%3a%20%3ablog%3a%3c%2fp%3e%0a%3cp%3eJau%20kur%c4%af%20laik%c4%85%20galvoju%20apie%20asmenin%c4%af%20puslap%c4%af%2c%20kuriam%20atnaujint%20pakakt%c5%b3%20i%c5%a1saugoti%0atekst%c4%85%20Markdown%20formatu.%20Vartotojui%20netur%c4%97t%c5%b3%20r%c5%abp%c4%97ti%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3eKaip%20ir%20kur%20prisijungti%3c%2fli%3e%0a%3cli%3eKoks%20prisijungimo%20slapta%c5%beodis%3c%2fli%3e%0a%3cli%3ePuslapio%20sistemos%20atnaujinimai%3c%2fli%3e%0a%3cli%3eAr%20yra%20prisijungimas%20prie%20interneto%3c%2fli%3e%0a%3cli%3eNar%c5%a1ykl%c4%97s%20paleidimas%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eIdealiu%20atveju%20%c5%a1ovus%20id%c4%97jai%20apie%20k%c4%85%20ra%c5%a1yt%20-%20pakakt%c5%b3%20redaktoriuje%20sukurti%20ira%c5%a1%c4%85%0air%20j%c4%af%20i%c5%a1saugoti.%20Baigus%20ra%c5%a1yti%20-%20toliau%20testi%20programavimo%20darbus.%3c%2fp%3e%0a%3cp%3eI%c5%a1saugojus%20straipsn%c4%af%20kodas%20%28tekstas%29%20tur%c4%97t%c5%b3%20b%c5%abti%20i%c5%a1saugomas%20kodo%20versijavimo%0asistemoje%2c%20sukeliamas%20%c4%af%20repozitorij%c4%85%2c%20sugeneruojamas%20statinis%20HTML%20ir%0aatnaujinamas%20puslapis.%20Daugiau%20nieko.%20Viskas%20vyksta%20automati%c5%a1kai%20be%20vartotojo%0a%c4%afsiki%c5%a1imo.%20Tiesa%2c%20kartais%20nety%c4%8dia%20%c4%afk%c4%97lus%20jautri%c4%85%20informacij%c4%85%20taip%20galima%0ai%c5%a1publikuoti%20j%c4%85%20visiems.%20Tokiu%20atveju%20pravartu%20susikonfig%c5%abruoti%20kelis%20git%0ahook%26rsquo%3bus%2c%20kurie%20neleist%c5%b3%20saugoti%20bent%20jau%20slapta%c5%beod%c5%bei%c5%b3%20ir%20rakt%c5%b3.%20Taip%20pat%0apublikavimas%20gal%c4%97t%c5%b3%20b%c5%abti%20rankinis%20vykdant%20%3ccode%3egit%20push%3c%2fcode%3e%20komand%c4%85.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&name=Asmeninis%20puslapis%20naudojant%20Vimwiki&description=%3cp%3e%3avim%3a%20%3ablog%3a%3c%2fp%3e%0a%3cp%3eJau%20kur%c4%af%20laik%c4%85%20galvoju%20apie%20asmenin%c4%af%20puslap%c4%af%2c%20kuriam%20atnaujint%20pakakt%c5%b3%20i%c5%a1saugoti%0atekst%c4%85%20Markdown%20formatu.%20Vartotojui%20netur%c4%97t%c5%b3%20r%c5%abp%c4%97ti%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3eKaip%20ir%20kur%20prisijungti%3c%2fli%3e%0a%3cli%3eKoks%20prisijungimo%20slapta%c5%beodis%3c%2fli%3e%0a%3cli%3ePuslapio%20sistemos%20atnaujinimai%3c%2fli%3e%0a%3cli%3eAr%20yra%20prisijungimas%20prie%20interneto%3c%2fli%3e%0a%3cli%3eNar%c5%a1ykl%c4%97s%20paleidimas%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eIdealiu%20atveju%20%c5%a1ovus%20id%c4%97jai%20apie%20k%c4%85%20ra%c5%a1yt%20-%20pakakt%c5%b3%20redaktoriuje%20sukurti%20ira%c5%a1%c4%85%0air%20j%c4%af%20i%c5%a1saugoti.%20Baigus%20ra%c5%a1yti%20-%20toliau%20testi%20programavimo%20darbus.%3c%2fp%3e%0a%3cp%3eI%c5%a1saugojus%20straipsn%c4%af%20kodas%20%28tekstas%29%20tur%c4%97t%c5%b3%20b%c5%abti%20i%c5%a1saugomas%20kodo%20versijavimo%0asistemoje%2c%20sukeliamas%20%c4%af%20repozitorij%c4%85%2c%20sugeneruojamas%20statinis%20HTML%20ir%0aatnaujinamas%20puslapis.%20Daugiau%20nieko.%20Viskas%20vyksta%20automati%c5%a1kai%20be%20vartotojo%0a%c4%afsiki%c5%a1imo.%20Tiesa%2c%20kartais%20nety%c4%8dia%20%c4%afk%c4%97lus%20jautri%c4%85%20informacij%c4%85%20taip%20galima%0ai%c5%a1publikuoti%20j%c4%85%20visiems.%20Tokiu%20atveju%20pravartu%20susikonfig%c5%abruoti%20kelis%20git%0ahook%26rsquo%3bus%2c%20kurie%20neleist%c5%b3%20saugoti%20bent%20jau%20slapta%c5%beod%c5%bei%c5%b3%20ir%20rakt%c5%b3.%20Taip%20pat%0apublikavimas%20gal%c4%97t%c5%b3%20b%c5%abti%20rankinis%20vykdant%20%3ccode%3egit%20push%3c%2fcode%3e%20komand%c4%85.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&t=Asmeninis%20puslapis%20naudojant%20Vimwiki">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-04-20%2f&t=Asmeninis%20puslapis%20naudojant%20Vimwiki" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -326,13 +316,15 @@ publikavimas galėtų būti rankinis vykdant <code>git push</code> komandą.</p>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -366,6 +358,9 @@ publikavimas galėtų būti rankinis vykdant <code>git push</code> komandą.</p>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

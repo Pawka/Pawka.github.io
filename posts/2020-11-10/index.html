@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Linux RAM kompresija su zram | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2020-11-10/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -22,16 +28,12 @@ Būna, paleidus gazelle kompas pakimba ir atsigauna po kažkiek laiko. Būna ats
     <meta property="article:tag" content="Linux">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Linux RAM kompresija su zram">
-  <meta name="twitter:description" content=":linux:
-Darbinis kompiuteris vargsta dėl atminties trūkumo. Mat turi tik 16G RAM’o. Dirbame su monorepo ir tam tikri monolitinės repozitorijos įrankiai kaip gazelle arba gopls reikalauja nemažai atminties ir kartais skubiai. Jei dar fone paleistas koks Spotify, Goole Chrome, Slack’as - visas RAM’o valgytojų elitas - tai kažkas turi pasitraukti.
-Būna, paleidus gazelle kompas pakimba ir atsigauna po kažkiek laiko. Būna atsigauna su baltu Slack’o langu (nes tam pritrūko atminties kažką sukramtyt). Būna nužudomas gopls language serveris (kas labai užknisa, nes indeksavimas užtrunka). Arba kartais išvis nebesulaukiu kol kompas atsigaus ir tenka jį perkrauti. Kokius 5 kartus per dieną.">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -44,13 +46,14 @@ Būna, paleidus gazelle kompas pakimba ir atsigauna po kažkiek laiko. Būna ats
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -68,25 +71,25 @@ Būna, paleidus gazelle kompas pakimba ir atsigauna po kažkiek laiko. Būna ats
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-10-28/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-10-28/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-11-15/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-11-15/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -106,66 +109,58 @@ Būna, paleidus gazelle kompas pakimba ir atsigauna po kažkiek laiko. Būna ats
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&text=Linux%20RAM%20kompresija%20su%20zram">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&text=Linux%20RAM%20kompresija%20su%20zram" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&is_video=false&description=Linux%20RAM%20kompresija%20su%20zram">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&is_video=false&description=Linux%20RAM%20kompresija%20su%20zram" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Linux%20RAM%20kompresija%20su%20zram&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f">
+    <a class="icon" href="mailto:?subject=Linux%20RAM%20kompresija%20su%20zram&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&name=Linux%20RAM%20kompresija%20su%20zram&description=%3cp%3e%3alinux%3a%3c%2fp%3e%0a%3cp%3eDarbinis%20kompiuteris%20vargsta%20d%c4%97l%20atminties%20tr%c5%abkumo.%20Mat%20turi%20tik%2016G%20RAM%26rsquo%3bo.%0aDirbame%20su%20monorepo%20ir%20tam%20tikri%20monolitin%c4%97s%20repozitorijos%20%c4%afrankiai%20kaip%0a%3ccode%3egazelle%3c%2fcode%3e%20arba%20%3ccode%3egopls%3c%2fcode%3e%20reikalauja%20nema%c5%beai%20atminties%20ir%20kartais%20skubiai.%20Jei%20dar%0afone%20paleistas%20koks%20Spotify%2c%20Goole%20Chrome%2c%20Slack%26rsquo%3bas%20-%20visas%20RAM%26rsquo%3bo%20valgytoj%c5%b3%0aelitas%20-%20tai%20ka%c5%bekas%20turi%20pasitraukti.%3c%2fp%3e%0a%3cp%3eB%c5%abna%2c%20paleidus%20%3ccode%3egazelle%3c%2fcode%3e%20kompas%20pakimba%20ir%20atsigauna%20po%20ka%c5%bekiek%20laiko.%20B%c5%abna%0aatsigauna%20su%20baltu%20Slack%26rsquo%3bo%20langu%20%28nes%20tam%20pritr%c5%abko%20atminties%20ka%c5%bek%c4%85%20sukramtyt%29.%0aB%c5%abna%20nu%c5%beudomas%20%3ccode%3egopls%3c%2fcode%3e%20language%20serveris%20%28kas%20labai%20u%c5%beknisa%2c%20nes%20indeksavimas%0au%c5%betrunka%29.%20Arba%20kartais%20i%c5%a1vis%20nebesulaukiu%20kol%20kompas%20atsigaus%20ir%20tenka%20j%c4%af%0aperkrauti.%20Kokius%205%20kartus%20per%20dien%c4%85.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&name=Linux%20RAM%20kompresija%20su%20zram&description=%3cp%3e%3alinux%3a%3c%2fp%3e%0a%3cp%3eDarbinis%20kompiuteris%20vargsta%20d%c4%97l%20atminties%20tr%c5%abkumo.%20Mat%20turi%20tik%2016G%20RAM%26rsquo%3bo.%0aDirbame%20su%20monorepo%20ir%20tam%20tikri%20monolitin%c4%97s%20repozitorijos%20%c4%afrankiai%20kaip%0a%3ccode%3egazelle%3c%2fcode%3e%20arba%20%3ccode%3egopls%3c%2fcode%3e%20reikalauja%20nema%c5%beai%20atminties%20ir%20kartais%20skubiai.%20Jei%20dar%0afone%20paleistas%20koks%20Spotify%2c%20Goole%20Chrome%2c%20Slack%26rsquo%3bas%20-%20visas%20RAM%26rsquo%3bo%20valgytoj%c5%b3%0aelitas%20-%20tai%20ka%c5%bekas%20turi%20pasitraukti.%3c%2fp%3e%0a%3cp%3eB%c5%abna%2c%20paleidus%20%3ccode%3egazelle%3c%2fcode%3e%20kompas%20pakimba%20ir%20atsigauna%20po%20ka%c5%bekiek%20laiko.%20B%c5%abna%0aatsigauna%20su%20baltu%20Slack%26rsquo%3bo%20langu%20%28nes%20tam%20pritr%c5%abko%20atminties%20ka%c5%bek%c4%85%20sukramtyt%29.%0aB%c5%abna%20nu%c5%beudomas%20%3ccode%3egopls%3c%2fcode%3e%20language%20serveris%20%28kas%20labai%20u%c5%beknisa%2c%20nes%20indeksavimas%0au%c5%betrunka%29.%20Arba%20kartais%20i%c5%a1vis%20nebesulaukiu%20kol%20kompas%20atsigaus%20ir%20tenka%20j%c4%af%0aperkrauti.%20Kokius%205%20kartus%20per%20dien%c4%85.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&t=Linux%20RAM%20kompresija%20su%20zram">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&t=Linux%20RAM%20kompresija%20su%20zram" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents"></nav>
     </div>
+    
   </span>
 </div>
 
@@ -184,18 +179,21 @@ Būna, paleidus gazelle kompas pakimba ir atsigauna po kažkiek laiko. Būna ats
         </div>
         
         
+        
+        
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             
             
             <a class="tag-link" href="/tags/linux" rel="tag">linux</a>
             
-        </div> 
+        </div>
         
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>:linux:</p>
 <p>Darbinis kompiuteris vargsta dėl atminties trūkumo. Mat turi tik 16G RAM&rsquo;o.
@@ -239,6 +237,7 @@ kažkokio kompiuterio sulėtėjimo.</p>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -254,9 +253,11 @@ kažkokio kompiuterio sulėtėjimo.</p>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents"></nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -267,57 +268,47 @@ kažkokio kompiuterio sulėtėjimo.</p>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&text=Linux%20RAM%20kompresija%20su%20zram">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&text=Linux%20RAM%20kompresija%20su%20zram" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&is_video=false&description=Linux%20RAM%20kompresija%20su%20zram">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&is_video=false&description=Linux%20RAM%20kompresija%20su%20zram" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Linux%20RAM%20kompresija%20su%20zram&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f">
+    <a class="icon" href="mailto:?subject=Linux%20RAM%20kompresija%20su%20zram&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&title=Linux%20RAM%20kompresija%20su%20zram">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&name=Linux%20RAM%20kompresija%20su%20zram&description=%3cp%3e%3alinux%3a%3c%2fp%3e%0a%3cp%3eDarbinis%20kompiuteris%20vargsta%20d%c4%97l%20atminties%20tr%c5%abkumo.%20Mat%20turi%20tik%2016G%20RAM%26rsquo%3bo.%0aDirbame%20su%20monorepo%20ir%20tam%20tikri%20monolitin%c4%97s%20repozitorijos%20%c4%afrankiai%20kaip%0a%3ccode%3egazelle%3c%2fcode%3e%20arba%20%3ccode%3egopls%3c%2fcode%3e%20reikalauja%20nema%c5%beai%20atminties%20ir%20kartais%20skubiai.%20Jei%20dar%0afone%20paleistas%20koks%20Spotify%2c%20Goole%20Chrome%2c%20Slack%26rsquo%3bas%20-%20visas%20RAM%26rsquo%3bo%20valgytoj%c5%b3%0aelitas%20-%20tai%20ka%c5%bekas%20turi%20pasitraukti.%3c%2fp%3e%0a%3cp%3eB%c5%abna%2c%20paleidus%20%3ccode%3egazelle%3c%2fcode%3e%20kompas%20pakimba%20ir%20atsigauna%20po%20ka%c5%bekiek%20laiko.%20B%c5%abna%0aatsigauna%20su%20baltu%20Slack%26rsquo%3bo%20langu%20%28nes%20tam%20pritr%c5%abko%20atminties%20ka%c5%bek%c4%85%20sukramtyt%29.%0aB%c5%abna%20nu%c5%beudomas%20%3ccode%3egopls%3c%2fcode%3e%20language%20serveris%20%28kas%20labai%20u%c5%beknisa%2c%20nes%20indeksavimas%0au%c5%betrunka%29.%20Arba%20kartais%20i%c5%a1vis%20nebesulaukiu%20kol%20kompas%20atsigaus%20ir%20tenka%20j%c4%af%0aperkrauti.%20Kokius%205%20kartus%20per%20dien%c4%85.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&name=Linux%20RAM%20kompresija%20su%20zram&description=%3cp%3e%3alinux%3a%3c%2fp%3e%0a%3cp%3eDarbinis%20kompiuteris%20vargsta%20d%c4%97l%20atminties%20tr%c5%abkumo.%20Mat%20turi%20tik%2016G%20RAM%26rsquo%3bo.%0aDirbame%20su%20monorepo%20ir%20tam%20tikri%20monolitin%c4%97s%20repozitorijos%20%c4%afrankiai%20kaip%0a%3ccode%3egazelle%3c%2fcode%3e%20arba%20%3ccode%3egopls%3c%2fcode%3e%20reikalauja%20nema%c5%beai%20atminties%20ir%20kartais%20skubiai.%20Jei%20dar%0afone%20paleistas%20koks%20Spotify%2c%20Goole%20Chrome%2c%20Slack%26rsquo%3bas%20-%20visas%20RAM%26rsquo%3bo%20valgytoj%c5%b3%0aelitas%20-%20tai%20ka%c5%bekas%20turi%20pasitraukti.%3c%2fp%3e%0a%3cp%3eB%c5%abna%2c%20paleidus%20%3ccode%3egazelle%3c%2fcode%3e%20kompas%20pakimba%20ir%20atsigauna%20po%20ka%c5%bekiek%20laiko.%20B%c5%abna%0aatsigauna%20su%20baltu%20Slack%26rsquo%3bo%20langu%20%28nes%20tam%20pritr%c5%abko%20atminties%20ka%c5%bek%c4%85%20sukramtyt%29.%0aB%c5%abna%20nu%c5%beudomas%20%3ccode%3egopls%3c%2fcode%3e%20language%20serveris%20%28kas%20labai%20u%c5%beknisa%2c%20nes%20indeksavimas%0au%c5%betrunka%29.%20Arba%20kartais%20i%c5%a1vis%20nebesulaukiu%20kol%20kompas%20atsigaus%20ir%20tenka%20j%c4%af%0aperkrauti.%20Kokius%205%20kartus%20per%20dien%c4%85.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&t=Linux%20RAM%20kompresija%20su%20zram">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&t=Linux%20RAM%20kompresija%20su%20zram" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -327,13 +318,15 @@ kažkokio kompiuterio sulėtėjimo.</p>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -367,6 +360,9 @@ kažkokio kompiuterio sulėtėjimo.</p>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

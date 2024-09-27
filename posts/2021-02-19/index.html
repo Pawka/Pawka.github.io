@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Permigravau iš GMail | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2021-02-19/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -19,14 +25,12 @@
     <meta property="article:modified_time" content="2021-02-19T00:00:00+00:00">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Permigravau iš GMail">
-  <meta name="twitter:description" content="Jau kuris laikas galvojau apie šį žingsnį. Mano el. pašto adresas baigėsi @gmail.com. Jį gavau dar tada kai GMail nebuvo prieinamas visiems ir kas jį turėjo - buvo kietas. Minimalus simbolių kiekis vartotojo varde privalėjo būti bent 6 simboliai, tad ilgai negalvojęs, pakeitęs w į dvi v susikūriau savo nick’o atitikmenį - pavvka. Tiesa, dėl šito paskui gailėjausi, nes būdavo labai nepatogu diktuoti telefonu savo el. pašto adresą: “p, a, dvi v, taip, kaip dviguba v bet vietoj jos dvi v…”. Bet iš GMail permigravau ne dėl to.">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -39,13 +43,14 @@
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -63,25 +68,25 @@
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2021-02-06/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2021-02-06/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2021-03-05/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2021-03-05/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -101,63 +106,54 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&text=Permigravau%20i%c5%a1%20GMail">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&text=Permigravau%20i%c5%a1%20GMail" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&is_video=false&description=Permigravau%20i%c5%a1%20GMail">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&is_video=false&description=Permigravau%20i%c5%a1%20GMail" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Permigravau%20i%c5%a1%20GMail&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f">
+    <a class="icon" href="mailto:?subject=Permigravau%20i%c5%a1%20GMail&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&name=Permigravau%20i%c5%a1%20GMail&description=%3cp%3eJau%20kuris%20laikas%20galvojau%20apie%20%c5%a1%c4%af%20%c5%beingsn%c4%af.%20Mano%20el.%20pa%c5%a1to%20adresas%20baig%c4%97si%0a%40gmail.com.%20J%c4%af%20gavau%20dar%20tada%20kai%20GMail%20nebuvo%20prieinamas%20visiems%20ir%20kas%20j%c4%af%0atur%c4%97jo%20-%20buvo%20kietas.%20Minimalus%20simboli%c5%b3%20kiekis%20vartotojo%20varde%20prival%c4%97jo%20b%c5%abti%0abent%206%20simboliai%2c%20tad%20ilgai%20negalvoj%c4%99s%2c%20pakeit%c4%99s%20w%20%c4%af%20dvi%20v%20susik%c5%abriau%20savo%0anick%26rsquo%3bo%20atitikmen%c4%af%20-%20pavvka.%20Tiesa%2c%20d%c4%97l%20%c5%a1ito%20paskui%20gail%c4%97jausi%2c%20nes%20b%c5%abdavo%20labai%0anepatogu%20diktuoti%20telefonu%20savo%20el.%20pa%c5%a1to%20adres%c4%85%3a%20%26ldquo%3bp%2c%20a%2c%20dvi%20v%2c%20taip%2c%20kaip%0adviguba%20v%20bet%20vietoj%20jos%20dvi%20v%26hellip%3b%26rdquo%3b.%20Bet%20i%c5%a1%20GMail%20permigravau%20ne%20d%c4%97l%20to.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&name=Permigravau%20i%c5%a1%20GMail&description=%3cp%3eJau%20kuris%20laikas%20galvojau%20apie%20%c5%a1%c4%af%20%c5%beingsn%c4%af.%20Mano%20el.%20pa%c5%a1to%20adresas%20baig%c4%97si%0a%40gmail.com.%20J%c4%af%20gavau%20dar%20tada%20kai%20GMail%20nebuvo%20prieinamas%20visiems%20ir%20kas%20j%c4%af%0atur%c4%97jo%20-%20buvo%20kietas.%20Minimalus%20simboli%c5%b3%20kiekis%20vartotojo%20varde%20prival%c4%97jo%20b%c5%abti%0abent%206%20simboliai%2c%20tad%20ilgai%20negalvoj%c4%99s%2c%20pakeit%c4%99s%20w%20%c4%af%20dvi%20v%20susik%c5%abriau%20savo%0anick%26rsquo%3bo%20atitikmen%c4%af%20-%20pavvka.%20Tiesa%2c%20d%c4%97l%20%c5%a1ito%20paskui%20gail%c4%97jausi%2c%20nes%20b%c5%abdavo%20labai%0anepatogu%20diktuoti%20telefonu%20savo%20el.%20pa%c5%a1to%20adres%c4%85%3a%20%26ldquo%3bp%2c%20a%2c%20dvi%20v%2c%20taip%2c%20kaip%0adviguba%20v%20bet%20vietoj%20jos%20dvi%20v%26hellip%3b%26rdquo%3b.%20Bet%20i%c5%a1%20GMail%20permigravau%20ne%20d%c4%97l%20to.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&t=Permigravau%20i%c5%a1%20GMail">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&t=Permigravau%20i%c5%a1%20GMail" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
@@ -166,6 +162,7 @@
   </ul>
 </nav>
     </div>
+    
   </span>
 </div>
 
@@ -184,10 +181,13 @@
         </div>
         
         
+        
+        
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>Jau kuris laikas galvojau apie šį žingsnį. Mano el. pašto adresas baigėsi
 @gmail.com. Jį gavau dar tada kai GMail nebuvo prieinamas visiems ir kas jį
@@ -258,6 +258,7 @@ parsisiunčiu.</p>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -273,6 +274,7 @@ parsisiunčiu.</p>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
@@ -281,6 +283,7 @@ parsisiunčiu.</p>
   </ul>
 </nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -291,57 +294,47 @@ parsisiunčiu.</p>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&text=Permigravau%20i%c5%a1%20GMail">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&text=Permigravau%20i%c5%a1%20GMail" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&is_video=false&description=Permigravau%20i%c5%a1%20GMail">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&is_video=false&description=Permigravau%20i%c5%a1%20GMail" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Permigravau%20i%c5%a1%20GMail&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f">
+    <a class="icon" href="mailto:?subject=Permigravau%20i%c5%a1%20GMail&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&title=Permigravau%20i%c5%a1%20GMail">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&name=Permigravau%20i%c5%a1%20GMail&description=%3cp%3eJau%20kuris%20laikas%20galvojau%20apie%20%c5%a1%c4%af%20%c5%beingsn%c4%af.%20Mano%20el.%20pa%c5%a1to%20adresas%20baig%c4%97si%0a%40gmail.com.%20J%c4%af%20gavau%20dar%20tada%20kai%20GMail%20nebuvo%20prieinamas%20visiems%20ir%20kas%20j%c4%af%0atur%c4%97jo%20-%20buvo%20kietas.%20Minimalus%20simboli%c5%b3%20kiekis%20vartotojo%20varde%20prival%c4%97jo%20b%c5%abti%0abent%206%20simboliai%2c%20tad%20ilgai%20negalvoj%c4%99s%2c%20pakeit%c4%99s%20w%20%c4%af%20dvi%20v%20susik%c5%abriau%20savo%0anick%26rsquo%3bo%20atitikmen%c4%af%20-%20pavvka.%20Tiesa%2c%20d%c4%97l%20%c5%a1ito%20paskui%20gail%c4%97jausi%2c%20nes%20b%c5%abdavo%20labai%0anepatogu%20diktuoti%20telefonu%20savo%20el.%20pa%c5%a1to%20adres%c4%85%3a%20%26ldquo%3bp%2c%20a%2c%20dvi%20v%2c%20taip%2c%20kaip%0adviguba%20v%20bet%20vietoj%20jos%20dvi%20v%26hellip%3b%26rdquo%3b.%20Bet%20i%c5%a1%20GMail%20permigravau%20ne%20d%c4%97l%20to.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&name=Permigravau%20i%c5%a1%20GMail&description=%3cp%3eJau%20kuris%20laikas%20galvojau%20apie%20%c5%a1%c4%af%20%c5%beingsn%c4%af.%20Mano%20el.%20pa%c5%a1to%20adresas%20baig%c4%97si%0a%40gmail.com.%20J%c4%af%20gavau%20dar%20tada%20kai%20GMail%20nebuvo%20prieinamas%20visiems%20ir%20kas%20j%c4%af%0atur%c4%97jo%20-%20buvo%20kietas.%20Minimalus%20simboli%c5%b3%20kiekis%20vartotojo%20varde%20prival%c4%97jo%20b%c5%abti%0abent%206%20simboliai%2c%20tad%20ilgai%20negalvoj%c4%99s%2c%20pakeit%c4%99s%20w%20%c4%af%20dvi%20v%20susik%c5%abriau%20savo%0anick%26rsquo%3bo%20atitikmen%c4%af%20-%20pavvka.%20Tiesa%2c%20d%c4%97l%20%c5%a1ito%20paskui%20gail%c4%97jausi%2c%20nes%20b%c5%abdavo%20labai%0anepatogu%20diktuoti%20telefonu%20savo%20el.%20pa%c5%a1to%20adres%c4%85%3a%20%26ldquo%3bp%2c%20a%2c%20dvi%20v%2c%20taip%2c%20kaip%0adviguba%20v%20bet%20vietoj%20jos%20dvi%20v%26hellip%3b%26rdquo%3b.%20Bet%20i%c5%a1%20GMail%20permigravau%20ne%20d%c4%97l%20to.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&t=Permigravau%20i%c5%a1%20GMail">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-19%2f&t=Permigravau%20i%c5%a1%20GMail" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -351,13 +344,15 @@ parsisiunčiu.</p>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -391,6 +386,9 @@ parsisiunčiu.</p>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

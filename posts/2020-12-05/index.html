@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Alaus virimas: Amarillo Golden Ale | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2020-12-05/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -23,17 +29,12 @@ Nors Amarillo apnyniai ir Golden Ale neatitinka vienas kito pagal stilių, bet a
     <meta property="article:tag" content="Homebrewing">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Alaus virimas: Amarillo Golden Ale">
-  <meta name="twitter:description" content=":homebrewing:
-Nors Amarillo apnyniai ir Golden Ale neatitinka vienas kito pagal stilių, bet aš per daug nesukau galvos. Norėjau išsivirti kažką lengvesnio nei IPA, išbandyt kitą salyklo bazę. Pagrinde IPA virdavau su 2-row Pale Ale salyklu (dažniausiai Maris Otter) ir įmesdavau dar kokio Crystal salyklo puskilį. Golden Ale salyklo bazė kiek kitokia:
-2kg 2-Row Pale Ale (Maris Otter) 2kg Pilsner Malt 0.5kg Wheat Malt Apyniai:
-30 min: 40g Amarillo (kad išgaut ~35 IBU) 0 min: 30g Amarillo (aromatui, flameout) Virimui dažniausiai mėgstu išnaudoti 100g apynių, nes tokio dydžio pakuotėmis jie pardavinėjami. Aš tiesiog nenoriu, kad likučiai tūnotų šaldiklyje. Tad po 7 dienų sumesiu likusius 30g sausam apyniavimui. Irgi, tikriausiai, ne visai Golden-ale’iška.">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -46,13 +47,14 @@ Nors Amarillo apnyniai ir Golden Ale neatitinka vienas kito pagal stilių, bet a
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -70,25 +72,25 @@ Nors Amarillo apnyniai ir Golden Ale neatitinka vienas kito pagal stilių, bet a
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-12-04/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-12-04/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-12-06/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-12-06/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -108,63 +110,54 @@ Nors Amarillo apnyniai ir Golden Ale neatitinka vienas kito pagal stilių, bet a
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&text=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&text=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&is_video=false&description=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&is_video=false&description=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f">
+    <a class="icon" href="mailto:?subject=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&name=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale&description=%3cp%3e%3ahomebrewing%3a%3c%2fp%3e%0a%3cp%3eNors%20Amarillo%20apnyniai%20ir%20Golden%20Ale%20neatitinka%20vienas%20kito%20pagal%20stili%c5%b3%2c%20bet%20a%c5%a1%0aper%20daug%20nesukau%20galvos.%20Nor%c4%97jau%20i%c5%a1sivirti%20ka%c5%bek%c4%85%20lengvesnio%20nei%20IPA%2c%20i%c5%a1bandyt%0akit%c4%85%20salyklo%20baz%c4%99.%20Pagrinde%20IPA%20virdavau%20su%202-row%20Pale%20Ale%20salyklu%20%28da%c5%beniausiai%0aMaris%20Otter%29%20ir%20%c4%afmesdavau%20dar%20kokio%20Crystal%20salyklo%20puskil%c4%af.%20Golden%20Ale%20salyklo%0abaz%c4%97%20kiek%20kitokia%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3e2kg%202-Row%20Pale%20Ale%20%28Maris%20Otter%29%3c%2fli%3e%0a%3cli%3e2kg%20Pilsner%20Malt%3c%2fli%3e%0a%3cli%3e0.5kg%20Wheat%20Malt%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eApyniai%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3e30%20min%3a%2040g%20Amarillo%20%28kad%20i%c5%a1gaut%20~35%20IBU%29%3c%2fli%3e%0a%3cli%3e0%20min%3a%2030g%20Amarillo%20%28aromatui%2c%20flameout%29%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eVirimui%20da%c5%beniausiai%20m%c4%97gstu%20i%c5%a1naudoti%20100g%20apyni%c5%b3%2c%20nes%20tokio%20dyd%c5%beio%20pakuot%c4%97mis%0ajie%20pardavin%c4%97jami.%20A%c5%a1%20tiesiog%20nenoriu%2c%20kad%20liku%c4%8diai%20t%c5%abnot%c5%b3%20%c5%a1aldiklyje.%20Tad%20po%207%0adien%c5%b3%20sumesiu%20likusius%2030g%20sausam%20apyniavimui.%20Irgi%2c%20tikriausiai%2c%20ne%20visai%0aGolden-ale%26rsquo%3bi%c5%a1ka.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&name=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale&description=%3cp%3e%3ahomebrewing%3a%3c%2fp%3e%0a%3cp%3eNors%20Amarillo%20apnyniai%20ir%20Golden%20Ale%20neatitinka%20vienas%20kito%20pagal%20stili%c5%b3%2c%20bet%20a%c5%a1%0aper%20daug%20nesukau%20galvos.%20Nor%c4%97jau%20i%c5%a1sivirti%20ka%c5%bek%c4%85%20lengvesnio%20nei%20IPA%2c%20i%c5%a1bandyt%0akit%c4%85%20salyklo%20baz%c4%99.%20Pagrinde%20IPA%20virdavau%20su%202-row%20Pale%20Ale%20salyklu%20%28da%c5%beniausiai%0aMaris%20Otter%29%20ir%20%c4%afmesdavau%20dar%20kokio%20Crystal%20salyklo%20puskil%c4%af.%20Golden%20Ale%20salyklo%0abaz%c4%97%20kiek%20kitokia%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3e2kg%202-Row%20Pale%20Ale%20%28Maris%20Otter%29%3c%2fli%3e%0a%3cli%3e2kg%20Pilsner%20Malt%3c%2fli%3e%0a%3cli%3e0.5kg%20Wheat%20Malt%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eApyniai%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3e30%20min%3a%2040g%20Amarillo%20%28kad%20i%c5%a1gaut%20~35%20IBU%29%3c%2fli%3e%0a%3cli%3e0%20min%3a%2030g%20Amarillo%20%28aromatui%2c%20flameout%29%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eVirimui%20da%c5%beniausiai%20m%c4%97gstu%20i%c5%a1naudoti%20100g%20apyni%c5%b3%2c%20nes%20tokio%20dyd%c5%beio%20pakuot%c4%97mis%0ajie%20pardavin%c4%97jami.%20A%c5%a1%20tiesiog%20nenoriu%2c%20kad%20liku%c4%8diai%20t%c5%abnot%c5%b3%20%c5%a1aldiklyje.%20Tad%20po%207%0adien%c5%b3%20sumesiu%20likusius%2030g%20sausam%20apyniavimui.%20Irgi%2c%20tikriausiai%2c%20ne%20visai%0aGolden-ale%26rsquo%3bi%c5%a1ka.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&t=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&t=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
@@ -174,6 +167,7 @@ Nors Amarillo apnyniai ir Golden Ale neatitinka vienas kito pagal stilių, bet a
   </ul>
 </nav>
     </div>
+    
   </span>
 </div>
 
@@ -192,18 +186,21 @@ Nors Amarillo apnyniai ir Golden Ale neatitinka vienas kito pagal stilių, bet a
         </div>
         
         
+        
+        
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             
             
             <a class="tag-link" href="/tags/homebrewing" rel="tag">homebrewing</a>
             
-        </div> 
+        </div>
         
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>:homebrewing:</p>
 <p>Nors Amarillo apnyniai ir Golden Ale neatitinka vienas kito pagal stilių, bet aš
@@ -265,6 +262,7 @@ išviręs.  Kitą kartą mielai kartočiau su britiškais apyniais.</p>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -280,6 +278,7 @@ išviręs.  Kitą kartą mielai kartočiau su britiškais apyniais.</p>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
@@ -289,6 +288,7 @@ išviręs.  Kitą kartą mielai kartočiau su britiškais apyniais.</p>
   </ul>
 </nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -299,57 +299,47 @@ išviręs.  Kitą kartą mielai kartočiau su britiškais apyniais.</p>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&text=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&text=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&is_video=false&description=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&is_video=false&description=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f">
+    <a class="icon" href="mailto:?subject=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&title=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&name=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale&description=%3cp%3e%3ahomebrewing%3a%3c%2fp%3e%0a%3cp%3eNors%20Amarillo%20apnyniai%20ir%20Golden%20Ale%20neatitinka%20vienas%20kito%20pagal%20stili%c5%b3%2c%20bet%20a%c5%a1%0aper%20daug%20nesukau%20galvos.%20Nor%c4%97jau%20i%c5%a1sivirti%20ka%c5%bek%c4%85%20lengvesnio%20nei%20IPA%2c%20i%c5%a1bandyt%0akit%c4%85%20salyklo%20baz%c4%99.%20Pagrinde%20IPA%20virdavau%20su%202-row%20Pale%20Ale%20salyklu%20%28da%c5%beniausiai%0aMaris%20Otter%29%20ir%20%c4%afmesdavau%20dar%20kokio%20Crystal%20salyklo%20puskil%c4%af.%20Golden%20Ale%20salyklo%0abaz%c4%97%20kiek%20kitokia%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3e2kg%202-Row%20Pale%20Ale%20%28Maris%20Otter%29%3c%2fli%3e%0a%3cli%3e2kg%20Pilsner%20Malt%3c%2fli%3e%0a%3cli%3e0.5kg%20Wheat%20Malt%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eApyniai%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3e30%20min%3a%2040g%20Amarillo%20%28kad%20i%c5%a1gaut%20~35%20IBU%29%3c%2fli%3e%0a%3cli%3e0%20min%3a%2030g%20Amarillo%20%28aromatui%2c%20flameout%29%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eVirimui%20da%c5%beniausiai%20m%c4%97gstu%20i%c5%a1naudoti%20100g%20apyni%c5%b3%2c%20nes%20tokio%20dyd%c5%beio%20pakuot%c4%97mis%0ajie%20pardavin%c4%97jami.%20A%c5%a1%20tiesiog%20nenoriu%2c%20kad%20liku%c4%8diai%20t%c5%abnot%c5%b3%20%c5%a1aldiklyje.%20Tad%20po%207%0adien%c5%b3%20sumesiu%20likusius%2030g%20sausam%20apyniavimui.%20Irgi%2c%20tikriausiai%2c%20ne%20visai%0aGolden-ale%26rsquo%3bi%c5%a1ka.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&name=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale&description=%3cp%3e%3ahomebrewing%3a%3c%2fp%3e%0a%3cp%3eNors%20Amarillo%20apnyniai%20ir%20Golden%20Ale%20neatitinka%20vienas%20kito%20pagal%20stili%c5%b3%2c%20bet%20a%c5%a1%0aper%20daug%20nesukau%20galvos.%20Nor%c4%97jau%20i%c5%a1sivirti%20ka%c5%bek%c4%85%20lengvesnio%20nei%20IPA%2c%20i%c5%a1bandyt%0akit%c4%85%20salyklo%20baz%c4%99.%20Pagrinde%20IPA%20virdavau%20su%202-row%20Pale%20Ale%20salyklu%20%28da%c5%beniausiai%0aMaris%20Otter%29%20ir%20%c4%afmesdavau%20dar%20kokio%20Crystal%20salyklo%20puskil%c4%af.%20Golden%20Ale%20salyklo%0abaz%c4%97%20kiek%20kitokia%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3e2kg%202-Row%20Pale%20Ale%20%28Maris%20Otter%29%3c%2fli%3e%0a%3cli%3e2kg%20Pilsner%20Malt%3c%2fli%3e%0a%3cli%3e0.5kg%20Wheat%20Malt%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eApyniai%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3e30%20min%3a%2040g%20Amarillo%20%28kad%20i%c5%a1gaut%20~35%20IBU%29%3c%2fli%3e%0a%3cli%3e0%20min%3a%2030g%20Amarillo%20%28aromatui%2c%20flameout%29%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eVirimui%20da%c5%beniausiai%20m%c4%97gstu%20i%c5%a1naudoti%20100g%20apyni%c5%b3%2c%20nes%20tokio%20dyd%c5%beio%20pakuot%c4%97mis%0ajie%20pardavin%c4%97jami.%20A%c5%a1%20tiesiog%20nenoriu%2c%20kad%20liku%c4%8diai%20t%c5%abnot%c5%b3%20%c5%a1aldiklyje.%20Tad%20po%207%0adien%c5%b3%20sumesiu%20likusius%2030g%20sausam%20apyniavimui.%20Irgi%2c%20tikriausiai%2c%20ne%20visai%0aGolden-ale%26rsquo%3bi%c5%a1ka.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&t=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-05%2f&t=Alaus%20virimas%3a%20Amarillo%20Golden%20Ale" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -359,13 +349,15 @@ išviręs.  Kitą kartą mielai kartočiau su britiškais apyniais.</p>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -399,6 +391,9 @@ išviręs.  Kitą kartą mielai kartočiau su britiškais apyniais.</p>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

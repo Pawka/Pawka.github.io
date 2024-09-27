@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Google Photos archyvo parsisiuntimas ir tvarkymas | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2023-11-11/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -25,16 +31,12 @@ Nusprendžiau, kad metas parsisiųsti ir susitvarkyti visą sukauptą mediją i�
     <meta property="article:tag" content="Nuotraukos">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Google Photos archyvo parsisiuntimas ir tvarkymas">
-  <meta name="twitter:description" content=":google: :exiftool: :fdupes: :nuotraukos:
-Mano Google paskyra buvo beveik prisipildžiusi. Pradėjau gauti nuolat siunčiamus priminimus apie tai, bei pasiūlymus nusipirkti daugiau vietos. Ačiū, bet neplanuoju to daryti :-) Mano nuotraukos saugiai guli kitur, o Google jas tiesiog pasaugo, kad galėčiau patogiai parsisiųsti į kompiuterį. Dar kartais sugeneruoja kokį koliažą ir tiek.
-Nusprendžiau, kad metas parsisiųsti ir susitvarkyti visą sukauptą mediją iš Google. Kompanija vartotojui duoda 15Gb naudotis nemokamai. Iš jų, nuotraukos ir video pas mane sudarė iki 9Gb. Kas nustebino, kad parsisiųsti archyvai užėmė net 59Gb!">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -47,13 +49,14 @@ Nusprendžiau, kad metas parsisiųsti ir susitvarkyti visą sukauptą mediją i�
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -71,25 +74,25 @@ Nusprendžiau, kad metas parsisiųsti ir susitvarkyti visą sukauptą mediją i�
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2023-09-05/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2023-09-05/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2023-12-31/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2023-12-31/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -109,63 +112,54 @@ Nusprendžiau, kad metas parsisiųsti ir susitvarkyti visą sukauptą mediją i�
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&text=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&text=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&is_video=false&description=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&is_video=false&description=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f">
+    <a class="icon" href="mailto:?subject=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&name=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas&description=%3cp%3e%3agoogle%3a%20%3aexiftool%3a%20%3afdupes%3a%20%3anuotraukos%3a%3c%2fp%3e%0a%3cp%3eMano%20Google%20paskyra%20buvo%20beveik%20prisipild%c5%beiusi.%20Prad%c4%97jau%20gauti%20nuolat%20siun%c4%8diamus%0apriminimus%20apie%20tai%2c%20bei%20pasi%c5%ablymus%20nusipirkti%20daugiau%20vietos.%20A%c4%8di%c5%ab%2c%20bet%0aneplanuoju%20to%20daryti%20%3a-%29%20Mano%20nuotraukos%20saugiai%20guli%20kitur%2c%20o%20Google%20jas%0atiesiog%20pasaugo%2c%20kad%20gal%c4%97%c4%8diau%20patogiai%20parsisi%c5%b3sti%20%c4%af%20kompiuter%c4%af.%20Dar%20kartais%0asugeneruoja%20kok%c4%af%20kolia%c5%be%c4%85%20ir%20tiek.%3c%2fp%3e%0a%3cp%3eNusprend%c5%beiau%2c%20kad%20metas%20parsisi%c5%b3sti%20ir%20susitvarkyti%20vis%c4%85%20sukaupt%c4%85%20medij%c4%85%20i%c5%a1%0aGoogle.%20Kompanija%20vartotojui%20duoda%2015Gb%20naudotis%20nemokamai.%20I%c5%a1%20j%c5%b3%2c%20nuotraukos%20ir%0avideo%20pas%20mane%20sudar%c4%97%20iki%209Gb.%20Kas%20nustebino%2c%20kad%20parsisi%c5%b3sti%20archyvai%20u%c5%be%c4%97m%c4%97%0anet%2059Gb%21%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&name=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas&description=%3cp%3e%3agoogle%3a%20%3aexiftool%3a%20%3afdupes%3a%20%3anuotraukos%3a%3c%2fp%3e%0a%3cp%3eMano%20Google%20paskyra%20buvo%20beveik%20prisipild%c5%beiusi.%20Prad%c4%97jau%20gauti%20nuolat%20siun%c4%8diamus%0apriminimus%20apie%20tai%2c%20bei%20pasi%c5%ablymus%20nusipirkti%20daugiau%20vietos.%20A%c4%8di%c5%ab%2c%20bet%0aneplanuoju%20to%20daryti%20%3a-%29%20Mano%20nuotraukos%20saugiai%20guli%20kitur%2c%20o%20Google%20jas%0atiesiog%20pasaugo%2c%20kad%20gal%c4%97%c4%8diau%20patogiai%20parsisi%c5%b3sti%20%c4%af%20kompiuter%c4%af.%20Dar%20kartais%0asugeneruoja%20kok%c4%af%20kolia%c5%be%c4%85%20ir%20tiek.%3c%2fp%3e%0a%3cp%3eNusprend%c5%beiau%2c%20kad%20metas%20parsisi%c5%b3sti%20ir%20susitvarkyti%20vis%c4%85%20sukaupt%c4%85%20medij%c4%85%20i%c5%a1%0aGoogle.%20Kompanija%20vartotojui%20duoda%2015Gb%20naudotis%20nemokamai.%20I%c5%a1%20j%c5%b3%2c%20nuotraukos%20ir%0avideo%20pas%20mane%20sudar%c4%97%20iki%209Gb.%20Kas%20nustebino%2c%20kad%20parsisi%c5%b3sti%20archyvai%20u%c5%be%c4%97m%c4%97%0anet%2059Gb%21%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&t=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&t=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
@@ -173,6 +167,7 @@ Nusprendžiau, kad metas parsisiųsti ir susitvarkyti visą sukauptą mediją i�
   </ul>
 </nav>
     </div>
+    
   </span>
 </div>
 
@@ -191,13 +186,15 @@ Nusprendžiau, kad metas parsisiųsti ir susitvarkyti visą sukauptą mediją i�
         </div>
         
         
+        
+        
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             
             
             <a class="tag-link" href="/tags/google" rel="tag">google</a>
             
-            
+             ,  
             <a class="tag-link" href="/tags/exiftool" rel="tag">exiftool</a>
             
              ,  
@@ -206,12 +203,13 @@ Nusprendžiau, kad metas parsisiųsti ir susitvarkyti visą sukauptą mediją i�
              ,  
             <a class="tag-link" href="/tags/nuotraukos" rel="tag">nuotraukos</a>
             
-        </div> 
+        </div>
         
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>:google: :exiftool: :fdupes: :nuotraukos:</p>
 <p>Mano Google paskyra buvo beveik prisipildžiusi. Pradėjau gauti nuolat siunčiamus
@@ -279,6 +277,7 @@ rasti įrankiai ir bash žinios labai pagelbėjo.</p>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -294,6 +293,7 @@ rasti įrankiai ir bash žinios labai pagelbėjo.</p>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
@@ -301,6 +301,7 @@ rasti įrankiai ir bash žinios labai pagelbėjo.</p>
   </ul>
 </nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -311,57 +312,47 @@ rasti įrankiai ir bash žinios labai pagelbėjo.</p>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&text=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&text=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&is_video=false&description=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&is_video=false&description=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f">
+    <a class="icon" href="mailto:?subject=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&title=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&name=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas&description=%3cp%3e%3agoogle%3a%20%3aexiftool%3a%20%3afdupes%3a%20%3anuotraukos%3a%3c%2fp%3e%0a%3cp%3eMano%20Google%20paskyra%20buvo%20beveik%20prisipild%c5%beiusi.%20Prad%c4%97jau%20gauti%20nuolat%20siun%c4%8diamus%0apriminimus%20apie%20tai%2c%20bei%20pasi%c5%ablymus%20nusipirkti%20daugiau%20vietos.%20A%c4%8di%c5%ab%2c%20bet%0aneplanuoju%20to%20daryti%20%3a-%29%20Mano%20nuotraukos%20saugiai%20guli%20kitur%2c%20o%20Google%20jas%0atiesiog%20pasaugo%2c%20kad%20gal%c4%97%c4%8diau%20patogiai%20parsisi%c5%b3sti%20%c4%af%20kompiuter%c4%af.%20Dar%20kartais%0asugeneruoja%20kok%c4%af%20kolia%c5%be%c4%85%20ir%20tiek.%3c%2fp%3e%0a%3cp%3eNusprend%c5%beiau%2c%20kad%20metas%20parsisi%c5%b3sti%20ir%20susitvarkyti%20vis%c4%85%20sukaupt%c4%85%20medij%c4%85%20i%c5%a1%0aGoogle.%20Kompanija%20vartotojui%20duoda%2015Gb%20naudotis%20nemokamai.%20I%c5%a1%20j%c5%b3%2c%20nuotraukos%20ir%0avideo%20pas%20mane%20sudar%c4%97%20iki%209Gb.%20Kas%20nustebino%2c%20kad%20parsisi%c5%b3sti%20archyvai%20u%c5%be%c4%97m%c4%97%0anet%2059Gb%21%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&name=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas&description=%3cp%3e%3agoogle%3a%20%3aexiftool%3a%20%3afdupes%3a%20%3anuotraukos%3a%3c%2fp%3e%0a%3cp%3eMano%20Google%20paskyra%20buvo%20beveik%20prisipild%c5%beiusi.%20Prad%c4%97jau%20gauti%20nuolat%20siun%c4%8diamus%0apriminimus%20apie%20tai%2c%20bei%20pasi%c5%ablymus%20nusipirkti%20daugiau%20vietos.%20A%c4%8di%c5%ab%2c%20bet%0aneplanuoju%20to%20daryti%20%3a-%29%20Mano%20nuotraukos%20saugiai%20guli%20kitur%2c%20o%20Google%20jas%0atiesiog%20pasaugo%2c%20kad%20gal%c4%97%c4%8diau%20patogiai%20parsisi%c5%b3sti%20%c4%af%20kompiuter%c4%af.%20Dar%20kartais%0asugeneruoja%20kok%c4%af%20kolia%c5%be%c4%85%20ir%20tiek.%3c%2fp%3e%0a%3cp%3eNusprend%c5%beiau%2c%20kad%20metas%20parsisi%c5%b3sti%20ir%20susitvarkyti%20vis%c4%85%20sukaupt%c4%85%20medij%c4%85%20i%c5%a1%0aGoogle.%20Kompanija%20vartotojui%20duoda%2015Gb%20naudotis%20nemokamai.%20I%c5%a1%20j%c5%b3%2c%20nuotraukos%20ir%0avideo%20pas%20mane%20sudar%c4%97%20iki%209Gb.%20Kas%20nustebino%2c%20kad%20parsisi%c5%b3sti%20archyvai%20u%c5%be%c4%97m%c4%97%0anet%2059Gb%21%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&t=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-11-11%2f&t=Google%20Photos%20archyvo%20parsisiuntimas%20ir%20tvarkymas" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -371,13 +362,15 @@ rasti įrankiai ir bash žinios labai pagelbėjo.</p>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -411,6 +404,9 @@ rasti įrankiai ir bash žinios labai pagelbėjo.</p>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

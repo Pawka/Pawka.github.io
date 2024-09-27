@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Bikepacking: Maistas 3 dienų kelionei | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2020-09-13/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -23,16 +29,12 @@ Orientuojuosi į užimamą vietą ir greitą gaminimą. Neimsiu katiliuko, o ši
     <meta property="article:tag" content="Kelione">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Bikepacking: Maistas 3 dienų kelionei">
-  <meta name="twitter:description" content=":bikepacking: :kelione:
-Rengiamės tryse į pirmąją man bickepacking’o kelionę. Kelionė rudeninė, orai bus kiek šaltesni. Trys dienos, dvi nakvynės, nakvosim prie ežero, po tentu.. Parduotuvių aplink daug nesitikime, tad pagrinde visą maistą pusryčiams ir vakarienei vešiuosi pats. Gal pietus pavyks kur nors pavalgyt, bet būsiu pasiruošęs ir jei nepavyks. Kadangi dar neteko taip keliauti, mano maisto paskaičiavime gali būti klaidų.
-Orientuojuosi į užimamą vietą ir greitą gaminimą. Neimsiu katiliuko, o šiltą maistą gaminsiu užpildamas karštu vandeniu. Ryte prieš išvykdamas planuoju suvalgyti apie 500-800 kalorijų. Tai maždaug vienas šiltas patiekalas ir koks nors užkandis. Važiuodamas dieną - užkąsti kas valandą, o prieš užmiegant apie 1000 kalorijų.">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -45,13 +47,14 @@ Orientuojuosi į užimamą vietą ir greitą gaminimą. Neimsiu katiliuko, o ši
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -69,25 +72,25 @@ Orientuojuosi į užimamą vietą ir greitą gaminimą. Neimsiu katiliuko, o ši
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-09-07/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-09-07/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-10-06/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-10-06/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -107,63 +110,54 @@ Orientuojuosi į užimamą vietą ir greitą gaminimą. Neimsiu katiliuko, o ši
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&text=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&text=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&is_video=false&description=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&is_video=false&description=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f">
+    <a class="icon" href="mailto:?subject=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&name=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei&description=%3cp%3e%3abikepacking%3a%20%3akelione%3a%3c%2fp%3e%0a%3cp%3eRengiam%c4%97s%20tryse%20%c4%af%20pirm%c4%85j%c4%85%20man%20bickepacking%26rsquo%3bo%20kelion%c4%99.%20Kelion%c4%97%20rudenin%c4%97%2c%20orai%20bus%0akiek%20%c5%a1altesni.%20Trys%20dienos%2c%20dvi%20nakvyn%c4%97s%2c%20nakvosim%20prie%20e%c5%beero%2c%20po%20tentu..%0aParduotuvi%c5%b3%20aplink%20daug%20nesitikime%2c%20tad%20pagrinde%20vis%c4%85%20maist%c4%85%20pusry%c4%8diams%20ir%0avakarienei%20ve%c5%a1iuosi%20pats.%20Gal%20pietus%20pavyks%20kur%20nors%20pavalgyt%2c%20bet%20b%c5%absiu%0apasiruo%c5%a1%c4%99s%20ir%20jei%20nepavyks.%20Kadangi%20dar%20neteko%20taip%20keliauti%2c%20mano%20maisto%0apaskai%c4%8diavime%20gali%20b%c5%abti%20klaid%c5%b3.%3c%2fp%3e%0a%3cp%3eOrientuojuosi%20%c4%af%20u%c5%beimam%c4%85%20viet%c4%85%20ir%20greit%c4%85%20gaminim%c4%85.%20Neimsiu%20katiliuko%2c%20o%20%c5%a1ilt%c4%85%0amaist%c4%85%20gaminsiu%20u%c5%bepildamas%20kar%c5%a1tu%20vandeniu.%20Ryte%20prie%c5%a1%20i%c5%a1vykdamas%20planuoju%0asuvalgyti%20apie%20500-800%20kalorij%c5%b3.%20Tai%20ma%c5%bedaug%20vienas%20%c5%a1iltas%20patiekalas%20ir%20koks%0anors%20u%c5%bekandis.%20Va%c5%beiuodamas%20dien%c4%85%20-%20u%c5%bek%c4%85sti%20kas%20valand%c4%85%2c%20o%20prie%c5%a1%20u%c5%bemiegant%20apie%0a1000%20kalorij%c5%b3.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&name=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei&description=%3cp%3e%3abikepacking%3a%20%3akelione%3a%3c%2fp%3e%0a%3cp%3eRengiam%c4%97s%20tryse%20%c4%af%20pirm%c4%85j%c4%85%20man%20bickepacking%26rsquo%3bo%20kelion%c4%99.%20Kelion%c4%97%20rudenin%c4%97%2c%20orai%20bus%0akiek%20%c5%a1altesni.%20Trys%20dienos%2c%20dvi%20nakvyn%c4%97s%2c%20nakvosim%20prie%20e%c5%beero%2c%20po%20tentu..%0aParduotuvi%c5%b3%20aplink%20daug%20nesitikime%2c%20tad%20pagrinde%20vis%c4%85%20maist%c4%85%20pusry%c4%8diams%20ir%0avakarienei%20ve%c5%a1iuosi%20pats.%20Gal%20pietus%20pavyks%20kur%20nors%20pavalgyt%2c%20bet%20b%c5%absiu%0apasiruo%c5%a1%c4%99s%20ir%20jei%20nepavyks.%20Kadangi%20dar%20neteko%20taip%20keliauti%2c%20mano%20maisto%0apaskai%c4%8diavime%20gali%20b%c5%abti%20klaid%c5%b3.%3c%2fp%3e%0a%3cp%3eOrientuojuosi%20%c4%af%20u%c5%beimam%c4%85%20viet%c4%85%20ir%20greit%c4%85%20gaminim%c4%85.%20Neimsiu%20katiliuko%2c%20o%20%c5%a1ilt%c4%85%0amaist%c4%85%20gaminsiu%20u%c5%bepildamas%20kar%c5%a1tu%20vandeniu.%20Ryte%20prie%c5%a1%20i%c5%a1vykdamas%20planuoju%0asuvalgyti%20apie%20500-800%20kalorij%c5%b3.%20Tai%20ma%c5%bedaug%20vienas%20%c5%a1iltas%20patiekalas%20ir%20koks%0anors%20u%c5%bekandis.%20Va%c5%beiuodamas%20dien%c4%85%20-%20u%c5%bek%c4%85sti%20kas%20valand%c4%85%2c%20o%20prie%c5%a1%20u%c5%bemiegant%20apie%0a1000%20kalorij%c5%b3.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&t=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&t=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
@@ -174,6 +168,7 @@ Orientuojuosi į užimamą vietą ir greitą gaminimą. Neimsiu katiliuko, o ši
   </ul>
 </nav>
     </div>
+    
   </span>
 </div>
 
@@ -192,21 +187,24 @@ Orientuojuosi į užimamą vietą ir greitą gaminimą. Neimsiu katiliuko, o ši
         </div>
         
         
+        
+        
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             
             
             <a class="tag-link" href="/tags/bikepacking" rel="tag">bikepacking</a>
             
-            
+             ,  
             <a class="tag-link" href="/tags/kelione" rel="tag">kelione</a>
             
-        </div> 
+        </div>
         
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>:bikepacking: :kelione:</p>
 <p>Rengiamės tryse į pirmąją man bickepacking&rsquo;o kelionę. Kelionė rudeninė, orai bus
@@ -281,6 +279,7 @@ vaisių (necukruotų) ir kokių m&amp;ms.</p>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -296,6 +295,7 @@ vaisių (necukruotų) ir kokių m&amp;ms.</p>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
@@ -306,6 +306,7 @@ vaisių (necukruotų) ir kokių m&amp;ms.</p>
   </ul>
 </nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -316,57 +317,47 @@ vaisių (necukruotų) ir kokių m&amp;ms.</p>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&text=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&text=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&is_video=false&description=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&is_video=false&description=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f">
+    <a class="icon" href="mailto:?subject=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&title=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&name=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei&description=%3cp%3e%3abikepacking%3a%20%3akelione%3a%3c%2fp%3e%0a%3cp%3eRengiam%c4%97s%20tryse%20%c4%af%20pirm%c4%85j%c4%85%20man%20bickepacking%26rsquo%3bo%20kelion%c4%99.%20Kelion%c4%97%20rudenin%c4%97%2c%20orai%20bus%0akiek%20%c5%a1altesni.%20Trys%20dienos%2c%20dvi%20nakvyn%c4%97s%2c%20nakvosim%20prie%20e%c5%beero%2c%20po%20tentu..%0aParduotuvi%c5%b3%20aplink%20daug%20nesitikime%2c%20tad%20pagrinde%20vis%c4%85%20maist%c4%85%20pusry%c4%8diams%20ir%0avakarienei%20ve%c5%a1iuosi%20pats.%20Gal%20pietus%20pavyks%20kur%20nors%20pavalgyt%2c%20bet%20b%c5%absiu%0apasiruo%c5%a1%c4%99s%20ir%20jei%20nepavyks.%20Kadangi%20dar%20neteko%20taip%20keliauti%2c%20mano%20maisto%0apaskai%c4%8diavime%20gali%20b%c5%abti%20klaid%c5%b3.%3c%2fp%3e%0a%3cp%3eOrientuojuosi%20%c4%af%20u%c5%beimam%c4%85%20viet%c4%85%20ir%20greit%c4%85%20gaminim%c4%85.%20Neimsiu%20katiliuko%2c%20o%20%c5%a1ilt%c4%85%0amaist%c4%85%20gaminsiu%20u%c5%bepildamas%20kar%c5%a1tu%20vandeniu.%20Ryte%20prie%c5%a1%20i%c5%a1vykdamas%20planuoju%0asuvalgyti%20apie%20500-800%20kalorij%c5%b3.%20Tai%20ma%c5%bedaug%20vienas%20%c5%a1iltas%20patiekalas%20ir%20koks%0anors%20u%c5%bekandis.%20Va%c5%beiuodamas%20dien%c4%85%20-%20u%c5%bek%c4%85sti%20kas%20valand%c4%85%2c%20o%20prie%c5%a1%20u%c5%bemiegant%20apie%0a1000%20kalorij%c5%b3.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&name=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei&description=%3cp%3e%3abikepacking%3a%20%3akelione%3a%3c%2fp%3e%0a%3cp%3eRengiam%c4%97s%20tryse%20%c4%af%20pirm%c4%85j%c4%85%20man%20bickepacking%26rsquo%3bo%20kelion%c4%99.%20Kelion%c4%97%20rudenin%c4%97%2c%20orai%20bus%0akiek%20%c5%a1altesni.%20Trys%20dienos%2c%20dvi%20nakvyn%c4%97s%2c%20nakvosim%20prie%20e%c5%beero%2c%20po%20tentu..%0aParduotuvi%c5%b3%20aplink%20daug%20nesitikime%2c%20tad%20pagrinde%20vis%c4%85%20maist%c4%85%20pusry%c4%8diams%20ir%0avakarienei%20ve%c5%a1iuosi%20pats.%20Gal%20pietus%20pavyks%20kur%20nors%20pavalgyt%2c%20bet%20b%c5%absiu%0apasiruo%c5%a1%c4%99s%20ir%20jei%20nepavyks.%20Kadangi%20dar%20neteko%20taip%20keliauti%2c%20mano%20maisto%0apaskai%c4%8diavime%20gali%20b%c5%abti%20klaid%c5%b3.%3c%2fp%3e%0a%3cp%3eOrientuojuosi%20%c4%af%20u%c5%beimam%c4%85%20viet%c4%85%20ir%20greit%c4%85%20gaminim%c4%85.%20Neimsiu%20katiliuko%2c%20o%20%c5%a1ilt%c4%85%0amaist%c4%85%20gaminsiu%20u%c5%bepildamas%20kar%c5%a1tu%20vandeniu.%20Ryte%20prie%c5%a1%20i%c5%a1vykdamas%20planuoju%0asuvalgyti%20apie%20500-800%20kalorij%c5%b3.%20Tai%20ma%c5%bedaug%20vienas%20%c5%a1iltas%20patiekalas%20ir%20koks%0anors%20u%c5%bekandis.%20Va%c5%beiuodamas%20dien%c4%85%20-%20u%c5%bek%c4%85sti%20kas%20valand%c4%85%2c%20o%20prie%c5%a1%20u%c5%bemiegant%20apie%0a1000%20kalorij%c5%b3.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&t=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-13%2f&t=Bikepacking%3a%20Maistas%203%20dien%c5%b3%20kelionei" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -376,13 +367,15 @@ vaisių (necukruotų) ir kokių m&amp;ms.</p>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -416,6 +409,9 @@ vaisių (necukruotų) ir kokių m&amp;ms.</p>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

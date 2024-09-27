@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Alaus Virimas: Nelson Seuvin IPA | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2020-10-18/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -21,15 +27,12 @@ Pasiruošimas: Traiškyti stambiau nei 0.41. Nes tekinant buvo susidarę kanalai
     <meta property="article:tag" content="Homebrewing">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Alaus Virimas: Nelson Seuvin IPA">
-  <meta name="twitter:description" content=":homebrewing:
-Pasiruošimas: Traiškyti stambiau nei 0.41. Nes tekinant buvo susidarę kanalai, kuriais tekėjo mentalas. O vietomis jis nepratekėdavo. Procesas Traiškiau 0.45 stambumu. Salinimo metu pirma supyliau vandenį ir tada bėriau salyklą. Visas salyklas sudrėko iškart. Taip gal ir geriau, nes nereikia ilgai maišyti ir temperatūra labai nenukrenta. Thermoworks ir kitas probinis termometas rodo 5 laipsnių paklaidą. Po tekinimo liko apie 2 litrus salinimo inde. Fermentavimosi temperatūra kiek aukštoka 20 laipsniai. Aktyvios fermentacijos metu buvo pasiekta 22 laipsniai. Kas pavyko Efektyvumas 72% Geras traiškymo stambumas - tekinimo metu nesimatė miltų, o ir efektyvumas geras. Ateityje traiškyti tokiu pat stambumu. Ateičiai Susikalibruoti thermoworks termometrą. Reiks pasiruošti ledukų. Salinimui pirma pilti vandenį į šaldytuvą, o paskui į jį salyklą. Mažiau vandens salinimui. Gal reik panaikint nuostolius brewersfriends įrangos nustatymuose. ">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -42,13 +45,14 @@ Pasiruošimas: Traiškyti stambiau nei 0.41. Nes tekinant buvo susidarę kanalai
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -66,25 +70,25 @@ Pasiruošimas: Traiškyti stambiau nei 0.41. Nes tekinant buvo susidarę kanalai
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-10-06/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-10-06/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-10-28/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-10-28/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -104,63 +108,54 @@ Pasiruošimas: Traiškyti stambiau nei 0.41. Nes tekinant buvo susidarę kanalai
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&text=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&text=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&is_video=false&description=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&is_video=false&description=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f">
+    <a class="icon" href="mailto:?subject=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&name=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA&description=%3cp%3e%3ahomebrewing%3a%3c%2fp%3e%0a%3ch2%20id%3d%22pasiruo%c5%a1imas%22%3ePasiruo%c5%a1imas%3a%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3e%3cinput%20checked%3d%22%22%20disabled%3d%22%22%20type%3d%22checkbox%22%3e%20Trai%c5%a1kyti%20stambiau%20nei%200.41.%20Nes%20tekinant%20buvo%20susidar%c4%99%20kanalai%2c%20kuriais%0atek%c4%97jo%20mentalas.%20O%20vietomis%20jis%20nepratek%c4%97davo.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22procesas%22%3eProcesas%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eTrai%c5%a1kiau%200.45%20stambumu.%3c%2fli%3e%0a%3cli%3eSalinimo%20metu%20pirma%20supyliau%20vanden%c4%af%20ir%20tada%20b%c4%97riau%20salykl%c4%85.%20Visas%20salyklas%0asudr%c4%97ko%20i%c5%a1kart.%20Taip%20gal%20ir%20geriau%2c%20nes%20nereikia%20ilgai%20mai%c5%a1yti%20ir%20temperat%c5%abra%0alabai%20nenukrenta.%3c%2fli%3e%0a%3cli%3eThermoworks%20ir%20kitas%20probinis%20termometas%20rodo%205%20laipsni%c5%b3%20paklaid%c4%85.%3c%2fli%3e%0a%3cli%3ePo%20tekinimo%20liko%20apie%202%20litrus%20salinimo%20inde.%3c%2fli%3e%0a%3cli%3eFermentavimosi%20temperat%c5%abra%20kiek%20auk%c5%a1toka%2020%20laipsniai.%20Aktyvios%20fermentacijos%0ametu%20buvo%20pasiekta%2022%20laipsniai.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22kas-pavyko%22%3eKas%20pavyko%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eEfektyvumas%2072%25%3c%2fli%3e%0a%3cli%3eGeras%20trai%c5%a1kymo%20stambumas%20-%20tekinimo%20metu%20nesimat%c4%97%20milt%c5%b3%2c%20o%20ir%20efektyvumas%0ageras.%20Ateityje%20trai%c5%a1kyti%20tokiu%20pat%20stambumu.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22atei%c4%8diai%22%3eAtei%c4%8diai%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eSusikalibruoti%20thermoworks%20termometr%c4%85.%20Reiks%20pasiruo%c5%a1ti%20leduk%c5%b3.%3c%2fli%3e%0a%3cli%3eSalinimui%20pirma%20pilti%20vanden%c4%af%20%c4%af%20%c5%a1aldytuv%c4%85%2c%20o%20paskui%20%c4%af%20j%c4%af%20salykl%c4%85.%3c%2fli%3e%0a%3cli%3eMa%c5%beiau%20vandens%20salinimui.%20Gal%20reik%20panaikint%20nuostolius%20brewersfriends%20%c4%afrangos%0anustatymuose.%3c%2fli%3e%0a%3c%2ful%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&name=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA&description=%3cp%3e%3ahomebrewing%3a%3c%2fp%3e%0a%3ch2%20id%3d%22pasiruo%c5%a1imas%22%3ePasiruo%c5%a1imas%3a%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3e%3cinput%20checked%3d%22%22%20disabled%3d%22%22%20type%3d%22checkbox%22%3e%20Trai%c5%a1kyti%20stambiau%20nei%200.41.%20Nes%20tekinant%20buvo%20susidar%c4%99%20kanalai%2c%20kuriais%0atek%c4%97jo%20mentalas.%20O%20vietomis%20jis%20nepratek%c4%97davo.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22procesas%22%3eProcesas%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eTrai%c5%a1kiau%200.45%20stambumu.%3c%2fli%3e%0a%3cli%3eSalinimo%20metu%20pirma%20supyliau%20vanden%c4%af%20ir%20tada%20b%c4%97riau%20salykl%c4%85.%20Visas%20salyklas%0asudr%c4%97ko%20i%c5%a1kart.%20Taip%20gal%20ir%20geriau%2c%20nes%20nereikia%20ilgai%20mai%c5%a1yti%20ir%20temperat%c5%abra%0alabai%20nenukrenta.%3c%2fli%3e%0a%3cli%3eThermoworks%20ir%20kitas%20probinis%20termometas%20rodo%205%20laipsni%c5%b3%20paklaid%c4%85.%3c%2fli%3e%0a%3cli%3ePo%20tekinimo%20liko%20apie%202%20litrus%20salinimo%20inde.%3c%2fli%3e%0a%3cli%3eFermentavimosi%20temperat%c5%abra%20kiek%20auk%c5%a1toka%2020%20laipsniai.%20Aktyvios%20fermentacijos%0ametu%20buvo%20pasiekta%2022%20laipsniai.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22kas-pavyko%22%3eKas%20pavyko%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eEfektyvumas%2072%25%3c%2fli%3e%0a%3cli%3eGeras%20trai%c5%a1kymo%20stambumas%20-%20tekinimo%20metu%20nesimat%c4%97%20milt%c5%b3%2c%20o%20ir%20efektyvumas%0ageras.%20Ateityje%20trai%c5%a1kyti%20tokiu%20pat%20stambumu.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22atei%c4%8diai%22%3eAtei%c4%8diai%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eSusikalibruoti%20thermoworks%20termometr%c4%85.%20Reiks%20pasiruo%c5%a1ti%20leduk%c5%b3.%3c%2fli%3e%0a%3cli%3eSalinimui%20pirma%20pilti%20vanden%c4%af%20%c4%af%20%c5%a1aldytuv%c4%85%2c%20o%20paskui%20%c4%af%20j%c4%af%20salykl%c4%85.%3c%2fli%3e%0a%3cli%3eMa%c5%beiau%20vandens%20salinimui.%20Gal%20reik%20panaikint%20nuostolius%20brewersfriends%20%c4%afrangos%0anustatymuose.%3c%2fli%3e%0a%3c%2ful%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&t=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&t=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
@@ -171,6 +166,7 @@ Pasiruošimas: Traiškyti stambiau nei 0.41. Nes tekinant buvo susidarę kanalai
   </ul>
 </nav>
     </div>
+    
   </span>
 </div>
 
@@ -189,18 +185,21 @@ Pasiruošimas: Traiškyti stambiau nei 0.41. Nes tekinant buvo susidarę kanalai
         </div>
         
         
+        
+        
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             
             
             <a class="tag-link" href="/tags/homebrewing" rel="tag">homebrewing</a>
             
-        </div> 
+        </div>
         
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>:homebrewing:</p>
 <h2 id="pasiruošimas">Pasiruošimas:</h2>
@@ -243,6 +242,7 @@ nustatymuose.</li>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -258,6 +258,7 @@ nustatymuose.</li>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
@@ -268,6 +269,7 @@ nustatymuose.</li>
   </ul>
 </nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -278,57 +280,47 @@ nustatymuose.</li>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&text=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&text=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&is_video=false&description=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&is_video=false&description=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f">
+    <a class="icon" href="mailto:?subject=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&title=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&name=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA&description=%3cp%3e%3ahomebrewing%3a%3c%2fp%3e%0a%3ch2%20id%3d%22pasiruo%c5%a1imas%22%3ePasiruo%c5%a1imas%3a%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3e%3cinput%20checked%3d%22%22%20disabled%3d%22%22%20type%3d%22checkbox%22%3e%20Trai%c5%a1kyti%20stambiau%20nei%200.41.%20Nes%20tekinant%20buvo%20susidar%c4%99%20kanalai%2c%20kuriais%0atek%c4%97jo%20mentalas.%20O%20vietomis%20jis%20nepratek%c4%97davo.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22procesas%22%3eProcesas%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eTrai%c5%a1kiau%200.45%20stambumu.%3c%2fli%3e%0a%3cli%3eSalinimo%20metu%20pirma%20supyliau%20vanden%c4%af%20ir%20tada%20b%c4%97riau%20salykl%c4%85.%20Visas%20salyklas%0asudr%c4%97ko%20i%c5%a1kart.%20Taip%20gal%20ir%20geriau%2c%20nes%20nereikia%20ilgai%20mai%c5%a1yti%20ir%20temperat%c5%abra%0alabai%20nenukrenta.%3c%2fli%3e%0a%3cli%3eThermoworks%20ir%20kitas%20probinis%20termometas%20rodo%205%20laipsni%c5%b3%20paklaid%c4%85.%3c%2fli%3e%0a%3cli%3ePo%20tekinimo%20liko%20apie%202%20litrus%20salinimo%20inde.%3c%2fli%3e%0a%3cli%3eFermentavimosi%20temperat%c5%abra%20kiek%20auk%c5%a1toka%2020%20laipsniai.%20Aktyvios%20fermentacijos%0ametu%20buvo%20pasiekta%2022%20laipsniai.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22kas-pavyko%22%3eKas%20pavyko%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eEfektyvumas%2072%25%3c%2fli%3e%0a%3cli%3eGeras%20trai%c5%a1kymo%20stambumas%20-%20tekinimo%20metu%20nesimat%c4%97%20milt%c5%b3%2c%20o%20ir%20efektyvumas%0ageras.%20Ateityje%20trai%c5%a1kyti%20tokiu%20pat%20stambumu.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22atei%c4%8diai%22%3eAtei%c4%8diai%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eSusikalibruoti%20thermoworks%20termometr%c4%85.%20Reiks%20pasiruo%c5%a1ti%20leduk%c5%b3.%3c%2fli%3e%0a%3cli%3eSalinimui%20pirma%20pilti%20vanden%c4%af%20%c4%af%20%c5%a1aldytuv%c4%85%2c%20o%20paskui%20%c4%af%20j%c4%af%20salykl%c4%85.%3c%2fli%3e%0a%3cli%3eMa%c5%beiau%20vandens%20salinimui.%20Gal%20reik%20panaikint%20nuostolius%20brewersfriends%20%c4%afrangos%0anustatymuose.%3c%2fli%3e%0a%3c%2ful%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&name=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA&description=%3cp%3e%3ahomebrewing%3a%3c%2fp%3e%0a%3ch2%20id%3d%22pasiruo%c5%a1imas%22%3ePasiruo%c5%a1imas%3a%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3e%3cinput%20checked%3d%22%22%20disabled%3d%22%22%20type%3d%22checkbox%22%3e%20Trai%c5%a1kyti%20stambiau%20nei%200.41.%20Nes%20tekinant%20buvo%20susidar%c4%99%20kanalai%2c%20kuriais%0atek%c4%97jo%20mentalas.%20O%20vietomis%20jis%20nepratek%c4%97davo.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22procesas%22%3eProcesas%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eTrai%c5%a1kiau%200.45%20stambumu.%3c%2fli%3e%0a%3cli%3eSalinimo%20metu%20pirma%20supyliau%20vanden%c4%af%20ir%20tada%20b%c4%97riau%20salykl%c4%85.%20Visas%20salyklas%0asudr%c4%97ko%20i%c5%a1kart.%20Taip%20gal%20ir%20geriau%2c%20nes%20nereikia%20ilgai%20mai%c5%a1yti%20ir%20temperat%c5%abra%0alabai%20nenukrenta.%3c%2fli%3e%0a%3cli%3eThermoworks%20ir%20kitas%20probinis%20termometas%20rodo%205%20laipsni%c5%b3%20paklaid%c4%85.%3c%2fli%3e%0a%3cli%3ePo%20tekinimo%20liko%20apie%202%20litrus%20salinimo%20inde.%3c%2fli%3e%0a%3cli%3eFermentavimosi%20temperat%c5%abra%20kiek%20auk%c5%a1toka%2020%20laipsniai.%20Aktyvios%20fermentacijos%0ametu%20buvo%20pasiekta%2022%20laipsniai.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22kas-pavyko%22%3eKas%20pavyko%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eEfektyvumas%2072%25%3c%2fli%3e%0a%3cli%3eGeras%20trai%c5%a1kymo%20stambumas%20-%20tekinimo%20metu%20nesimat%c4%97%20milt%c5%b3%2c%20o%20ir%20efektyvumas%0ageras.%20Ateityje%20trai%c5%a1kyti%20tokiu%20pat%20stambumu.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22atei%c4%8diai%22%3eAtei%c4%8diai%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eSusikalibruoti%20thermoworks%20termometr%c4%85.%20Reiks%20pasiruo%c5%a1ti%20leduk%c5%b3.%3c%2fli%3e%0a%3cli%3eSalinimui%20pirma%20pilti%20vanden%c4%af%20%c4%af%20%c5%a1aldytuv%c4%85%2c%20o%20paskui%20%c4%af%20j%c4%af%20salykl%c4%85.%3c%2fli%3e%0a%3cli%3eMa%c5%beiau%20vandens%20salinimui.%20Gal%20reik%20panaikint%20nuostolius%20brewersfriends%20%c4%afrangos%0anustatymuose.%3c%2fli%3e%0a%3c%2ful%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&t=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-18%2f&t=Alaus%20Virimas%3a%20Nelson%20Seuvin%20IPA" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -338,13 +330,15 @@ nustatymuose.</li>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -378,6 +372,9 @@ nustatymuose.</li>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

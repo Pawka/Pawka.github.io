@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> OpenSimplex triukšmas ir žemėlapių generavimas | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2023-03-18/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -24,16 +30,12 @@ Pirmas mano sugeneruotas žemėlapis buvo rougelike žaidimui, kurį gaminau pag
     <meta property="article:tag" content="Generative">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="OpenSimplex triukšmas ir žemėlapių generavimas">
-  <meta name="twitter:description" content=":programavimas: :maps: :generative:
-Mane žavi generuojamų dalykų programavimas. Dalykų tokių kaip muzika, piešiniai, žemėlapiai, ir pan. Šioje srityje neturiu beveik jokios patirties, tad gal todėl man tokie darbai atrodo apgaubti mistikos aura. Ir čia nekalbu apie linijas, pribraižytas tarp atsitiktinių skaičių generatoriaus išdėliotų taškų. Labiau apie tokius, kaip pvz. Here Dragons Abound autoriaus generuojami žemėlapiai.
-Pirmas mano sugeneruotas žemėlapis buvo rougelike žaidimui, kurį gaminau pagal Rougelike Tutotrial in Rust. Šis žemėlapis labai paprastas - kambariai ir tuneliai požemyje. Principas maždaug toks:">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -46,13 +48,14 @@ Pirmas mano sugeneruotas žemėlapis buvo rougelike žaidimui, kurį gaminau pag
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -70,25 +73,25 @@ Pirmas mano sugeneruotas žemėlapis buvo rougelike žaidimui, kurį gaminau pag
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2023-03-03/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2023-03-03/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2023-03-31/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2023-03-31/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -108,63 +111,54 @@ Pirmas mano sugeneruotas žemėlapis buvo rougelike žaidimui, kurį gaminau pag
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&text=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&text=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&is_video=false&description=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&is_video=false&description=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f">
+    <a class="icon" href="mailto:?subject=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&name=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas&description=%3cp%3e%3aprogramavimas%3a%20%3amaps%3a%20%3agenerative%3a%3c%2fp%3e%0a%3cp%3eMane%20%c5%beavi%20generuojam%c5%b3%20dalyk%c5%b3%20programavimas.%20Dalyk%c5%b3%20toki%c5%b3%20kaip%20muzika%2c%20pie%c5%a1iniai%2c%0a%c5%beem%c4%97lapiai%2c%20ir%20pan.%20%c5%a0ioje%20srityje%20neturiu%20beveik%20jokios%20patirties%2c%20tad%20gal%20tod%c4%97l%0aman%20tokie%20darbai%20atrodo%20apgaubti%20mistikos%20aura.%20Ir%20%c4%8dia%20nekalbu%20apie%20linijas%2c%0apribrai%c5%beytas%20tarp%20atsitiktini%c5%b3%20skai%c4%8di%c5%b3%20generatoriaus%20i%c5%a1d%c4%97liot%c5%b3%20ta%c5%a1k%c5%b3.%20Labiau%0aapie%20tokius%2c%20kaip%20pvz.%20%3ca%20href%3d%22https%3a%2f%2fheredragonsabound.blogspot.com%2f%22%3eHere%20Dragons%20Abound%3c%2fa%3e%20autoriaus%20generuojami%0a%c5%beem%c4%97lapiai.%3c%2fp%3e%0a%3cp%3ePirmas%20mano%20sugeneruotas%20%c5%beem%c4%97lapis%20buvo%20rougelike%20%c5%beaidimui%2c%20kur%c4%af%20gaminau%20pagal%0a%3ca%20href%3d%22https%3a%2f%2fbfnightly.bracketproductions.com%2fchapter_4.html%22%3eRougelike%20Tutotrial%20in%20Rust%3c%2fa%3e.%20%c5%a0is%20%c5%beem%c4%97lapis%20labai%20paprastas%20-%20kambariai%20ir%0atuneliai%20po%c5%beemyje.%20Principas%20ma%c5%bedaug%20toks%3a%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&name=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas&description=%3cp%3e%3aprogramavimas%3a%20%3amaps%3a%20%3agenerative%3a%3c%2fp%3e%0a%3cp%3eMane%20%c5%beavi%20generuojam%c5%b3%20dalyk%c5%b3%20programavimas.%20Dalyk%c5%b3%20toki%c5%b3%20kaip%20muzika%2c%20pie%c5%a1iniai%2c%0a%c5%beem%c4%97lapiai%2c%20ir%20pan.%20%c5%a0ioje%20srityje%20neturiu%20beveik%20jokios%20patirties%2c%20tad%20gal%20tod%c4%97l%0aman%20tokie%20darbai%20atrodo%20apgaubti%20mistikos%20aura.%20Ir%20%c4%8dia%20nekalbu%20apie%20linijas%2c%0apribrai%c5%beytas%20tarp%20atsitiktini%c5%b3%20skai%c4%8di%c5%b3%20generatoriaus%20i%c5%a1d%c4%97liot%c5%b3%20ta%c5%a1k%c5%b3.%20Labiau%0aapie%20tokius%2c%20kaip%20pvz.%20%3ca%20href%3d%22https%3a%2f%2fheredragonsabound.blogspot.com%2f%22%3eHere%20Dragons%20Abound%3c%2fa%3e%20autoriaus%20generuojami%0a%c5%beem%c4%97lapiai.%3c%2fp%3e%0a%3cp%3ePirmas%20mano%20sugeneruotas%20%c5%beem%c4%97lapis%20buvo%20rougelike%20%c5%beaidimui%2c%20kur%c4%af%20gaminau%20pagal%0a%3ca%20href%3d%22https%3a%2f%2fbfnightly.bracketproductions.com%2fchapter_4.html%22%3eRougelike%20Tutotrial%20in%20Rust%3c%2fa%3e.%20%c5%a0is%20%c5%beem%c4%97lapis%20labai%20paprastas%20-%20kambariai%20ir%0atuneliai%20po%c5%beemyje.%20Principas%20ma%c5%bedaug%20toks%3a%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&t=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&t=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
@@ -174,6 +168,7 @@ Pirmas mano sugeneruotas žemėlapis buvo rougelike žaidimui, kurį gaminau pag
   </ul>
 </nav>
     </div>
+    
   </span>
 </div>
 
@@ -192,24 +187,27 @@ Pirmas mano sugeneruotas žemėlapis buvo rougelike žaidimui, kurį gaminau pag
         </div>
         
         
+        
+        
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             
             
             <a class="tag-link" href="/tags/programavimas" rel="tag">programavimas</a>
             
-            
+             ,  
             <a class="tag-link" href="/tags/maps" rel="tag">maps</a>
             
              ,  
             <a class="tag-link" href="/tags/generative" rel="tag">generative</a>
             
-        </div> 
+        </div>
         
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>:programavimas: :maps: :generative:</p>
 <p>Mane žavi generuojamų dalykų programavimas. Dalykų tokių kaip muzika, piešiniai,
@@ -309,6 +307,7 @@ tinkamą biblioteką.</li>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -324,6 +323,7 @@ tinkamą biblioteką.</li>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
@@ -333,6 +333,7 @@ tinkamą biblioteką.</li>
   </ul>
 </nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -343,57 +344,47 @@ tinkamą biblioteką.</li>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&text=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&text=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&is_video=false&description=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&is_video=false&description=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f">
+    <a class="icon" href="mailto:?subject=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&title=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&name=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas&description=%3cp%3e%3aprogramavimas%3a%20%3amaps%3a%20%3agenerative%3a%3c%2fp%3e%0a%3cp%3eMane%20%c5%beavi%20generuojam%c5%b3%20dalyk%c5%b3%20programavimas.%20Dalyk%c5%b3%20toki%c5%b3%20kaip%20muzika%2c%20pie%c5%a1iniai%2c%0a%c5%beem%c4%97lapiai%2c%20ir%20pan.%20%c5%a0ioje%20srityje%20neturiu%20beveik%20jokios%20patirties%2c%20tad%20gal%20tod%c4%97l%0aman%20tokie%20darbai%20atrodo%20apgaubti%20mistikos%20aura.%20Ir%20%c4%8dia%20nekalbu%20apie%20linijas%2c%0apribrai%c5%beytas%20tarp%20atsitiktini%c5%b3%20skai%c4%8di%c5%b3%20generatoriaus%20i%c5%a1d%c4%97liot%c5%b3%20ta%c5%a1k%c5%b3.%20Labiau%0aapie%20tokius%2c%20kaip%20pvz.%20%3ca%20href%3d%22https%3a%2f%2fheredragonsabound.blogspot.com%2f%22%3eHere%20Dragons%20Abound%3c%2fa%3e%20autoriaus%20generuojami%0a%c5%beem%c4%97lapiai.%3c%2fp%3e%0a%3cp%3ePirmas%20mano%20sugeneruotas%20%c5%beem%c4%97lapis%20buvo%20rougelike%20%c5%beaidimui%2c%20kur%c4%af%20gaminau%20pagal%0a%3ca%20href%3d%22https%3a%2f%2fbfnightly.bracketproductions.com%2fchapter_4.html%22%3eRougelike%20Tutotrial%20in%20Rust%3c%2fa%3e.%20%c5%a0is%20%c5%beem%c4%97lapis%20labai%20paprastas%20-%20kambariai%20ir%0atuneliai%20po%c5%beemyje.%20Principas%20ma%c5%bedaug%20toks%3a%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&name=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas&description=%3cp%3e%3aprogramavimas%3a%20%3amaps%3a%20%3agenerative%3a%3c%2fp%3e%0a%3cp%3eMane%20%c5%beavi%20generuojam%c5%b3%20dalyk%c5%b3%20programavimas.%20Dalyk%c5%b3%20toki%c5%b3%20kaip%20muzika%2c%20pie%c5%a1iniai%2c%0a%c5%beem%c4%97lapiai%2c%20ir%20pan.%20%c5%a0ioje%20srityje%20neturiu%20beveik%20jokios%20patirties%2c%20tad%20gal%20tod%c4%97l%0aman%20tokie%20darbai%20atrodo%20apgaubti%20mistikos%20aura.%20Ir%20%c4%8dia%20nekalbu%20apie%20linijas%2c%0apribrai%c5%beytas%20tarp%20atsitiktini%c5%b3%20skai%c4%8di%c5%b3%20generatoriaus%20i%c5%a1d%c4%97liot%c5%b3%20ta%c5%a1k%c5%b3.%20Labiau%0aapie%20tokius%2c%20kaip%20pvz.%20%3ca%20href%3d%22https%3a%2f%2fheredragonsabound.blogspot.com%2f%22%3eHere%20Dragons%20Abound%3c%2fa%3e%20autoriaus%20generuojami%0a%c5%beem%c4%97lapiai.%3c%2fp%3e%0a%3cp%3ePirmas%20mano%20sugeneruotas%20%c5%beem%c4%97lapis%20buvo%20rougelike%20%c5%beaidimui%2c%20kur%c4%af%20gaminau%20pagal%0a%3ca%20href%3d%22https%3a%2f%2fbfnightly.bracketproductions.com%2fchapter_4.html%22%3eRougelike%20Tutotrial%20in%20Rust%3c%2fa%3e.%20%c5%a0is%20%c5%beem%c4%97lapis%20labai%20paprastas%20-%20kambariai%20ir%0atuneliai%20po%c5%beemyje.%20Principas%20ma%c5%bedaug%20toks%3a%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&t=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2023-03-18%2f&t=OpenSimplex%20triuk%c5%a1mas%20ir%20%c5%beem%c4%97lapi%c5%b3%20generavimas" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -403,13 +394,15 @@ tinkamą biblioteką.</li>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -443,6 +436,9 @@ tinkamą biblioteką.</li>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

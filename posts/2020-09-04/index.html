@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> TIL: column -t command to format output | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2020-09-04/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -25,18 +31,12 @@ pawka@kyloren &gt; cat file.txt | column -t aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2
     <meta property="article:tag" content="Cli">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="TIL: column -t command to format output">
-  <meta name="twitter:description" content=":til: :cli:
-column -t command can be used to pretty print output of files (e.g. database exports) by aligning columns nicely.
-Original content:
-pawka@kyloren &gt; cat file.txt aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2nx 6154 bb/bbbbbb PHID-REPO-bampn53k6a7zwzr76rez 3235 cccc/ccccc-cccc-ccccccccc PHID-REPO-scvhcxnrs4nyrzrs64jc 2433 ddd-dddd PHID-REPO-uexvk77yeovy63fhokqw 1269 eeeeee/eee PHID-REPO-hmdgak5gad4rxiter65h 1266 Formatted content:
-pawka@kyloren &gt; cat file.txt | column -t aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2nx 6154 bb/bbbbbb PHID-REPO-bampn53k6a7zwzr76rez 3235 cccc/ccccc-cccc-ccccccccc PHID-REPO-scvhcxnrs4nyrzrs64jc 2433 ddd-dddd PHID-REPO-uexvk77yeovy63fhokqw 1269 eeeeee/eee PHID-REPO-hmdgak5gad4rxiter65h 1266 `` ">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -49,13 +49,14 @@ pawka@kyloren &gt; cat file.txt | column -t aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -73,25 +74,25 @@ pawka@kyloren &gt; cat file.txt | column -t aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-08-31/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-08-31/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-09-07/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-09-07/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -111,66 +112,58 @@ pawka@kyloren &gt; cat file.txt | column -t aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&text=TIL%3a%20column%20-t%20command%20to%20format%20output">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&text=TIL%3a%20column%20-t%20command%20to%20format%20output" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&is_video=false&description=TIL%3a%20column%20-t%20command%20to%20format%20output">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&is_video=false&description=TIL%3a%20column%20-t%20command%20to%20format%20output" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=TIL%3a%20column%20-t%20command%20to%20format%20output&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f">
+    <a class="icon" href="mailto:?subject=TIL%3a%20column%20-t%20command%20to%20format%20output&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&name=TIL%3a%20column%20-t%20command%20to%20format%20output&description=%3cp%3e%3atil%3a%20%3acli%3a%3c%2fp%3e%0a%3cp%3e%3ccode%3ecolumn%20-t%3c%2fcode%3e%20command%20can%20be%20used%20to%20pretty%20print%20output%20of%20files%20%28e.g.%20database%0aexports%29%20by%20aligning%20columns%20nicely.%3c%2fp%3e%0a%3cp%3eOriginal%20content%3a%3c%2fp%3e%0a%3cpre%20tabindex%3d%220%22%3e%3ccode%3epawka%40kyloren%20%26gt%3b%20cat%20file.txt%0aaa-aaaa%20PHID-REPO-qb3mtuk2we6ivy7xw2nx%20%206154%0abb%2fbbbbbb%20%20%20%20%20%20%20PHID-REPO-bampn53k6a7zwzr76rez%20%203235%0acccc%2fccccc-cccc-ccccccccc%20%20%20%20%20%20%20PHID-REPO-scvhcxnrs4nyrzrs64jc%20%202433%0addd-dddd%20%20%20%20%20%20%20%20PHID-REPO-uexvk77yeovy63fhokqw%20%201269%0aeeeeee%2feee%20%20%20%20%20%20PHID-REPO-hmdgak5gad4rxiter65h%20%201266%0a%3c%2fcode%3e%3c%2fpre%3e%3cp%3eFormatted%20content%3a%3c%2fp%3e%0a%3cpre%20tabindex%3d%220%22%3e%3ccode%3epawka%40kyloren%20%26gt%3b%20cat%20file.txt%20%7c%20column%20-t%0aaa-aaaa%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-qb3mtuk2we6ivy7xw2nx%20%206154%0abb%2fbbbbbb%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-bampn53k6a7zwzr76rez%20%203235%0acccc%2fccccc-cccc-ccccccccc%20%20PHID-REPO-scvhcxnrs4nyrzrs64jc%20%202433%0addd-dddd%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-uexvk77yeovy63fhokqw%20%201269%0aeeeeee%2feee%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-hmdgak5gad4rxiter65h%20%201266%0a%60%60%0a%3c%2fcode%3e%3c%2fpre%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&name=TIL%3a%20column%20-t%20command%20to%20format%20output&description=%3cp%3e%3atil%3a%20%3acli%3a%3c%2fp%3e%0a%3cp%3e%3ccode%3ecolumn%20-t%3c%2fcode%3e%20command%20can%20be%20used%20to%20pretty%20print%20output%20of%20files%20%28e.g.%20database%0aexports%29%20by%20aligning%20columns%20nicely.%3c%2fp%3e%0a%3cp%3eOriginal%20content%3a%3c%2fp%3e%0a%3cpre%20tabindex%3d%220%22%3e%3ccode%3epawka%40kyloren%20%26gt%3b%20cat%20file.txt%0aaa-aaaa%20PHID-REPO-qb3mtuk2we6ivy7xw2nx%20%206154%0abb%2fbbbbbb%20%20%20%20%20%20%20PHID-REPO-bampn53k6a7zwzr76rez%20%203235%0acccc%2fccccc-cccc-ccccccccc%20%20%20%20%20%20%20PHID-REPO-scvhcxnrs4nyrzrs64jc%20%202433%0addd-dddd%20%20%20%20%20%20%20%20PHID-REPO-uexvk77yeovy63fhokqw%20%201269%0aeeeeee%2feee%20%20%20%20%20%20PHID-REPO-hmdgak5gad4rxiter65h%20%201266%0a%3c%2fcode%3e%3c%2fpre%3e%3cp%3eFormatted%20content%3a%3c%2fp%3e%0a%3cpre%20tabindex%3d%220%22%3e%3ccode%3epawka%40kyloren%20%26gt%3b%20cat%20file.txt%20%7c%20column%20-t%0aaa-aaaa%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-qb3mtuk2we6ivy7xw2nx%20%206154%0abb%2fbbbbbb%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-bampn53k6a7zwzr76rez%20%203235%0acccc%2fccccc-cccc-ccccccccc%20%20PHID-REPO-scvhcxnrs4nyrzrs64jc%20%202433%0addd-dddd%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-uexvk77yeovy63fhokqw%20%201269%0aeeeeee%2feee%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-hmdgak5gad4rxiter65h%20%201266%0a%60%60%0a%3c%2fcode%3e%3c%2fpre%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&t=TIL%3a%20column%20-t%20command%20to%20format%20output">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&t=TIL%3a%20column%20-t%20command%20to%20format%20output" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents"></nav>
     </div>
+    
   </span>
 </div>
 
@@ -189,21 +182,24 @@ pawka@kyloren &gt; cat file.txt | column -t aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2
         </div>
         
         
+        
+        
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             
             
             <a class="tag-link" href="/tags/til" rel="tag">til</a>
             
-            
+             ,  
             <a class="tag-link" href="/tags/cli" rel="tag">cli</a>
             
-        </div> 
+        </div>
         
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>:til: :cli:</p>
 <p><code>column -t</code> command can be used to pretty print output of files (e.g. database
@@ -234,6 +230,7 @@ eeeeee/eee                 PHID-REPO-hmdgak5gad4rxiter65h  1266
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -249,9 +246,11 @@ eeeeee/eee                 PHID-REPO-hmdgak5gad4rxiter65h  1266
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents"></nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -262,57 +261,47 @@ eeeeee/eee                 PHID-REPO-hmdgak5gad4rxiter65h  1266
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&text=TIL%3a%20column%20-t%20command%20to%20format%20output">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&text=TIL%3a%20column%20-t%20command%20to%20format%20output" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&is_video=false&description=TIL%3a%20column%20-t%20command%20to%20format%20output">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&is_video=false&description=TIL%3a%20column%20-t%20command%20to%20format%20output" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=TIL%3a%20column%20-t%20command%20to%20format%20output&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f">
+    <a class="icon" href="mailto:?subject=TIL%3a%20column%20-t%20command%20to%20format%20output&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&title=TIL%3a%20column%20-t%20command%20to%20format%20output">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&name=TIL%3a%20column%20-t%20command%20to%20format%20output&description=%3cp%3e%3atil%3a%20%3acli%3a%3c%2fp%3e%0a%3cp%3e%3ccode%3ecolumn%20-t%3c%2fcode%3e%20command%20can%20be%20used%20to%20pretty%20print%20output%20of%20files%20%28e.g.%20database%0aexports%29%20by%20aligning%20columns%20nicely.%3c%2fp%3e%0a%3cp%3eOriginal%20content%3a%3c%2fp%3e%0a%3cpre%20tabindex%3d%220%22%3e%3ccode%3epawka%40kyloren%20%26gt%3b%20cat%20file.txt%0aaa-aaaa%20PHID-REPO-qb3mtuk2we6ivy7xw2nx%20%206154%0abb%2fbbbbbb%20%20%20%20%20%20%20PHID-REPO-bampn53k6a7zwzr76rez%20%203235%0acccc%2fccccc-cccc-ccccccccc%20%20%20%20%20%20%20PHID-REPO-scvhcxnrs4nyrzrs64jc%20%202433%0addd-dddd%20%20%20%20%20%20%20%20PHID-REPO-uexvk77yeovy63fhokqw%20%201269%0aeeeeee%2feee%20%20%20%20%20%20PHID-REPO-hmdgak5gad4rxiter65h%20%201266%0a%3c%2fcode%3e%3c%2fpre%3e%3cp%3eFormatted%20content%3a%3c%2fp%3e%0a%3cpre%20tabindex%3d%220%22%3e%3ccode%3epawka%40kyloren%20%26gt%3b%20cat%20file.txt%20%7c%20column%20-t%0aaa-aaaa%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-qb3mtuk2we6ivy7xw2nx%20%206154%0abb%2fbbbbbb%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-bampn53k6a7zwzr76rez%20%203235%0acccc%2fccccc-cccc-ccccccccc%20%20PHID-REPO-scvhcxnrs4nyrzrs64jc%20%202433%0addd-dddd%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-uexvk77yeovy63fhokqw%20%201269%0aeeeeee%2feee%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-hmdgak5gad4rxiter65h%20%201266%0a%60%60%0a%3c%2fcode%3e%3c%2fpre%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&name=TIL%3a%20column%20-t%20command%20to%20format%20output&description=%3cp%3e%3atil%3a%20%3acli%3a%3c%2fp%3e%0a%3cp%3e%3ccode%3ecolumn%20-t%3c%2fcode%3e%20command%20can%20be%20used%20to%20pretty%20print%20output%20of%20files%20%28e.g.%20database%0aexports%29%20by%20aligning%20columns%20nicely.%3c%2fp%3e%0a%3cp%3eOriginal%20content%3a%3c%2fp%3e%0a%3cpre%20tabindex%3d%220%22%3e%3ccode%3epawka%40kyloren%20%26gt%3b%20cat%20file.txt%0aaa-aaaa%20PHID-REPO-qb3mtuk2we6ivy7xw2nx%20%206154%0abb%2fbbbbbb%20%20%20%20%20%20%20PHID-REPO-bampn53k6a7zwzr76rez%20%203235%0acccc%2fccccc-cccc-ccccccccc%20%20%20%20%20%20%20PHID-REPO-scvhcxnrs4nyrzrs64jc%20%202433%0addd-dddd%20%20%20%20%20%20%20%20PHID-REPO-uexvk77yeovy63fhokqw%20%201269%0aeeeeee%2feee%20%20%20%20%20%20PHID-REPO-hmdgak5gad4rxiter65h%20%201266%0a%3c%2fcode%3e%3c%2fpre%3e%3cp%3eFormatted%20content%3a%3c%2fp%3e%0a%3cpre%20tabindex%3d%220%22%3e%3ccode%3epawka%40kyloren%20%26gt%3b%20cat%20file.txt%20%7c%20column%20-t%0aaa-aaaa%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-qb3mtuk2we6ivy7xw2nx%20%206154%0abb%2fbbbbbb%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-bampn53k6a7zwzr76rez%20%203235%0acccc%2fccccc-cccc-ccccccccc%20%20PHID-REPO-scvhcxnrs4nyrzrs64jc%20%202433%0addd-dddd%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-uexvk77yeovy63fhokqw%20%201269%0aeeeeee%2feee%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PHID-REPO-hmdgak5gad4rxiter65h%20%201266%0a%60%60%0a%3c%2fcode%3e%3c%2fpre%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&t=TIL%3a%20column%20-t%20command%20to%20format%20output">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-09-04%2f&t=TIL%3a%20column%20-t%20command%20to%20format%20output" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -322,13 +311,15 @@ eeeeee/eee                 PHID-REPO-hmdgak5gad4rxiter65h  1266
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -362,6 +353,9 @@ eeeeee/eee                 PHID-REPO-hmdgak5gad4rxiter65h  1266
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Fosdem 2022 notes | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2022-02-05/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -22,15 +28,12 @@ This is the second time I’m participating online conference and both times are
     <meta property="article:tag" content="Konferencija">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Fosdem 2022 notes">
-  <meta name="twitter:description" content=":fosdem: :konferencija:
-This is the second time I’m participating online conference and both times are Fosdem. Below are my personal notes of Fosdem 2022. Some notes might not be completed which I was planning to do later. But it is possible the later never came. My personal scores are mostly based how much fun I’ve received from the talk. These do not reflect quality of presentations. Simply I might be to stupid to understand the content so I’d rate the talk as “not so much fun”.">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -43,13 +46,14 @@ This is the second time I’m participating online conference and both times are
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -67,25 +71,25 @@ This is the second time I’m participating online conference and both times are
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2022-01-24/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2022-01-24/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2022-02-17/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2022-02-17/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -105,63 +109,54 @@ This is the second time I’m participating online conference and both times are
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&text=Fosdem%202022%20notes">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&text=Fosdem%202022%20notes" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&is_video=false&description=Fosdem%202022%20notes">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&is_video=false&description=Fosdem%202022%20notes" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Fosdem%202022%20notes&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f">
+    <a class="icon" href="mailto:?subject=Fosdem%202022%20notes&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&name=Fosdem%202022%20notes&description=%3cp%3e%3afosdem%3a%20%3akonferencija%3a%3c%2fp%3e%0a%3cp%3eThis%20is%20the%20second%20time%20I%26rsquo%3bm%20participating%20online%20conference%20and%20both%20times%20are%0aFosdem.%20Below%20are%20my%20personal%20notes%20of%20Fosdem%202022.%20Some%20notes%20might%20not%20be%0acompleted%20which%20I%20was%20planning%20to%20do%20later.%20But%20it%20is%20possible%20the%20later%20never%0acame.%20My%20personal%20scores%20are%20mostly%20based%20how%20much%20fun%20I%26rsquo%3bve%20received%20from%20the%0atalk.%20These%20do%20not%20reflect%20quality%20of%20presentations.%20Simply%20I%20might%20be%20to%20stupid%0ato%20understand%20the%20content%20so%20I%26rsquo%3bd%20rate%20the%20talk%20as%20%26ldquo%3bnot%20so%20much%20fun%26rdquo%3b.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&name=Fosdem%202022%20notes&description=%3cp%3e%3afosdem%3a%20%3akonferencija%3a%3c%2fp%3e%0a%3cp%3eThis%20is%20the%20second%20time%20I%26rsquo%3bm%20participating%20online%20conference%20and%20both%20times%20are%0aFosdem.%20Below%20are%20my%20personal%20notes%20of%20Fosdem%202022.%20Some%20notes%20might%20not%20be%0acompleted%20which%20I%20was%20planning%20to%20do%20later.%20But%20it%20is%20possible%20the%20later%20never%0acame.%20My%20personal%20scores%20are%20mostly%20based%20how%20much%20fun%20I%26rsquo%3bve%20received%20from%20the%0atalk.%20These%20do%20not%20reflect%20quality%20of%20presentations.%20Simply%20I%20might%20be%20to%20stupid%0ato%20understand%20the%20content%20so%20I%26rsquo%3bd%20rate%20the%20talk%20as%20%26ldquo%3bnot%20so%20much%20fun%26rdquo%3b.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&t=Fosdem%202022%20notes">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&t=Fosdem%202022%20notes" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
@@ -184,6 +179,7 @@ This is the second time I’m participating online conference and both times are
   </ul>
 </nav>
     </div>
+    
   </span>
 </div>
 
@@ -202,21 +198,24 @@ This is the second time I’m participating online conference and both times are
         </div>
         
         
+        
+        
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             
             
             <a class="tag-link" href="/tags/fosdem" rel="tag">fosdem</a>
             
-            
+             ,  
             <a class="tag-link" href="/tags/konferencija" rel="tag">konferencija</a>
             
-        </div> 
+        </div>
         
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>:fosdem: :konferencija:</p>
 <p>This is the second time I&rsquo;m participating online conference and both times are
@@ -451,6 +450,7 @@ gotchas which I am not familiar with.</p>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -466,6 +466,7 @@ gotchas which I am not familiar with.</p>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
@@ -488,6 +489,7 @@ gotchas which I am not familiar with.</p>
   </ul>
 </nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -498,57 +500,47 @@ gotchas which I am not familiar with.</p>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&text=Fosdem%202022%20notes">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&text=Fosdem%202022%20notes" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&is_video=false&description=Fosdem%202022%20notes">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&is_video=false&description=Fosdem%202022%20notes" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Fosdem%202022%20notes&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f">
+    <a class="icon" href="mailto:?subject=Fosdem%202022%20notes&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&title=Fosdem%202022%20notes">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&name=Fosdem%202022%20notes&description=%3cp%3e%3afosdem%3a%20%3akonferencija%3a%3c%2fp%3e%0a%3cp%3eThis%20is%20the%20second%20time%20I%26rsquo%3bm%20participating%20online%20conference%20and%20both%20times%20are%0aFosdem.%20Below%20are%20my%20personal%20notes%20of%20Fosdem%202022.%20Some%20notes%20might%20not%20be%0acompleted%20which%20I%20was%20planning%20to%20do%20later.%20But%20it%20is%20possible%20the%20later%20never%0acame.%20My%20personal%20scores%20are%20mostly%20based%20how%20much%20fun%20I%26rsquo%3bve%20received%20from%20the%0atalk.%20These%20do%20not%20reflect%20quality%20of%20presentations.%20Simply%20I%20might%20be%20to%20stupid%0ato%20understand%20the%20content%20so%20I%26rsquo%3bd%20rate%20the%20talk%20as%20%26ldquo%3bnot%20so%20much%20fun%26rdquo%3b.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&name=Fosdem%202022%20notes&description=%3cp%3e%3afosdem%3a%20%3akonferencija%3a%3c%2fp%3e%0a%3cp%3eThis%20is%20the%20second%20time%20I%26rsquo%3bm%20participating%20online%20conference%20and%20both%20times%20are%0aFosdem.%20Below%20are%20my%20personal%20notes%20of%20Fosdem%202022.%20Some%20notes%20might%20not%20be%0acompleted%20which%20I%20was%20planning%20to%20do%20later.%20But%20it%20is%20possible%20the%20later%20never%0acame.%20My%20personal%20scores%20are%20mostly%20based%20how%20much%20fun%20I%26rsquo%3bve%20received%20from%20the%0atalk.%20These%20do%20not%20reflect%20quality%20of%20presentations.%20Simply%20I%20might%20be%20to%20stupid%0ato%20understand%20the%20content%20so%20I%26rsquo%3bd%20rate%20the%20talk%20as%20%26ldquo%3bnot%20so%20much%20fun%26rdquo%3b.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&t=Fosdem%202022%20notes">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-02-05%2f&t=Fosdem%202022%20notes" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -558,13 +550,15 @@ gotchas which I am not familiar with.</p>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -598,6 +592,9 @@ gotchas which I am not familiar with.</p>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

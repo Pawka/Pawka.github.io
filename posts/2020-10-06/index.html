@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Bikepacking kelionės retrospektyva | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2020-10-06/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -23,16 +29,12 @@ Asvejos Gravel Fondo trasa tikrai nuostabi, graži. Tiesa, kai kurios vietos nep
     <meta property="article:tag" content="Kelione">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Bikepacking kelionės retrospektyva">
-  <meta name="twitter:description" content=":bikepacking: :kelione:
-Praėjo jau dvi savaitės nuo mūsų kelionės. Tuo pačiu tai buvo ir mano pirmoji turistinė kelionė dviračiais, kurios metu reikėjo visą mantą vežtis patiems.
-Asvejos Gravel Fondo trasa tikrai nuostabi, graži. Tiesa, kai kurios vietos nepravažiuojamos - dviračius teko nešti ir stumti į lietaus išgriaužtus kalnus. Kolega minėjo, kad turnyro metu trasos yra paruošiamos. O mūsų atveju to paruošimo jau nebebuvo likę. Aplink ežerą radome vieną parduotuvę rytiniame Asvejos krašte. Buvom kartą sustoję “normaliai” pavalgyt Dubingių žirgyne - daugiau nelabai yra kur. “Oro Dubingiai” pravažiuojančių pro šalį nepriima - turi apsistoti ten.">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -45,13 +47,14 @@ Asvejos Gravel Fondo trasa tikrai nuostabi, graži. Tiesa, kai kurios vietos nep
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -69,25 +72,25 @@ Asvejos Gravel Fondo trasa tikrai nuostabi, graži. Tiesa, kai kurios vietos nep
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-09-13/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-09-13/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-10-18/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-10-18/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -107,63 +110,54 @@ Asvejos Gravel Fondo trasa tikrai nuostabi, graži. Tiesa, kai kurios vietos nep
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&text=Bikepacking%20kelion%c4%97s%20retrospektyva">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&text=Bikepacking%20kelion%c4%97s%20retrospektyva" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&is_video=false&description=Bikepacking%20kelion%c4%97s%20retrospektyva">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&is_video=false&description=Bikepacking%20kelion%c4%97s%20retrospektyva" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Bikepacking%20kelion%c4%97s%20retrospektyva&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f">
+    <a class="icon" href="mailto:?subject=Bikepacking%20kelion%c4%97s%20retrospektyva&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&name=Bikepacking%20kelion%c4%97s%20retrospektyva&description=%3cp%3e%3abikepacking%3a%20%3akelione%3a%3c%2fp%3e%0a%3cp%3ePra%c4%97jo%20jau%20dvi%20savait%c4%97s%20nuo%20m%c5%abs%c5%b3%20kelion%c4%97s.%20Tuo%20pa%c4%8diu%20tai%20buvo%20ir%20mano%20pirmoji%0aturistin%c4%97%20kelion%c4%97%20dvira%c4%8diais%2c%20kurios%20metu%20reik%c4%97jo%20vis%c4%85%20mant%c4%85%20ve%c5%betis%20patiems.%3c%2fp%3e%0a%3cp%3eAsvejos%20Gravel%20Fondo%20trasa%20tikrai%20nuostabi%2c%20gra%c5%bei.%20Tiesa%2c%20kai%20kurios%20vietos%0aneprava%c5%beiuojamos%20-%20dvira%c4%8dius%20teko%20ne%c5%a1ti%20ir%20stumti%20%c4%af%20lietaus%20i%c5%a1griau%c5%betus%20kalnus.%0aKolega%20min%c4%97jo%2c%20kad%20turnyro%20metu%20trasos%20yra%20paruo%c5%a1iamos.%20O%20m%c5%abs%c5%b3%20atveju%20to%0aparuo%c5%a1imo%20jau%20nebebuvo%20lik%c4%99.%20Aplink%20e%c5%beer%c4%85%20radome%20vien%c4%85%20parduotuv%c4%99%20rytiniame%0aAsvejos%20kra%c5%a1te.%20Buvom%20kart%c4%85%20sustoj%c4%99%20%26ldquo%3bnormaliai%26rdquo%3b%20pavalgyt%20Dubingi%c5%b3%20%c5%beirgyne%20-%0adaugiau%20nelabai%20yra%20kur.%20%26ldquo%3bOro%20Dubingiai%26rdquo%3b%20prava%c5%beiuojan%c4%8di%c5%b3%20pro%20%c5%a1al%c4%af%20nepriima%20-%0aturi%20apsistoti%20ten.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&name=Bikepacking%20kelion%c4%97s%20retrospektyva&description=%3cp%3e%3abikepacking%3a%20%3akelione%3a%3c%2fp%3e%0a%3cp%3ePra%c4%97jo%20jau%20dvi%20savait%c4%97s%20nuo%20m%c5%abs%c5%b3%20kelion%c4%97s.%20Tuo%20pa%c4%8diu%20tai%20buvo%20ir%20mano%20pirmoji%0aturistin%c4%97%20kelion%c4%97%20dvira%c4%8diais%2c%20kurios%20metu%20reik%c4%97jo%20vis%c4%85%20mant%c4%85%20ve%c5%betis%20patiems.%3c%2fp%3e%0a%3cp%3eAsvejos%20Gravel%20Fondo%20trasa%20tikrai%20nuostabi%2c%20gra%c5%bei.%20Tiesa%2c%20kai%20kurios%20vietos%0aneprava%c5%beiuojamos%20-%20dvira%c4%8dius%20teko%20ne%c5%a1ti%20ir%20stumti%20%c4%af%20lietaus%20i%c5%a1griau%c5%betus%20kalnus.%0aKolega%20min%c4%97jo%2c%20kad%20turnyro%20metu%20trasos%20yra%20paruo%c5%a1iamos.%20O%20m%c5%abs%c5%b3%20atveju%20to%0aparuo%c5%a1imo%20jau%20nebebuvo%20lik%c4%99.%20Aplink%20e%c5%beer%c4%85%20radome%20vien%c4%85%20parduotuv%c4%99%20rytiniame%0aAsvejos%20kra%c5%a1te.%20Buvom%20kart%c4%85%20sustoj%c4%99%20%26ldquo%3bnormaliai%26rdquo%3b%20pavalgyt%20Dubingi%c5%b3%20%c5%beirgyne%20-%0adaugiau%20nelabai%20yra%20kur.%20%26ldquo%3bOro%20Dubingiai%26rdquo%3b%20prava%c5%beiuojan%c4%8di%c5%b3%20pro%20%c5%a1al%c4%af%20nepriima%20-%0aturi%20apsistoti%20ten.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&t=Bikepacking%20kelion%c4%97s%20retrospektyva">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&t=Bikepacking%20kelion%c4%97s%20retrospektyva" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
@@ -174,6 +168,7 @@ Asvejos Gravel Fondo trasa tikrai nuostabi, graži. Tiesa, kai kurios vietos nep
   </ul>
 </nav>
     </div>
+    
   </span>
 </div>
 
@@ -192,21 +187,24 @@ Asvejos Gravel Fondo trasa tikrai nuostabi, graži. Tiesa, kai kurios vietos nep
         </div>
         
         
+        
+        
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             
             
             <a class="tag-link" href="/tags/bikepacking" rel="tag">bikepacking</a>
             
-            
+             ,  
             <a class="tag-link" href="/tags/kelione" rel="tag">kelione</a>
             
-        </div> 
+        </div>
         
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>:bikepacking: :kelione:</p>
 <p>Praėjo jau dvi savaitės nuo mūsų kelionės. Tuo pačiu tai buvo ir mano pirmoji
@@ -309,6 +307,7 @@ nusilupa.</li>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -324,6 +323,7 @@ nusilupa.</li>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
@@ -334,6 +334,7 @@ nusilupa.</li>
   </ul>
 </nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -344,57 +345,47 @@ nusilupa.</li>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&text=Bikepacking%20kelion%c4%97s%20retrospektyva">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&text=Bikepacking%20kelion%c4%97s%20retrospektyva" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&is_video=false&description=Bikepacking%20kelion%c4%97s%20retrospektyva">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&is_video=false&description=Bikepacking%20kelion%c4%97s%20retrospektyva" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Bikepacking%20kelion%c4%97s%20retrospektyva&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f">
+    <a class="icon" href="mailto:?subject=Bikepacking%20kelion%c4%97s%20retrospektyva&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&title=Bikepacking%20kelion%c4%97s%20retrospektyva">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&name=Bikepacking%20kelion%c4%97s%20retrospektyva&description=%3cp%3e%3abikepacking%3a%20%3akelione%3a%3c%2fp%3e%0a%3cp%3ePra%c4%97jo%20jau%20dvi%20savait%c4%97s%20nuo%20m%c5%abs%c5%b3%20kelion%c4%97s.%20Tuo%20pa%c4%8diu%20tai%20buvo%20ir%20mano%20pirmoji%0aturistin%c4%97%20kelion%c4%97%20dvira%c4%8diais%2c%20kurios%20metu%20reik%c4%97jo%20vis%c4%85%20mant%c4%85%20ve%c5%betis%20patiems.%3c%2fp%3e%0a%3cp%3eAsvejos%20Gravel%20Fondo%20trasa%20tikrai%20nuostabi%2c%20gra%c5%bei.%20Tiesa%2c%20kai%20kurios%20vietos%0aneprava%c5%beiuojamos%20-%20dvira%c4%8dius%20teko%20ne%c5%a1ti%20ir%20stumti%20%c4%af%20lietaus%20i%c5%a1griau%c5%betus%20kalnus.%0aKolega%20min%c4%97jo%2c%20kad%20turnyro%20metu%20trasos%20yra%20paruo%c5%a1iamos.%20O%20m%c5%abs%c5%b3%20atveju%20to%0aparuo%c5%a1imo%20jau%20nebebuvo%20lik%c4%99.%20Aplink%20e%c5%beer%c4%85%20radome%20vien%c4%85%20parduotuv%c4%99%20rytiniame%0aAsvejos%20kra%c5%a1te.%20Buvom%20kart%c4%85%20sustoj%c4%99%20%26ldquo%3bnormaliai%26rdquo%3b%20pavalgyt%20Dubingi%c5%b3%20%c5%beirgyne%20-%0adaugiau%20nelabai%20yra%20kur.%20%26ldquo%3bOro%20Dubingiai%26rdquo%3b%20prava%c5%beiuojan%c4%8di%c5%b3%20pro%20%c5%a1al%c4%af%20nepriima%20-%0aturi%20apsistoti%20ten.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&name=Bikepacking%20kelion%c4%97s%20retrospektyva&description=%3cp%3e%3abikepacking%3a%20%3akelione%3a%3c%2fp%3e%0a%3cp%3ePra%c4%97jo%20jau%20dvi%20savait%c4%97s%20nuo%20m%c5%abs%c5%b3%20kelion%c4%97s.%20Tuo%20pa%c4%8diu%20tai%20buvo%20ir%20mano%20pirmoji%0aturistin%c4%97%20kelion%c4%97%20dvira%c4%8diais%2c%20kurios%20metu%20reik%c4%97jo%20vis%c4%85%20mant%c4%85%20ve%c5%betis%20patiems.%3c%2fp%3e%0a%3cp%3eAsvejos%20Gravel%20Fondo%20trasa%20tikrai%20nuostabi%2c%20gra%c5%bei.%20Tiesa%2c%20kai%20kurios%20vietos%0aneprava%c5%beiuojamos%20-%20dvira%c4%8dius%20teko%20ne%c5%a1ti%20ir%20stumti%20%c4%af%20lietaus%20i%c5%a1griau%c5%betus%20kalnus.%0aKolega%20min%c4%97jo%2c%20kad%20turnyro%20metu%20trasos%20yra%20paruo%c5%a1iamos.%20O%20m%c5%abs%c5%b3%20atveju%20to%0aparuo%c5%a1imo%20jau%20nebebuvo%20lik%c4%99.%20Aplink%20e%c5%beer%c4%85%20radome%20vien%c4%85%20parduotuv%c4%99%20rytiniame%0aAsvejos%20kra%c5%a1te.%20Buvom%20kart%c4%85%20sustoj%c4%99%20%26ldquo%3bnormaliai%26rdquo%3b%20pavalgyt%20Dubingi%c5%b3%20%c5%beirgyne%20-%0adaugiau%20nelabai%20yra%20kur.%20%26ldquo%3bOro%20Dubingiai%26rdquo%3b%20prava%c5%beiuojan%c4%8di%c5%b3%20pro%20%c5%a1al%c4%af%20nepriima%20-%0aturi%20apsistoti%20ten.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&t=Bikepacking%20kelion%c4%97s%20retrospektyva">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-06%2f&t=Bikepacking%20kelion%c4%97s%20retrospektyva" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -404,13 +395,15 @@ nusilupa.</li>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -444,6 +437,9 @@ nusilupa.</li>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

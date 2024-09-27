@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> writenext.io - application to make writing a habbit | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2020-05-27/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -19,14 +25,12 @@
     <meta property="article:modified_time" content="2020-05-27T00:00:00+00:00">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="writenext.io - application to make writing a habbit">
-  <meta name="twitter:description" content="I was a blogger long time ago. I really liked to write small posts. Though with time I’ve started feel more and more responsibile of the posts I wrote. Which is good in one way as this feeling is supposed to increase the quality of posts. But there is other side too - I had multiple unpublished posts which were not good enough. I’ve spent time to write those but I was not happy enough to publish them. Also some topics were not which I was interested into. But which (I expected) my readers are interested.">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -39,13 +43,14 @@
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -63,25 +68,25 @@
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-05-20/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-05-20/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-06-15/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-06-15/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -101,66 +106,58 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&text=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&text=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&is_video=false&description=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&is_video=false&description=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f">
+    <a class="icon" href="mailto:?subject=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&name=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit&description=%3cp%3eI%20was%20a%20blogger%20long%20time%20ago.%20I%20really%20liked%20to%20write%20small%20posts.%20Though%20with%0atime%20I%26rsquo%3bve%20started%20feel%20more%20and%20more%20responsibile%20of%20the%20posts%20I%20wrote.%20Which%0ais%20good%20in%20one%20way%20as%20this%20feeling%20is%20supposed%20to%20increase%20the%20quality%20of%0aposts.%20But%20there%20is%20other%20side%20too%20-%20I%20had%20multiple%20unpublished%20posts%20which%0awere%20not%20good%20enough.%20I%26rsquo%3bve%20spent%20time%20to%20write%20those%20but%20I%20was%20not%20happy%20enough%0ato%20publish%20them.%20Also%20some%20topics%20were%20not%20which%20I%20was%20interested%20into.%20But%0awhich%20%28I%20expected%29%20my%20readers%20are%20interested.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&name=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit&description=%3cp%3eI%20was%20a%20blogger%20long%20time%20ago.%20I%20really%20liked%20to%20write%20small%20posts.%20Though%20with%0atime%20I%26rsquo%3bve%20started%20feel%20more%20and%20more%20responsibile%20of%20the%20posts%20I%20wrote.%20Which%0ais%20good%20in%20one%20way%20as%20this%20feeling%20is%20supposed%20to%20increase%20the%20quality%20of%0aposts.%20But%20there%20is%20other%20side%20too%20-%20I%20had%20multiple%20unpublished%20posts%20which%0awere%20not%20good%20enough.%20I%26rsquo%3bve%20spent%20time%20to%20write%20those%20but%20I%20was%20not%20happy%20enough%0ato%20publish%20them.%20Also%20some%20topics%20were%20not%20which%20I%20was%20interested%20into.%20But%0awhich%20%28I%20expected%29%20my%20readers%20are%20interested.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&t=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&t=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents"></nav>
     </div>
+    
   </span>
 </div>
 
@@ -179,10 +176,13 @@
         </div>
         
         
+        
+        
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>I was a blogger long time ago. I really liked to write small posts. Though with
 time I&rsquo;ve started feel more and more responsibile of the posts I wrote. Which
@@ -210,6 +210,7 @@ export my writings and still collect badges :-) Let&rsquo;s see.</p>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -225,9 +226,11 @@ export my writings and still collect badges :-) Let&rsquo;s see.</p>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents"></nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -238,57 +241,47 @@ export my writings and still collect badges :-) Let&rsquo;s see.</p>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&text=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&text=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&is_video=false&description=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&is_video=false&description=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f">
+    <a class="icon" href="mailto:?subject=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&title=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&name=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit&description=%3cp%3eI%20was%20a%20blogger%20long%20time%20ago.%20I%20really%20liked%20to%20write%20small%20posts.%20Though%20with%0atime%20I%26rsquo%3bve%20started%20feel%20more%20and%20more%20responsibile%20of%20the%20posts%20I%20wrote.%20Which%0ais%20good%20in%20one%20way%20as%20this%20feeling%20is%20supposed%20to%20increase%20the%20quality%20of%0aposts.%20But%20there%20is%20other%20side%20too%20-%20I%20had%20multiple%20unpublished%20posts%20which%0awere%20not%20good%20enough.%20I%26rsquo%3bve%20spent%20time%20to%20write%20those%20but%20I%20was%20not%20happy%20enough%0ato%20publish%20them.%20Also%20some%20topics%20were%20not%20which%20I%20was%20interested%20into.%20But%0awhich%20%28I%20expected%29%20my%20readers%20are%20interested.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&name=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit&description=%3cp%3eI%20was%20a%20blogger%20long%20time%20ago.%20I%20really%20liked%20to%20write%20small%20posts.%20Though%20with%0atime%20I%26rsquo%3bve%20started%20feel%20more%20and%20more%20responsibile%20of%20the%20posts%20I%20wrote.%20Which%0ais%20good%20in%20one%20way%20as%20this%20feeling%20is%20supposed%20to%20increase%20the%20quality%20of%0aposts.%20But%20there%20is%20other%20side%20too%20-%20I%20had%20multiple%20unpublished%20posts%20which%0awere%20not%20good%20enough.%20I%26rsquo%3bve%20spent%20time%20to%20write%20those%20but%20I%20was%20not%20happy%20enough%0ato%20publish%20them.%20Also%20some%20topics%20were%20not%20which%20I%20was%20interested%20into.%20But%0awhich%20%28I%20expected%29%20my%20readers%20are%20interested.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&t=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-05-27%2f&t=writenext.io%20-%20application%20to%20make%20writing%20a%20habbit" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -298,13 +291,15 @@ export my writings and still collect badges :-) Let&rsquo;s see.</p>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -338,6 +333,9 @@ export my writings and still collect badges :-) Let&rsquo;s see.</p>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

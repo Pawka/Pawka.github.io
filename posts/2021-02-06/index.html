@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Fosdem 2021 notes | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2021-02-06/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -22,15 +28,12 @@ Fosdem 2021 was the first virtual/on-line conference I’ve participated. I (tho
     <meta property="article:tag" content="Konferencija">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Fosdem 2021 notes">
-  <meta name="twitter:description" content=":fosdem: :konferencija:
-Fosdem 2021 was the first virtual/on-line conference I’ve participated. I (thought) do not really like watching videos and participate in such virtual events. But I must admit I really enjoyed the Fosdem this year. Yeah, there were multiple technical issues, like low video quality (very few times), speakers did not hear hearing questions from the moderators, speakers and moderators were cut in the middle of sentence when answering questions (because time management was automated), etc. But despite that it was great to watch pre-recorded presentation and chat with the speaker or other participants in parallel in the chatroom. Ask questions, comment, up-vote other questions, etc. It was nice experience and much better than I’ve expected initially!">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -43,13 +46,14 @@ Fosdem 2021 was the first virtual/on-line conference I’ve participated. I (tho
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -67,25 +71,25 @@ Fosdem 2021 was the first virtual/on-line conference I’ve participated. I (tho
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2021-01-31/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2021-01-31/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2021-02-19/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2021-02-19/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -105,63 +109,54 @@ Fosdem 2021 was the first virtual/on-line conference I’ve participated. I (tho
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&text=Fosdem%202021%20notes">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&text=Fosdem%202021%20notes" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&is_video=false&description=Fosdem%202021%20notes">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&is_video=false&description=Fosdem%202021%20notes" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Fosdem%202021%20notes&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f">
+    <a class="icon" href="mailto:?subject=Fosdem%202021%20notes&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&name=Fosdem%202021%20notes&description=%3cp%3e%3afosdem%3a%20%3akonferencija%3a%3c%2fp%3e%0a%3cp%3eFosdem%202021%20was%20the%20first%20virtual%2fon-line%20conference%20I%26rsquo%3bve%20participated.%20I%0a%28thought%29%20do%20not%20really%20like%20watching%20videos%20and%20participate%20in%20such%20virtual%0aevents.%20But%20I%20must%20admit%20I%20really%20enjoyed%20the%20Fosdem%20this%20year.%20Yeah%2c%20there%20were%0amultiple%20technical%20issues%2c%20like%20low%20video%20quality%20%28very%20few%20times%29%2c%20speakers%0adid%20not%20hear%20hearing%20questions%20from%20the%20moderators%2c%20speakers%20and%20moderators%20were%0acut%20in%20the%20middle%20of%20sentence%20when%20answering%20questions%20%28because%20time%20management%0awas%20automated%29%2c%20etc.%20But%20despite%20that%20it%20was%20great%20to%20watch%20pre-recorded%0apresentation%20and%20chat%20with%20the%20speaker%20or%20other%20participants%20in%20parallel%20in%20the%0achatroom.%20Ask%20questions%2c%20comment%2c%20up-vote%20other%20questions%2c%20etc.%20It%20was%20nice%0aexperience%20and%20much%20better%20than%20I%26rsquo%3bve%20expected%20initially%21%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&name=Fosdem%202021%20notes&description=%3cp%3e%3afosdem%3a%20%3akonferencija%3a%3c%2fp%3e%0a%3cp%3eFosdem%202021%20was%20the%20first%20virtual%2fon-line%20conference%20I%26rsquo%3bve%20participated.%20I%0a%28thought%29%20do%20not%20really%20like%20watching%20videos%20and%20participate%20in%20such%20virtual%0aevents.%20But%20I%20must%20admit%20I%20really%20enjoyed%20the%20Fosdem%20this%20year.%20Yeah%2c%20there%20were%0amultiple%20technical%20issues%2c%20like%20low%20video%20quality%20%28very%20few%20times%29%2c%20speakers%0adid%20not%20hear%20hearing%20questions%20from%20the%20moderators%2c%20speakers%20and%20moderators%20were%0acut%20in%20the%20middle%20of%20sentence%20when%20answering%20questions%20%28because%20time%20management%0awas%20automated%29%2c%20etc.%20But%20despite%20that%20it%20was%20great%20to%20watch%20pre-recorded%0apresentation%20and%20chat%20with%20the%20speaker%20or%20other%20participants%20in%20parallel%20in%20the%0achatroom.%20Ask%20questions%2c%20comment%2c%20up-vote%20other%20questions%2c%20etc.%20It%20was%20nice%0aexperience%20and%20much%20better%20than%20I%26rsquo%3bve%20expected%20initially%21%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&t=Fosdem%202021%20notes">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&t=Fosdem%202021%20notes" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
@@ -186,6 +181,7 @@ Fosdem 2021 was the first virtual/on-line conference I’ve participated. I (tho
   </ul>
 </nav>
     </div>
+    
   </span>
 </div>
 
@@ -204,21 +200,24 @@ Fosdem 2021 was the first virtual/on-line conference I’ve participated. I (tho
         </div>
         
         
+        
+        
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             
             
             <a class="tag-link" href="/tags/fosdem" rel="tag">fosdem</a>
             
-            
+             ,  
             <a class="tag-link" href="/tags/konferencija" rel="tag">konferencija</a>
             
-        </div> 
+        </div>
         
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>:fosdem: :konferencija:</p>
 <p>Fosdem 2021 was the first virtual/on-line conference I&rsquo;ve participated. I
@@ -426,6 +425,7 @@ the end.</li>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -441,6 +441,7 @@ the end.</li>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
@@ -465,6 +466,7 @@ the end.</li>
   </ul>
 </nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -475,57 +477,47 @@ the end.</li>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&text=Fosdem%202021%20notes">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&text=Fosdem%202021%20notes" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&is_video=false&description=Fosdem%202021%20notes">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&is_video=false&description=Fosdem%202021%20notes" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Fosdem%202021%20notes&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f">
+    <a class="icon" href="mailto:?subject=Fosdem%202021%20notes&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&title=Fosdem%202021%20notes">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&name=Fosdem%202021%20notes&description=%3cp%3e%3afosdem%3a%20%3akonferencija%3a%3c%2fp%3e%0a%3cp%3eFosdem%202021%20was%20the%20first%20virtual%2fon-line%20conference%20I%26rsquo%3bve%20participated.%20I%0a%28thought%29%20do%20not%20really%20like%20watching%20videos%20and%20participate%20in%20such%20virtual%0aevents.%20But%20I%20must%20admit%20I%20really%20enjoyed%20the%20Fosdem%20this%20year.%20Yeah%2c%20there%20were%0amultiple%20technical%20issues%2c%20like%20low%20video%20quality%20%28very%20few%20times%29%2c%20speakers%0adid%20not%20hear%20hearing%20questions%20from%20the%20moderators%2c%20speakers%20and%20moderators%20were%0acut%20in%20the%20middle%20of%20sentence%20when%20answering%20questions%20%28because%20time%20management%0awas%20automated%29%2c%20etc.%20But%20despite%20that%20it%20was%20great%20to%20watch%20pre-recorded%0apresentation%20and%20chat%20with%20the%20speaker%20or%20other%20participants%20in%20parallel%20in%20the%0achatroom.%20Ask%20questions%2c%20comment%2c%20up-vote%20other%20questions%2c%20etc.%20It%20was%20nice%0aexperience%20and%20much%20better%20than%20I%26rsquo%3bve%20expected%20initially%21%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&name=Fosdem%202021%20notes&description=%3cp%3e%3afosdem%3a%20%3akonferencija%3a%3c%2fp%3e%0a%3cp%3eFosdem%202021%20was%20the%20first%20virtual%2fon-line%20conference%20I%26rsquo%3bve%20participated.%20I%0a%28thought%29%20do%20not%20really%20like%20watching%20videos%20and%20participate%20in%20such%20virtual%0aevents.%20But%20I%20must%20admit%20I%20really%20enjoyed%20the%20Fosdem%20this%20year.%20Yeah%2c%20there%20were%0amultiple%20technical%20issues%2c%20like%20low%20video%20quality%20%28very%20few%20times%29%2c%20speakers%0adid%20not%20hear%20hearing%20questions%20from%20the%20moderators%2c%20speakers%20and%20moderators%20were%0acut%20in%20the%20middle%20of%20sentence%20when%20answering%20questions%20%28because%20time%20management%0awas%20automated%29%2c%20etc.%20But%20despite%20that%20it%20was%20great%20to%20watch%20pre-recorded%0apresentation%20and%20chat%20with%20the%20speaker%20or%20other%20participants%20in%20parallel%20in%20the%0achatroom.%20Ask%20questions%2c%20comment%2c%20up-vote%20other%20questions%2c%20etc.%20It%20was%20nice%0aexperience%20and%20much%20better%20than%20I%26rsquo%3bve%20expected%20initially%21%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&t=Fosdem%202021%20notes">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-02-06%2f&t=Fosdem%202021%20notes" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -535,13 +527,15 @@ the end.</li>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -575,6 +569,9 @@ the end.</li>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

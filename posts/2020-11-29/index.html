@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Pasileidau Pi-Hole namų tinkle | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2020-11-29/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -20,15 +26,12 @@ Namie turiu keletą Raspberry Pi. Vienas prijungtas prie miegamojo televizoriaus
     <meta property="article:modified_time" content="2020-11-29T00:00:00+00:00">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Pasileidau Pi-Hole namų tinkle">
-  <meta name="twitter:description" content="Šiandien namie susikonfigūravau Pi-Hole - DNS serverį su reklaminių ir sekimo puslapių blokavimo galimybe. Pi-Hole veikia DNS lygmenyje blokuodamas užklausas pagal iš anksto paruoštus sąrašus. Turinys net nėra parsiunčiamas į kompiuterį, nes Pi-Hole tiesiog apsimeta, kad tokiu adresu nieko nėra ir neleidžia atsisiųsti visokių sekimo, reklaminių skriptų ar kitų velnių.
-Namie turiu keletą Raspberry Pi. Vienas prijungtas prie miegamojo televizoriaus, kad galėtume naudotis Kodi filmų žiūrėjimui. Na o kitas kurį laiką gulėjo dykas. Kadangi šiandien kaip tik tvarkiau pirmąjį, tad tuo pačiu radau laiko ir suinsaliuoti Pi-Hole. Pats Pi-Hole nebūtinai privalo veikti Raspberry’je - galima paleisti ir Docker konteineryje ar bet kur kitur. Bet kadangi turėjau laisvą Rpi (beje, seną v2), tai ten ir sugrūdau šį DNS serverį. Pajungiau jį prie maršrutizatoriaus, nukreipiau maršrutizatoriaus DNS adresą į Pi-Hole ir viskas.">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -41,13 +44,14 @@ Namie turiu keletą Raspberry Pi. Vienas prijungtas prie miegamojo televizoriaus
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -65,25 +69,25 @@ Namie turiu keletą Raspberry Pi. Vienas prijungtas prie miegamojo televizoriaus
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-11-15/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-11-15/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-12-04/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-12-04/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -103,66 +107,58 @@ Namie turiu keletą Raspberry Pi. Vienas prijungtas prie miegamojo televizoriaus
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&text=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&text=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&is_video=false&description=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&is_video=false&description=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f">
+    <a class="icon" href="mailto:?subject=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&name=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle&description=%3cp%3e%c5%a0iandien%20namie%20susikonfig%c5%abravau%20%3ca%20href%3d%22Pi-Hol%3a%2f%2fpi-hole.net%2f%22%3ePi-Hole%3c%2fa%3e%20-%20DNS%20server%c4%af%0asu%20reklamini%c5%b3%20ir%20sekimo%20puslapi%c5%b3%20blokavimo%20galimybe.%20Pi-Hole%20veikia%20DNS%0alygmenyje%20blokuodamas%20u%c5%beklausas%20pagal%20i%c5%a1%20anksto%20paruo%c5%a1tus%20s%c4%85ra%c5%a1us.%20Turinys%20net%0an%c4%97ra%20parsiun%c4%8diamas%20%c4%af%20kompiuter%c4%af%2c%20nes%20Pi-Hole%20tiesiog%20apsimeta%2c%20kad%20tokiu%20adresu%0anieko%20n%c4%97ra%20ir%20neleid%c5%beia%20atsisi%c5%b3sti%20visoki%c5%b3%20sekimo%2c%20reklamini%c5%b3%20skript%c5%b3%20ar%20kit%c5%b3%0avelni%c5%b3.%3c%2fp%3e%0a%3cp%3eNamie%20turiu%20kelet%c4%85%20Raspberry%20Pi.%20Vienas%20prijungtas%20prie%20miegamojo%20televizoriaus%2c%0akad%20gal%c4%97tume%20naudotis%20%3ca%20href%3d%22https%3a%2f%2fkodi.tv%2f%22%3eKodi%3c%2fa%3e%20film%c5%b3%20%c5%bei%c5%abr%c4%97jimui.%20Na%20o%20kitas%0akur%c4%af%20laik%c4%85%20gul%c4%97jo%20dykas.%20Kadangi%20%c5%a1iandien%20kaip%20tik%20tvarkiau%20pirm%c4%85j%c4%af%2c%20tad%20tuo%0apa%c4%8diu%20radau%20laiko%20ir%20suinsaliuoti%20Pi-Hole.%20Pats%20Pi-Hole%20neb%c5%abtinai%20privalo%20veikti%0aRaspberry%26rsquo%3bje%20-%20galima%20paleisti%20ir%20Docker%20konteineryje%20ar%20bet%20kur%20kitur.%20Bet%0akadangi%20tur%c4%97jau%20laisv%c4%85%20Rpi%20%28beje%2c%20sen%c4%85%20v2%29%2c%20tai%20ten%20ir%20sugr%c5%abdau%20%c5%a1%c4%af%20DNS%20server%c4%af.%0aPajungiau%20j%c4%af%20prie%20mar%c5%a1rutizatoriaus%2c%20nukreipiau%20mar%c5%a1rutizatoriaus%20DNS%20adres%c4%85%20%c4%af%0aPi-Hole%20ir%20viskas.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&name=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle&description=%3cp%3e%c5%a0iandien%20namie%20susikonfig%c5%abravau%20%3ca%20href%3d%22Pi-Hol%3a%2f%2fpi-hole.net%2f%22%3ePi-Hole%3c%2fa%3e%20-%20DNS%20server%c4%af%0asu%20reklamini%c5%b3%20ir%20sekimo%20puslapi%c5%b3%20blokavimo%20galimybe.%20Pi-Hole%20veikia%20DNS%0alygmenyje%20blokuodamas%20u%c5%beklausas%20pagal%20i%c5%a1%20anksto%20paruo%c5%a1tus%20s%c4%85ra%c5%a1us.%20Turinys%20net%0an%c4%97ra%20parsiun%c4%8diamas%20%c4%af%20kompiuter%c4%af%2c%20nes%20Pi-Hole%20tiesiog%20apsimeta%2c%20kad%20tokiu%20adresu%0anieko%20n%c4%97ra%20ir%20neleid%c5%beia%20atsisi%c5%b3sti%20visoki%c5%b3%20sekimo%2c%20reklamini%c5%b3%20skript%c5%b3%20ar%20kit%c5%b3%0avelni%c5%b3.%3c%2fp%3e%0a%3cp%3eNamie%20turiu%20kelet%c4%85%20Raspberry%20Pi.%20Vienas%20prijungtas%20prie%20miegamojo%20televizoriaus%2c%0akad%20gal%c4%97tume%20naudotis%20%3ca%20href%3d%22https%3a%2f%2fkodi.tv%2f%22%3eKodi%3c%2fa%3e%20film%c5%b3%20%c5%bei%c5%abr%c4%97jimui.%20Na%20o%20kitas%0akur%c4%af%20laik%c4%85%20gul%c4%97jo%20dykas.%20Kadangi%20%c5%a1iandien%20kaip%20tik%20tvarkiau%20pirm%c4%85j%c4%af%2c%20tad%20tuo%0apa%c4%8diu%20radau%20laiko%20ir%20suinsaliuoti%20Pi-Hole.%20Pats%20Pi-Hole%20neb%c5%abtinai%20privalo%20veikti%0aRaspberry%26rsquo%3bje%20-%20galima%20paleisti%20ir%20Docker%20konteineryje%20ar%20bet%20kur%20kitur.%20Bet%0akadangi%20tur%c4%97jau%20laisv%c4%85%20Rpi%20%28beje%2c%20sen%c4%85%20v2%29%2c%20tai%20ten%20ir%20sugr%c5%abdau%20%c5%a1%c4%af%20DNS%20server%c4%af.%0aPajungiau%20j%c4%af%20prie%20mar%c5%a1rutizatoriaus%2c%20nukreipiau%20mar%c5%a1rutizatoriaus%20DNS%20adres%c4%85%20%c4%af%0aPi-Hole%20ir%20viskas.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&t=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&t=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents"></nav>
     </div>
+    
   </span>
 </div>
 
@@ -181,10 +177,13 @@ Namie turiu keletą Raspberry Pi. Vienas prijungtas prie miegamojo televizoriaus
         </div>
         
         
+        
+        
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>Šiandien namie susikonfigūravau <a href="Pi-Hol://pi-hole.net/">Pi-Hole</a> - DNS serverį
 su reklaminių ir sekimo puslapių blokavimo galimybe. Pi-Hole veikia DNS
@@ -215,6 +214,7 @@ ar tai užklausų ar interneto adresų kiekis.</p>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -230,9 +230,11 @@ ar tai užklausų ar interneto adresų kiekis.</p>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents"></nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -243,57 +245,47 @@ ar tai užklausų ar interneto adresų kiekis.</p>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&text=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&text=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&is_video=false&description=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&is_video=false&description=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f">
+    <a class="icon" href="mailto:?subject=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&title=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&name=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle&description=%3cp%3e%c5%a0iandien%20namie%20susikonfig%c5%abravau%20%3ca%20href%3d%22Pi-Hol%3a%2f%2fpi-hole.net%2f%22%3ePi-Hole%3c%2fa%3e%20-%20DNS%20server%c4%af%0asu%20reklamini%c5%b3%20ir%20sekimo%20puslapi%c5%b3%20blokavimo%20galimybe.%20Pi-Hole%20veikia%20DNS%0alygmenyje%20blokuodamas%20u%c5%beklausas%20pagal%20i%c5%a1%20anksto%20paruo%c5%a1tus%20s%c4%85ra%c5%a1us.%20Turinys%20net%0an%c4%97ra%20parsiun%c4%8diamas%20%c4%af%20kompiuter%c4%af%2c%20nes%20Pi-Hole%20tiesiog%20apsimeta%2c%20kad%20tokiu%20adresu%0anieko%20n%c4%97ra%20ir%20neleid%c5%beia%20atsisi%c5%b3sti%20visoki%c5%b3%20sekimo%2c%20reklamini%c5%b3%20skript%c5%b3%20ar%20kit%c5%b3%0avelni%c5%b3.%3c%2fp%3e%0a%3cp%3eNamie%20turiu%20kelet%c4%85%20Raspberry%20Pi.%20Vienas%20prijungtas%20prie%20miegamojo%20televizoriaus%2c%0akad%20gal%c4%97tume%20naudotis%20%3ca%20href%3d%22https%3a%2f%2fkodi.tv%2f%22%3eKodi%3c%2fa%3e%20film%c5%b3%20%c5%bei%c5%abr%c4%97jimui.%20Na%20o%20kitas%0akur%c4%af%20laik%c4%85%20gul%c4%97jo%20dykas.%20Kadangi%20%c5%a1iandien%20kaip%20tik%20tvarkiau%20pirm%c4%85j%c4%af%2c%20tad%20tuo%0apa%c4%8diu%20radau%20laiko%20ir%20suinsaliuoti%20Pi-Hole.%20Pats%20Pi-Hole%20neb%c5%abtinai%20privalo%20veikti%0aRaspberry%26rsquo%3bje%20-%20galima%20paleisti%20ir%20Docker%20konteineryje%20ar%20bet%20kur%20kitur.%20Bet%0akadangi%20tur%c4%97jau%20laisv%c4%85%20Rpi%20%28beje%2c%20sen%c4%85%20v2%29%2c%20tai%20ten%20ir%20sugr%c5%abdau%20%c5%a1%c4%af%20DNS%20server%c4%af.%0aPajungiau%20j%c4%af%20prie%20mar%c5%a1rutizatoriaus%2c%20nukreipiau%20mar%c5%a1rutizatoriaus%20DNS%20adres%c4%85%20%c4%af%0aPi-Hole%20ir%20viskas.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&name=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle&description=%3cp%3e%c5%a0iandien%20namie%20susikonfig%c5%abravau%20%3ca%20href%3d%22Pi-Hol%3a%2f%2fpi-hole.net%2f%22%3ePi-Hole%3c%2fa%3e%20-%20DNS%20server%c4%af%0asu%20reklamini%c5%b3%20ir%20sekimo%20puslapi%c5%b3%20blokavimo%20galimybe.%20Pi-Hole%20veikia%20DNS%0alygmenyje%20blokuodamas%20u%c5%beklausas%20pagal%20i%c5%a1%20anksto%20paruo%c5%a1tus%20s%c4%85ra%c5%a1us.%20Turinys%20net%0an%c4%97ra%20parsiun%c4%8diamas%20%c4%af%20kompiuter%c4%af%2c%20nes%20Pi-Hole%20tiesiog%20apsimeta%2c%20kad%20tokiu%20adresu%0anieko%20n%c4%97ra%20ir%20neleid%c5%beia%20atsisi%c5%b3sti%20visoki%c5%b3%20sekimo%2c%20reklamini%c5%b3%20skript%c5%b3%20ar%20kit%c5%b3%0avelni%c5%b3.%3c%2fp%3e%0a%3cp%3eNamie%20turiu%20kelet%c4%85%20Raspberry%20Pi.%20Vienas%20prijungtas%20prie%20miegamojo%20televizoriaus%2c%0akad%20gal%c4%97tume%20naudotis%20%3ca%20href%3d%22https%3a%2f%2fkodi.tv%2f%22%3eKodi%3c%2fa%3e%20film%c5%b3%20%c5%bei%c5%abr%c4%97jimui.%20Na%20o%20kitas%0akur%c4%af%20laik%c4%85%20gul%c4%97jo%20dykas.%20Kadangi%20%c5%a1iandien%20kaip%20tik%20tvarkiau%20pirm%c4%85j%c4%af%2c%20tad%20tuo%0apa%c4%8diu%20radau%20laiko%20ir%20suinsaliuoti%20Pi-Hole.%20Pats%20Pi-Hole%20neb%c5%abtinai%20privalo%20veikti%0aRaspberry%26rsquo%3bje%20-%20galima%20paleisti%20ir%20Docker%20konteineryje%20ar%20bet%20kur%20kitur.%20Bet%0akadangi%20tur%c4%97jau%20laisv%c4%85%20Rpi%20%28beje%2c%20sen%c4%85%20v2%29%2c%20tai%20ten%20ir%20sugr%c5%abdau%20%c5%a1%c4%af%20DNS%20server%c4%af.%0aPajungiau%20j%c4%af%20prie%20mar%c5%a1rutizatoriaus%2c%20nukreipiau%20mar%c5%a1rutizatoriaus%20DNS%20adres%c4%85%20%c4%af%0aPi-Hole%20ir%20viskas.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&t=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-29%2f&t=Pasileidau%20Pi-Hole%20nam%c5%b3%20tinkle" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -303,13 +295,15 @@ ar tai užklausų ar interneto adresų kiekis.</p>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -343,6 +337,9 @@ ar tai užklausų ar interneto adresų kiekis.</p>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 

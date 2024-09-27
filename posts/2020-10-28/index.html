@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Vimwiki dienoraščio perkėlimas į Github Pages naudojant Hugo | Pawka&#39;s diary</title>
+  <link rel = 'canonical' href = 'https://pawka.notrollsallowed.com/posts/2020-10-28/'>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -22,15 +28,12 @@
     <meta property="article:tag" content="Blog">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Vimwiki dienoraščio perkėlimas į Github Pages naudojant Hugo">
-  <meta name="twitter:description" content=":vim: :blog:
-Šita idėja galvoje sukosi jau seniai. Teksto redagavimui naudoju VIM. Ilgai ieškojau įrankio, kuris būtų patogus užrašams. Naudojau Evernote, Synology Notes, vim oultiner, vim notes, kol galiausiai apsistojau prie vimwiki. Vimwiki turiu dvi atskiras kolekcijas - vieną darbui, o kitą asmeniniams užrašams. Tekstą rašau Markdown formatu. Tuo pačiu vimwiki turi dienoraščio funkciją, kuri tiesiog sukuria naują failą, skritą įrašams, su dienos data ir generuoja indeksinį puslapį, kuriame saugomos nuorodos į visus šiuos failus. Paprasta ir patogu.">
+  
+  
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
-  
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/style-white.css">
   
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -43,13 +46,14 @@
 
   
 </head>
+
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
 
   <div id="header-post">
   <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -67,25 +71,25 @@
       <ul>
         
         <li>
-          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-10-18/">
+          <a class="icon" href=" https://pawka.notrollsallowed.com/posts/2020-10-18/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-11-10/">
+          <a class="icon" href="https://pawka.notrollsallowed.com/posts/2020-11-10/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
         
         <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
             <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
           </a>
         </li>
         <li>
-          <a class="icon" href="#">
+          <a class="icon" href="#" aria-label="Share">
             <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
           </a>
         </li>
@@ -105,66 +109,58 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&text=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&text=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&is_video=false&description=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&is_video=false&description=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f">
+    <a class="icon" href="mailto:?subject=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
-      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
-      <i class="fab fa-digg " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&name=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo&description=%3cp%3e%3avim%3a%20%3ablog%3a%3c%2fp%3e%0a%3cp%3e%c5%a0ita%20id%c4%97ja%20galvoje%20sukosi%20jau%20seniai.%20Teksto%20redagavimui%20naudoju%20VIM.%20Ilgai%0aie%c5%a1kojau%20%c4%afrankio%2c%20kuris%20b%c5%abt%c5%b3%20patogus%20u%c5%bera%c5%a1ams.%20Naudojau%20Evernote%2c%20Synology%0aNotes%2c%20vim%20oultiner%2c%20vim%20notes%2c%20kol%20galiausiai%20apsistojau%20prie%20vimwiki.%20Vimwiki%0aturiu%20dvi%20atskiras%20kolekcijas%20-%20vien%c4%85%20darbui%2c%20o%20kit%c4%85%20asmeniniams%20u%c5%bera%c5%a1ams.%0aTekst%c4%85%20ra%c5%a1au%20Markdown%20formatu.%20Tuo%20pa%c4%8diu%20vimwiki%20turi%20dienora%c5%a1%c4%8dio%20funkcij%c4%85%2c%20kuri%0atiesiog%20sukuria%20nauj%c4%85%20fail%c4%85%2c%20skrit%c4%85%20%c4%afra%c5%a1ams%2c%20su%20dienos%20data%20ir%20generuoja%0aindeksin%c4%af%20puslap%c4%af%2c%20kuriame%20saugomos%20nuorodos%20%c4%af%20visus%20%c5%a1iuos%20failus.%20Paprasta%20ir%0apatogu.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&name=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo&description=%3cp%3e%3avim%3a%20%3ablog%3a%3c%2fp%3e%0a%3cp%3e%c5%a0ita%20id%c4%97ja%20galvoje%20sukosi%20jau%20seniai.%20Teksto%20redagavimui%20naudoju%20VIM.%20Ilgai%0aie%c5%a1kojau%20%c4%afrankio%2c%20kuris%20b%c5%abt%c5%b3%20patogus%20u%c5%bera%c5%a1ams.%20Naudojau%20Evernote%2c%20Synology%0aNotes%2c%20vim%20oultiner%2c%20vim%20notes%2c%20kol%20galiausiai%20apsistojau%20prie%20vimwiki.%20Vimwiki%0aturiu%20dvi%20atskiras%20kolekcijas%20-%20vien%c4%85%20darbui%2c%20o%20kit%c4%85%20asmeniniams%20u%c5%bera%c5%a1ams.%0aTekst%c4%85%20ra%c5%a1au%20Markdown%20formatu.%20Tuo%20pa%c4%8diu%20vimwiki%20turi%20dienora%c5%a1%c4%8dio%20funkcij%c4%85%2c%20kuri%0atiesiog%20sukuria%20nauj%c4%85%20fail%c4%85%2c%20skrit%c4%85%20%c4%afra%c5%a1ams%2c%20su%20dienos%20data%20ir%20generuoja%0aindeksin%c4%af%20puslap%c4%af%2c%20kuriame%20saugomos%20nuorodos%20%c4%af%20visus%20%c5%a1iuos%20failus.%20Paprasta%20ir%0apatogu.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&t=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&t=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
 </ul>
 
     </div>
+    
     <div id="toc">
       <nav id="TableOfContents"></nav>
     </div>
+    
   </span>
 </div>
 
@@ -183,21 +179,24 @@
         </div>
         
         
+        
+        
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             
             
             <a class="tag-link" href="/tags/vim" rel="tag">vim</a>
             
-            
+             ,  
             <a class="tag-link" href="/tags/blog" rel="tag">blog</a>
             
-        </div> 
+        </div>
         
       </div>
     </header>
 
   
+    
     <div class="content" itemprop="articleBody">
       <p>:vim: :blog:</p>
 <p>Šita idėja galvoje sukosi jau seniai. Teksto redagavimui naudoju VIM. Ilgai
@@ -310,6 +309,7 @@ learned) sąrašiuką viename puslapyje.</p>
 
 
 
+
   <div id="footer-post-container">
   <div id="footer-post">
 
@@ -325,9 +325,11 @@ learned) sąrašiuką viename puslapyje.</p>
       </ul>
     </div>
 
+    
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents"></nav>
     </div>
+    
 
     <div id="share-footer" style="display: none">
       
@@ -338,57 +340,47 @@ learned) sąrašiuką viename puslapyje.</p>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&text=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&text=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&is_video=false&description=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&is_video=false&description=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f">
+    <a class="icon" href="mailto:?subject=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo&body=Check out this article: https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
-      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&title=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
-      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&name=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo&description=%3cp%3e%3avim%3a%20%3ablog%3a%3c%2fp%3e%0a%3cp%3e%c5%a0ita%20id%c4%97ja%20galvoje%20sukosi%20jau%20seniai.%20Teksto%20redagavimui%20naudoju%20VIM.%20Ilgai%0aie%c5%a1kojau%20%c4%afrankio%2c%20kuris%20b%c5%abt%c5%b3%20patogus%20u%c5%bera%c5%a1ams.%20Naudojau%20Evernote%2c%20Synology%0aNotes%2c%20vim%20oultiner%2c%20vim%20notes%2c%20kol%20galiausiai%20apsistojau%20prie%20vimwiki.%20Vimwiki%0aturiu%20dvi%20atskiras%20kolekcijas%20-%20vien%c4%85%20darbui%2c%20o%20kit%c4%85%20asmeniniams%20u%c5%bera%c5%a1ams.%0aTekst%c4%85%20ra%c5%a1au%20Markdown%20formatu.%20Tuo%20pa%c4%8diu%20vimwiki%20turi%20dienora%c5%a1%c4%8dio%20funkcij%c4%85%2c%20kuri%0atiesiog%20sukuria%20nauj%c4%85%20fail%c4%85%2c%20skrit%c4%85%20%c4%afra%c5%a1ams%2c%20su%20dienos%20data%20ir%20generuoja%0aindeksin%c4%af%20puslap%c4%af%2c%20kuriame%20saugomos%20nuorodos%20%c4%af%20visus%20%c5%a1iuos%20failus.%20Paprasta%20ir%0apatogu.%3c%2fp%3e">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&name=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo&description=%3cp%3e%3avim%3a%20%3ablog%3a%3c%2fp%3e%0a%3cp%3e%c5%a0ita%20id%c4%97ja%20galvoje%20sukosi%20jau%20seniai.%20Teksto%20redagavimui%20naudoju%20VIM.%20Ilgai%0aie%c5%a1kojau%20%c4%afrankio%2c%20kuris%20b%c5%abt%c5%b3%20patogus%20u%c5%bera%c5%a1ams.%20Naudojau%20Evernote%2c%20Synology%0aNotes%2c%20vim%20oultiner%2c%20vim%20notes%2c%20kol%20galiausiai%20apsistojau%20prie%20vimwiki.%20Vimwiki%0aturiu%20dvi%20atskiras%20kolekcijas%20-%20vien%c4%85%20darbui%2c%20o%20kit%c4%85%20asmeniniams%20u%c5%bera%c5%a1ams.%0aTekst%c4%85%20ra%c5%a1au%20Markdown%20formatu.%20Tuo%20pa%c4%8diu%20vimwiki%20turi%20dienora%c5%a1%c4%8dio%20funkcij%c4%85%2c%20kuri%0atiesiog%20sukuria%20nauj%c4%85%20fail%c4%85%2c%20skrit%c4%85%20%c4%afra%c5%a1ams%2c%20su%20dienos%20data%20ir%20generuoja%0aindeksin%c4%af%20puslap%c4%af%2c%20kuriame%20saugomos%20nuorodos%20%c4%af%20visus%20%c5%a1iuos%20failus.%20Paprasta%20ir%0apatogu.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&t=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-10-28%2f&t=Vimwiki%20dienora%c5%a1%c4%8dio%20perk%c4%97limas%20%c4%af%20Github%20Pages%20naudojant%20Hugo" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -398,13 +390,15 @@ learned) sąrašiuką viename puslapyje.</p>
 
     <div id="actions-footer">
       
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
           <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
           <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
           <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
           <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
@@ -438,6 +432,9 @@ learned) sąrašiuką viename puslapyje.</p>
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
 
 
 
