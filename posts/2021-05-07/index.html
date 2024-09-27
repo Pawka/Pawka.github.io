@@ -13,7 +13,7 @@
   <meta property="og:title" content="TIL: Configure Pulseaudio to not switch output to hot-plugged devices">
   <meta property="og:description" content=":til: :linux:
 Motivation I have Blue Yeti USB microphone which also has an audio output for monitoring. I do not use the output but once pluged-in - Ubuntu recognize it as new sound card and switch output to the microphone immediatelly. This drives me nuts because I always need to switch back audio output manually to previous device.
-Pulseaudio config Pulseaudio has a feature automatically switch to hot-plugged devices which is enabled by default.">
+Pulseaudio config Pulseaudio has a feature automatically switch to hot-plugged devices which is enabled by default. All is needed - comment out this setting on the configuration.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -27,7 +27,7 @@ Pulseaudio config Pulseaudio has a feature automatically switch to hot-plugged d
   <meta name="twitter:title" content="TIL: Configure Pulseaudio to not switch output to hot-plugged devices">
   <meta name="twitter:description" content=":til: :linux:
 Motivation I have Blue Yeti USB microphone which also has an audio output for monitoring. I do not use the output but once pluged-in - Ubuntu recognize it as new sound card and switch output to the microphone immediatelly. This drives me nuts because I always need to switch back audio output manually to previous device.
-Pulseaudio config Pulseaudio has a feature automatically switch to hot-plugged devices which is enabled by default.">
+Pulseaudio config Pulseaudio has a feature automatically switch to hot-plugged devices which is enabled by default. All is needed - comment out this setting on the configuration.">
 
   
   
@@ -152,7 +152,7 @@ Pulseaudio config Pulseaudio has a feature automatically switch to hot-plugged d
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-05-07%2f&name=TIL%3a%20Configure%20Pulseaudio%20to%20not%20switch%20output%20to%20hot-plugged%20devices&description=%3atil%3a%20%3alinux%3a%0aMotivation%20I%20have%20Blue%20Yeti%20USB%20microphone%20which%20also%20has%20an%20audio%20output%20for%20monitoring.%20I%20do%20not%20use%20the%20output%20but%20once%20pluged-in%20-%20Ubuntu%20recognize%20it%20as%20new%20sound%20card%20and%20switch%20output%20to%20the%20microphone%20immediatelly.%20This%20drives%20me%20nuts%20because%20I%20always%20need%20to%20switch%20back%20audio%20output%20manually%20to%20previous%20device.%0aPulseaudio%20config%20Pulseaudio%20has%20a%20feature%20automatically%20switch%20to%20hot-plugged%20devices%20which%20is%20enabled%20by%20default.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-05-07%2f&name=TIL%3a%20Configure%20Pulseaudio%20to%20not%20switch%20output%20to%20hot-plugged%20devices&description=%3cp%3e%3atil%3a%20%3alinux%3a%3c%2fp%3e%0a%3ch2%20id%3d%22motivation%22%3eMotivation%3c%2fh2%3e%0a%3cp%3eI%20have%20Blue%20Yeti%20USB%20microphone%20which%20also%20has%20an%20audio%20output%20for%20monitoring.%0aI%20do%20not%20use%20the%20output%20but%20once%20pluged-in%20-%20Ubuntu%20recognize%20it%20as%20new%20sound%0acard%20and%20switch%20output%20to%20the%20microphone%20immediatelly.%20This%20drives%20me%20nuts%0abecause%20I%20always%20need%20to%20switch%20back%20audio%20output%20manually%20to%20previous%20device.%3c%2fp%3e%0a%3ch2%20id%3d%22pulseaudio-config%22%3ePulseaudio%20config%3c%2fh2%3e%0a%3cp%3ePulseaudio%20has%20a%20feature%20automatically%20switch%20to%20hot-plugged%20devices%20which%20is%0aenabled%20by%20default.%20All%20is%20needed%20-%20comment%20out%20this%20setting%20on%20the%0aconfiguration.%3c%2fp%3e">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -312,7 +312,7 @@ load-module module-switch-on-connect
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-05-07%2f&name=TIL%3a%20Configure%20Pulseaudio%20to%20not%20switch%20output%20to%20hot-plugged%20devices&description=%3atil%3a%20%3alinux%3a%0aMotivation%20I%20have%20Blue%20Yeti%20USB%20microphone%20which%20also%20has%20an%20audio%20output%20for%20monitoring.%20I%20do%20not%20use%20the%20output%20but%20once%20pluged-in%20-%20Ubuntu%20recognize%20it%20as%20new%20sound%20card%20and%20switch%20output%20to%20the%20microphone%20immediatelly.%20This%20drives%20me%20nuts%20because%20I%20always%20need%20to%20switch%20back%20audio%20output%20manually%20to%20previous%20device.%0aPulseaudio%20config%20Pulseaudio%20has%20a%20feature%20automatically%20switch%20to%20hot-plugged%20devices%20which%20is%20enabled%20by%20default.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2021-05-07%2f&name=TIL%3a%20Configure%20Pulseaudio%20to%20not%20switch%20output%20to%20hot-plugged%20devices&description=%3cp%3e%3atil%3a%20%3alinux%3a%3c%2fp%3e%0a%3ch2%20id%3d%22motivation%22%3eMotivation%3c%2fh2%3e%0a%3cp%3eI%20have%20Blue%20Yeti%20USB%20microphone%20which%20also%20has%20an%20audio%20output%20for%20monitoring.%0aI%20do%20not%20use%20the%20output%20but%20once%20pluged-in%20-%20Ubuntu%20recognize%20it%20as%20new%20sound%0acard%20and%20switch%20output%20to%20the%20microphone%20immediatelly.%20This%20drives%20me%20nuts%0abecause%20I%20always%20need%20to%20switch%20back%20audio%20output%20manually%20to%20previous%20device.%3c%2fp%3e%0a%3ch2%20id%3d%22pulseaudio-config%22%3ePulseaudio%20config%3c%2fh2%3e%0a%3cp%3ePulseaudio%20has%20a%20feature%20automatically%20switch%20to%20hot-plugged%20devices%20which%20is%0aenabled%20by%20default.%20All%20is%20needed%20-%20comment%20out%20this%20setting%20on%20the%0aconfiguration.%3c%2fp%3e">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
