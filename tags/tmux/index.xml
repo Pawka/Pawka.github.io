@@ -1,44 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tmux on Pawka&#39;s diary</title>
+    <title>Tmux on Pawka&#39;s diary</title>
     <link>https://pawka.notrollsallowed.com/tags/tmux/</link>
-    <description>Recent content in tmux on Pawka&#39;s diary</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Tmux on Pawka&#39;s diary</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pawka.notrollsallowed.com/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL: Swap panes on TMUX</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-07-15/</link>
       <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-07-15/</guid>
-      <description>:til: :tmux:
-To move pane left or right &amp;lt;prefix&amp;gt; { or &amp;lt;prefix&amp;gt; } key sequence can be used.</description>
+      <description>&lt;p&gt;:til: :tmux:&lt;/p&gt;&#xA;&lt;p&gt;To move pane left or right &lt;code&gt;&amp;lt;prefix&amp;gt; {&lt;/code&gt; or &lt;code&gt;&amp;lt;prefix&amp;gt; }&lt;/code&gt; key sequence can be&#xA;used.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: TMUX pane management</title>
       <link>https://pawka.notrollsallowed.com/posts/2019-09-25/</link>
       <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2019-09-25/</guid>
-      <description>:til: :tmux:
-Inside any pane, press &amp;lt;Prefix&amp;gt;! and tmux will create a new window from your pane, removing the original pane.
-Now, to move the first window into a pane in the second window, press &amp;lt;Prefix&amp;gt;: to enter Command mode, and type this:
-:join-pane -s panes:1 or
-:join-pane -s :1 You can use this technique to move panes around as well. If your first window had two panes, you could specify the source pane like this:</description>
+      <description>&lt;p&gt;:til: :tmux:&lt;/p&gt;&#xA;&lt;p&gt;Inside any pane, press &lt;code&gt;&amp;lt;Prefix&amp;gt;!&lt;/code&gt; and tmux will create a new window from your&#xA;pane, removing the original pane.&lt;/p&gt;&#xA;&lt;p&gt;Now, to move the first window into a pane in the second window, press&#xA;&lt;code&gt;&amp;lt;Prefix&amp;gt;:&lt;/code&gt; to enter Command mode, and type this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-viml&#34; data-lang=&#34;viml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;join&lt;/span&gt;-&lt;span style=&#34;color:#a6e22e&#34;&gt;pane&lt;/span&gt; -&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;panes&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-viml&#34; data-lang=&#34;viml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;join&lt;/span&gt;-&lt;span style=&#34;color:#a6e22e&#34;&gt;pane&lt;/span&gt; -&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt; :&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can use this technique to move panes around as well. If your first window&#xA;had two panes, you could specify the source pane like this:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Copy TMUX pane contents to buffer</title>
       <link>https://pawka.notrollsallowed.com/posts/2019-09-24/</link>
       <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2019-09-24/</guid>
-      <description>:til: :tmux:
-Tmux has a handy shortcut that copies the entire visible contents of a pane to a paste buffer. Enter tmux’s Command mode with &amp;lt;Prefix&amp;gt;:capture-pane. The contents of the pane will be in a paste buffer. You can then paste that content into another pane or window by pressing &amp;lt;Prefix&amp;gt;].</description>
+      <description>&lt;p&gt;:til: :tmux:&lt;/p&gt;&#xA;&lt;p&gt;Tmux has a handy shortcut that copies the entire visible contents of a pane to&#xA;a paste buffer. Enter tmux’s Command mode with &lt;code&gt;&amp;lt;Prefix&amp;gt;:capture-pane&lt;/code&gt;.&#xA;The contents of the pane will be in a paste buffer. You can then paste that&#xA;content into another pane or window by pressing &lt;code&gt;&amp;lt;Prefix&amp;gt;]&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

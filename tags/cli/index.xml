@@ -1,79 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cli on Pawka&#39;s diary</title>
+    <title>Cli on Pawka&#39;s diary</title>
     <link>https://pawka.notrollsallowed.com/tags/cli/</link>
-    <description>Recent content in cli on Pawka&#39;s diary</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Cli on Pawka&#39;s diary</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pawka.notrollsallowed.com/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL: Scale images in command line</title>
       <link>https://pawka.notrollsallowed.com/posts/2022-08-09/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2022-08-09/</guid>
-      <description>:til: :cli:
-To resize images in commandline imagemagick package is required. With the package convert command becomes available which could be used to resize or scale images.
-convert -resize 30% *.jpg convert-resize 200x200 *.jpg </description>
+      <description>&lt;p&gt;:til: :cli:&lt;/p&gt;&#xA;&lt;p&gt;To resize images in commandline &lt;code&gt;imagemagick&lt;/code&gt; package is required. With the&#xA;package &lt;code&gt;convert&lt;/code&gt; command becomes available which could be used to resize or&#xA;scale images.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;convert -resize 30% *.jpg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;convert-resize 200x200 *.jpg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Call bash function via xargs</title>
       <link>https://pawka.notrollsallowed.com/posts/2021-03-05/</link>
       <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2021-03-05/</guid>
-      <description>:til: :cli: :bash:
-To run cli tools there is xargs. But what if I want to run certain part of bash script (a function) in parallel? One option is to extract function to a separate file and feed it into xargs. Another way - make xargs to execute the function:
-#!/bin/bash p() { echo &amp;#34;&amp;gt; $1&amp;#34; } main() { export -f p seq 10 | xargs -n 1 -I {} bash -c &amp;#34;p {}&amp;#34; } main &amp;#34;@$&amp;#34; Necesary line here is to export the function via export -f &amp;lt;function_name&amp;gt;.</description>
+      <description>&lt;p&gt;:til: :cli: :bash:&lt;/p&gt;&#xA;&lt;p&gt;To run cli tools there is &lt;code&gt;xargs&lt;/code&gt;. But what if I want to run certain part of&#xA;bash script (a function) in parallel? One option is to extract function to a&#xA;separate file and feed it into &lt;code&gt;xargs&lt;/code&gt;. Another way - make &lt;code&gt;xargs&lt;/code&gt; to execute&#xA;the function:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;p&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;gt; &lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;main&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    export -f p&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    seq &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; | xargs -n &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; -I &lt;span style=&#34;color:#f92672&#34;&gt;{}&lt;/span&gt; bash -c  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p {}&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;main &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@&lt;/span&gt;$&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Necesary line here is to export the function via &lt;code&gt;export -f &amp;lt;function_name&amp;gt;&lt;/code&gt;.&#xA;Once function is exported to the scope, &lt;code&gt;xargs&lt;/code&gt; can access it and execute call&#xA;to the function. The &lt;code&gt;p {}&lt;/code&gt; part means value from &lt;code&gt;seq&lt;/code&gt; command is provided to&#xA;function &lt;code&gt;p&lt;/code&gt;. E.g. &lt;code&gt;p 10&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: column -t command to format output</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-09-04/</link>
       <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-09-04/</guid>
-      <description>:til: :cli:
-column -t command can be used to pretty print output of files (e.g. database exports) by aligning columns nicely.
-Original content:
-pawka@kyloren &amp;gt; cat file.txt aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2nx 6154 bb/bbbbbb PHID-REPO-bampn53k6a7zwzr76rez 3235 cccc/ccccc-cccc-ccccccccc PHID-REPO-scvhcxnrs4nyrzrs64jc 2433 ddd-dddd PHID-REPO-uexvk77yeovy63fhokqw 1269 eeeeee/eee PHID-REPO-hmdgak5gad4rxiter65h 1266 Formatted content:
-pawka@kyloren &amp;gt; cat file.txt | column -t aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2nx 6154 bb/bbbbbb PHID-REPO-bampn53k6a7zwzr76rez 3235 cccc/ccccc-cccc-ccccccccc PHID-REPO-scvhcxnrs4nyrzrs64jc 2433 ddd-dddd PHID-REPO-uexvk77yeovy63fhokqw 1269 eeeeee/eee PHID-REPO-hmdgak5gad4rxiter65h 1266 `` </description>
+      <description>&lt;p&gt;:til: :cli:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;column -t&lt;/code&gt; command can be used to pretty print output of files (e.g. database&#xA;exports) by aligning columns nicely.&lt;/p&gt;&#xA;&lt;p&gt;Original content:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pawka@kyloren &amp;gt; cat file.txt&#xA;aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2nx  6154&#xA;bb/bbbbbb       PHID-REPO-bampn53k6a7zwzr76rez  3235&#xA;cccc/ccccc-cccc-ccccccccc       PHID-REPO-scvhcxnrs4nyrzrs64jc  2433&#xA;ddd-dddd        PHID-REPO-uexvk77yeovy63fhokqw  1269&#xA;eeeeee/eee      PHID-REPO-hmdgak5gad4rxiter65h  1266&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Formatted content:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pawka@kyloren &amp;gt; cat file.txt | column -t&#xA;aa-aaaa                    PHID-REPO-qb3mtuk2we6ivy7xw2nx  6154&#xA;bb/bbbbbb                  PHID-REPO-bampn53k6a7zwzr76rez  3235&#xA;cccc/ccccc-cccc-ccccccccc  PHID-REPO-scvhcxnrs4nyrzrs64jc  2433&#xA;ddd-dddd                   PHID-REPO-uexvk77yeovy63fhokqw  1269&#xA;eeeeee/eee                 PHID-REPO-hmdgak5gad4rxiter65h  1266&#xA;``&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Forward data to CURL from STDIN</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-05-04/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-05-04/</guid>
-      <description>:til: :curl: :cli:
-curl can read data from STDIN when --data @- is provided as parameter:
-$ echo &amp;#34;Hi&amp;#34; | curl http://theurl.com -d @- </description>
+      <description>&lt;p&gt;:til: :curl: :cli:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;curl&lt;/code&gt; can read data from STDIN when &lt;code&gt;--data @-&lt;/code&gt; is provided as parameter:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ echo &amp;#34;Hi&amp;#34; | curl http://theurl.com -d @-&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Make timelapse video with ffmpeg</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-04-24/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-04-24/</guid>
-      <description>:til: :ffmpeg: :cli:
-Jau kažkadaise esu su ffmpeg gaminęs video iš paveiksliukų ir atvirkščiai, tad šis būdas manęs nenustebino. Tiesiog ffmpeg turi krūvą parametrų kurių tikrai neįmanoma prisiminti dažnai neredaguojant vaizdinės medžiagos.
-Sukūriau tokį Makefile, kuris iš paveikslų sudėlioja geros kokybės video:
-# Build timelapse video from images timelapse.mp4: ffmpeg -r 24 -pattern_type glob -i &amp;#39;*.JPG&amp;#39; -s hd1080 -vcodec libx264 \ -crf 18 -preset slow timelapse.mp4 To list available encoders run ffmpeg -encoders.</description>
+      <description>&lt;p&gt;:til: :ffmpeg: :cli:&lt;/p&gt;&#xA;&lt;p&gt;Jau kažkadaise esu su &lt;code&gt;ffmpeg&lt;/code&gt; gaminęs video iš paveiksliukų ir atvirkščiai, tad&#xA;šis būdas manęs nenustebino. Tiesiog &lt;code&gt;ffmpeg&lt;/code&gt; turi krūvą parametrų kurių tikrai&#xA;neįmanoma prisiminti dažnai neredaguojant vaizdinės medžiagos.&lt;/p&gt;&#xA;&lt;p&gt;Sukūriau tokį &lt;code&gt;Makefile&lt;/code&gt;, kuris iš paveikslų sudėlioja geros kokybės video:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Build timelapse video from images&#xA;timelapse.mp4:&#xA;        ffmpeg -r 24 -pattern_type glob -i &amp;#39;*.JPG&amp;#39; -s hd1080 -vcodec libx264 \&#xA;        -crf 18 -preset slow timelapse.mp4&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To list available encoders run &lt;code&gt;ffmpeg -encoders&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Jump to previous directory on bash/zsh</title>
       <link>https://pawka.notrollsallowed.com/posts/2019-12-31/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2019-12-31/</guid>
-      <description>:til: :cli:
-$ cd - </description>
+      <description>&lt;p&gt;:til: :cli:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ cd -&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
   </channel>
 </rss>

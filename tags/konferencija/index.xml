@@ -1,67 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>konferencija on Pawka&#39;s diary</title>
+    <title>Konferencija on Pawka&#39;s diary</title>
     <link>https://pawka.notrollsallowed.com/tags/konferencija/</link>
-    <description>Recent content in konferencija on Pawka&#39;s diary</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Konferencija on Pawka&#39;s diary</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/konferencija/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pawka.notrollsallowed.com/tags/konferencija/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fosdem 2023 notes</title>
       <link>https://pawka.notrollsallowed.com/posts/2023-02-11/</link>
       <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2023-02-11/</guid>
-      <description>:fosdem: :konferencija:
-Finally Fosdem is live again! Unfortunately there was no direct flight from Vilnius, since Brussels Airlines have stopped direct flights until spring. Anyway, Fosdem was great this year!
-Building a CI pipeline with Dagger in Go Personal score: 2/5, URL
-Speaker did a short intro what Dagger is and then tried to launch demo for 20 mins but failed. I&amp;rsquo;ve got the main idea what Dagger actually is but nothing special from this talk.</description>
+      <description>&lt;p&gt;:fosdem: :konferencija:&lt;/p&gt;&#xA;&lt;p&gt;Finally Fosdem is live again! Unfortunately there was no direct flight from&#xA;Vilnius, since Brussels Airlines have stopped direct flights until spring.&#xA;Anyway, Fosdem was great this year!&lt;/p&gt;&#xA;&lt;h2 id=&#34;building-a-ci-pipeline-with-dagger-in-go&#34;&gt;Building a CI pipeline with Dagger in Go&lt;/h2&gt;&#xA;&lt;p&gt;Personal score: 2/5, &lt;a href=&#34;https://fosdem.org/2023/schedule/event/gocidagger/&#34;&gt;URL&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Speaker did a short intro what Dagger is and then tried to launch demo for 20&#xA;mins but failed. I&amp;rsquo;ve got the main idea what Dagger actually is but nothing&#xA;special from this talk.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>May Contain Hackers 2022 notes</title>
       <link>https://pawka.notrollsallowed.com/posts/2022-08-08/</link>
       <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2022-08-08/</guid>
-      <description>:konferencija:
-I did not got a chance to participate in MCH2022 but they have published records of presentations which are available here. Below are some notes of presentations I&amp;rsquo;ve watched.
-Electronic Locks: Bumping and Other Mischief Personal score: 4/5
-Gem. Live demo unlocking multiple electronic locks. Basically all electronic locks sucks because of solenoid (magnets in locks are bad idea), mechanical issues (springs, freely moving parts are bad idea too). Basically all these locks were unlocked with virbations, magnets or torque.</description>
+      <description>&lt;p&gt;:konferencija:&lt;/p&gt;&#xA;&lt;p&gt;I did not got a chance to participate in MCH2022 but they have published records&#xA;of presentations which are available &lt;a href=&#34;https://media.ccc.de/c/MCH2022&#34;&gt;here&lt;/a&gt;. Below are some notes of presentations&#xA;I&amp;rsquo;ve watched.&lt;/p&gt;&#xA;&lt;h2 id=&#34;electronic-locks-bumping-and-other-mischief&#34;&gt;Electronic Locks: Bumping and Other Mischief&lt;/h2&gt;&#xA;&lt;p&gt;Personal score: 4/5&lt;/p&gt;&#xA;&lt;p&gt;Gem. Live demo unlocking multiple electronic locks. Basically all electronic&#xA;locks sucks because of solenoid (magnets in locks are bad idea), mechanical&#xA;issues (springs, freely moving parts are bad idea too). Basically all these&#xA;locks were unlocked with virbations, magnets or torque.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fosdem 2022 notes</title>
       <link>https://pawka.notrollsallowed.com/posts/2022-02-05/</link>
       <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2022-02-05/</guid>
-      <description>:fosdem: :konferencija:
-This is the second time I&amp;rsquo;m participating online conference and both times are Fosdem. Below are my personal notes of Fosdem 2022. Some notes might not be completed which I was planning to do later. But it is possible the later never came. My personal scores are mostly based how much fun I&amp;rsquo;ve received from the talk. These do not reflect quality of presentations. Simply I might be to stupid to understand the content so I&amp;rsquo;d rate the talk as &amp;ldquo;not so much fun&amp;rdquo;.</description>
+      <description>&lt;p&gt;:fosdem: :konferencija:&lt;/p&gt;&#xA;&lt;p&gt;This is the second time I&amp;rsquo;m participating online conference and both times are&#xA;Fosdem. Below are my personal notes of Fosdem 2022. Some notes might not be&#xA;completed which I was planning to do later. But it is possible the later never&#xA;came. My personal scores are mostly based how much fun I&amp;rsquo;ve received from the&#xA;talk. These do not reflect quality of presentations. Simply I might be to stupid&#xA;to understand the content so I&amp;rsquo;d rate the talk as &amp;ldquo;not so much fun&amp;rdquo;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fosdem 2021 notes</title>
       <link>https://pawka.notrollsallowed.com/posts/2021-02-06/</link>
       <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2021-02-06/</guid>
-      <description>:fosdem: :konferencija:
-Fosdem 2021 was the first virtual/on-line conference I&amp;rsquo;ve participated. I (thought) do not really like watching videos and participate in such virtual events. But I must admit I really enjoyed the Fosdem this year. Yeah, there were multiple technical issues, like low video quality (very few times), speakers did not hear hearing questions from the moderators, speakers and moderators were cut in the middle of sentence when answering questions (because time management was automated), etc.</description>
+      <description>&lt;p&gt;:fosdem: :konferencija:&lt;/p&gt;&#xA;&lt;p&gt;Fosdem 2021 was the first virtual/on-line conference I&amp;rsquo;ve participated. I&#xA;(thought) do not really like watching videos and participate in such virtual&#xA;events. But I must admit I really enjoyed the Fosdem this year. Yeah, there were&#xA;multiple technical issues, like low video quality (very few times), speakers&#xA;did not hear hearing questions from the moderators, speakers and moderators were&#xA;cut in the middle of sentence when answering questions (because time management&#xA;was automated), etc. But despite that it was great to watch pre-recorded&#xA;presentation and chat with the speaker or other participants in parallel in the&#xA;chatroom. Ask questions, comment, up-vote other questions, etc. It was nice&#xA;experience and much better than I&amp;rsquo;ve expected initially!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fosdem 2020: Retrocomputing devroom apžvalga</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-04-02/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-04-02/</guid>
-      <description>:fosdem: :konferencija:
-BASICODE: the 8-bit programming API that crossed the Berlin Wall Įdomumas 3/5.
-Bičas pasakoja kaip senais 8-bitų kompiuterių laikais (apie 1981) kompiuteriai užsikraudavo BASIC aplinką vietoj operacinės sistemos. Kompiuteriai būdavo skirtingi, tad ir BASIC&amp;rsquo;ų versijų būdavo įvairių. Programinė įranga tilpdavo į kelis žurnalio puslapius ir taip būdavo platinama. Tačiau kildavo problemų, nes BASIC&amp;rsquo;ai visgi būdavo skirtingi.
-Galiausiai atsirado transliatoriai, kurie trūkstamas procedūras aprašydavo kode. Pvz CLS funkcijos nebuvimas būdavo pakeičiamas GOTO 100 kur 100-ojoje eilutėje būdavo talpinamas kodas, atitinkantis CLS funkciją.</description>
+      <description>&lt;p&gt;:fosdem: :konferencija:&lt;/p&gt;&#xA;&lt;h2 id=&#34;basicode-the-8-bit-programming-api-that-crossed-the-berlin-wallhttpsfosdemorg2020scheduleeventretro_basicode_8_bit_programming_api&#34;&gt;&lt;a href=&#34;https://fosdem.org/2020/schedule/event/retro_basicode_8_bit_programming_api/&#34;&gt;BASICODE: the 8-bit programming API that crossed the Berlin Wall&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Įdomumas 3/5.&lt;/p&gt;&#xA;&lt;p&gt;Bičas pasakoja kaip senais 8-bitų kompiuterių laikais (apie 1981) kompiuteriai&#xA;užsikraudavo BASIC aplinką vietoj operacinės sistemos. Kompiuteriai būdavo&#xA;skirtingi, tad ir BASIC&amp;rsquo;ų versijų būdavo įvairių. Programinė įranga tilpdavo į&#xA;kelis žurnalio puslapius ir taip būdavo platinama. Tačiau kildavo problemų, nes&#xA;BASIC&amp;rsquo;ai visgi būdavo skirtingi.&lt;/p&gt;&#xA;&lt;p&gt;Galiausiai atsirado transliatoriai, kurie trūkstamas procedūras aprašydavo kode.&#xA;Pvz &lt;code&gt;CLS&lt;/code&gt; funkcijos nebuvimas būdavo pakeičiamas &lt;code&gt;GOTO 100&lt;/code&gt; kur 100-ojoje&#xA;eilutėje būdavo talpinamas kodas, atitinkantis CLS funkciją.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

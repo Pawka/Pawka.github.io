@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>keyboards on Pawka&#39;s diary</title>
+    <title>Keyboards on Pawka&#39;s diary</title>
     <link>https://pawka.notrollsallowed.com/tags/keyboards/</link>
-    <description>Recent content in keyboards on Pawka&#39;s diary</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Keyboards on Pawka&#39;s diary</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/keyboards/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pawka.notrollsallowed.com/tags/keyboards/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pasigaminau Ergodox klaviatūrą</title>
       <link>https://pawka.notrollsallowed.com/posts/2021-03-28/</link>
       <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2021-03-28/</guid>
-      <description>:ergodox: :keyboards: :diy:
-Prieš kelis metus įsigijau nuostabią klaviatūrą - Ultimate Hacking Keyboard. Tai buvo mano pirmoji dviejų dalių (split) klaviatūra. Esu ja labai patenkintas iki šiol, nes jos ergonominis dizainas padėjo atsikratyti riešų skausmų. O galimybė programuoti visus mygtukus didino produktyvumą. Tačiau ilgiau dirbdamas pastebėjau, kad kai kurių mygtukų negaliu fiziškai pasiekti neatkeldamas riešų. Dėl to kai kurie mygtukai yra paprasčiausiai nenaudojami. Kitas klaviatūros variantas kurį tuo metu svarsčiau buvo Ergodox.</description>
+      <description>&lt;p&gt;:ergodox: :keyboards: :diy:&lt;/p&gt;&#xA;&lt;p&gt;Prieš kelis metus įsigijau nuostabią klaviatūrą - Ultimate Hacking Keyboard. Tai&#xA;buvo mano pirmoji dviejų dalių (split) klaviatūra. Esu ja labai patenkintas iki&#xA;šiol, nes jos ergonominis dizainas padėjo atsikratyti riešų skausmų. O&#xA;galimybė programuoti visus mygtukus didino produktyvumą. Tačiau ilgiau dirbdamas&#xA;pastebėjau, kad kai kurių mygtukų negaliu fiziškai pasiekti neatkeldamas riešų.&#xA;Dėl to kai kurie mygtukai yra paprasčiausiai nenaudojami. Kitas klaviatūros&#xA;variantas kurį tuo metu svarsčiau buvo Ergodox. Europoje neradau kas ja&#xA;prekiauja, o dėl rekomendacijų galiausiai pasirinkau UHK.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

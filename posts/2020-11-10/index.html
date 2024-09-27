@@ -14,19 +14,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="Linux RAM kompresija su zram" />
-<meta property="og:description" content=":linux:
-Darbinis kompiuteris vargsta dėl atminties trūkumo. Mat turi tik 16G RAM&rsquo;o. Dirbame su monorepo ir tam tikri monolitinės repozitorijos įrankiai kaip gazelle arba gopls reikalauja nemažai atminties ir kartais skubiai. Jei dar fone paleistas koks Spotify, Goole Chrome, Slack&rsquo;as - visas RAM&rsquo;o valgytojų elitas - tai kažkas turi pasitraukti.
-Būna, paleidus gazelle kompas pakimba ir atsigauna po kažkiek laiko. Būna atsigauna su baltu Slack&rsquo;o langu (nes tam pritrūko atminties kažką sukramtyt)." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2020-11-10/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-11-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-11-10T00:00:00+00:00" />
+  <meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2020-11-10/">
+  <meta property="og:site_name" content="Pawka&#39;s diary">
+  <meta property="og:title" content="Linux RAM kompresija su zram">
+  <meta property="og:description" content=":linux:
+Darbinis kompiuteris vargsta dėl atminties trūkumo. Mat turi tik 16G RAM’o. Dirbame su monorepo ir tam tikri monolitinės repozitorijos įrankiai kaip gazelle arba gopls reikalauja nemažai atminties ir kartais skubiai. Jei dar fone paleistas koks Spotify, Goole Chrome, Slack’as - visas RAM’o valgytojų elitas - tai kažkas turi pasitraukti.
+Būna, paleidus gazelle kompas pakimba ir atsigauna po kažkiek laiko. Būna atsigauna su baltu Slack’o langu (nes tam pritrūko atminties kažką sukramtyt). Būna nužudomas gopls language serveris (kas labai užknisa, nes indeksavimas užtrunka). Arba kartais išvis nebesulaukiu kol kompas atsigaus ir tenka jį perkrauti. Kokius 5 kartus per dieną.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-11-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2020-11-10T00:00:00+00:00">
+    <meta property="article:tag" content="Linux">
 
   
   
   
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/scss/style.scss" integrity="">
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
@@ -140,7 +144,7 @@ Būna, paleidus gazelle kompas pakimba ir atsigauna po kažkiek laiko. Būna ats
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&name=Linux%20RAM%20kompresija%20su%20zram&description=%3alinux%3a%0aDarbinis%20kompiuteris%20vargsta%20d%c4%97l%20atminties%20tr%c5%abkumo.%20Mat%20turi%20tik%2016G%20RAM%26rsquo%3bo.%20Dirbame%20su%20monorepo%20ir%20tam%20tikri%20monolitin%c4%97s%20repozitorijos%20%c4%afrankiai%20kaip%20gazelle%20arba%20gopls%20reikalauja%20nema%c5%beai%20atminties%20ir%20kartais%20skubiai.%20Jei%20dar%20fone%20paleistas%20koks%20Spotify%2c%20Goole%20Chrome%2c%20Slack%26rsquo%3bas%20-%20visas%20RAM%26rsquo%3bo%20valgytoj%c5%b3%20elitas%20-%20tai%20ka%c5%bekas%20turi%20pasitraukti.%0aB%c5%abna%2c%20paleidus%20gazelle%20kompas%20pakimba%20ir%20atsigauna%20po%20ka%c5%bekiek%20laiko.%20B%c5%abna%20atsigauna%20su%20baltu%20Slack%26rsquo%3bo%20langu%20%28nes%20tam%20pritr%c5%abko%20atminties%20ka%c5%bek%c4%85%20sukramtyt%29." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&name=Linux%20RAM%20kompresija%20su%20zram&description=%3cp%3e%3alinux%3a%3c%2fp%3e%0a%3cp%3eDarbinis%20kompiuteris%20vargsta%20d%c4%97l%20atminties%20tr%c5%abkumo.%20Mat%20turi%20tik%2016G%20RAM%26rsquo%3bo.%0aDirbame%20su%20monorepo%20ir%20tam%20tikri%20monolitin%c4%97s%20repozitorijos%20%c4%afrankiai%20kaip%0a%3ccode%3egazelle%3c%2fcode%3e%20arba%20%3ccode%3egopls%3c%2fcode%3e%20reikalauja%20nema%c5%beai%20atminties%20ir%20kartais%20skubiai.%20Jei%20dar%0afone%20paleistas%20koks%20Spotify%2c%20Goole%20Chrome%2c%20Slack%26rsquo%3bas%20-%20visas%20RAM%26rsquo%3bo%20valgytoj%c5%b3%0aelitas%20-%20tai%20ka%c5%bekas%20turi%20pasitraukti.%3c%2fp%3e%0a%3cp%3eB%c5%abna%2c%20paleidus%20%3ccode%3egazelle%3c%2fcode%3e%20kompas%20pakimba%20ir%20atsigauna%20po%20ka%c5%bekiek%20laiko.%20B%c5%abna%0aatsigauna%20su%20baltu%20Slack%26rsquo%3bo%20langu%20%28nes%20tam%20pritr%c5%abko%20atminties%20ka%c5%bek%c4%85%20sukramtyt%29.%0aB%c5%abna%20nu%c5%beudomas%20%3ccode%3egopls%3c%2fcode%3e%20language%20serveris%20%28kas%20labai%20u%c5%beknisa%2c%20nes%20indeksavimas%0au%c5%betrunka%29.%20Arba%20kartais%20i%c5%a1vis%20nebesulaukiu%20kol%20kompas%20atsigaus%20ir%20tenka%20j%c4%af%0aperkrauti.%20Kokius%205%20kartus%20per%20dien%c4%85.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -299,7 +303,7 @@ kažkokio kompiuterio sulėtėjimo.</p>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&name=Linux%20RAM%20kompresija%20su%20zram&description=%3alinux%3a%0aDarbinis%20kompiuteris%20vargsta%20d%c4%97l%20atminties%20tr%c5%abkumo.%20Mat%20turi%20tik%2016G%20RAM%26rsquo%3bo.%20Dirbame%20su%20monorepo%20ir%20tam%20tikri%20monolitin%c4%97s%20repozitorijos%20%c4%afrankiai%20kaip%20gazelle%20arba%20gopls%20reikalauja%20nema%c5%beai%20atminties%20ir%20kartais%20skubiai.%20Jei%20dar%20fone%20paleistas%20koks%20Spotify%2c%20Goole%20Chrome%2c%20Slack%26rsquo%3bas%20-%20visas%20RAM%26rsquo%3bo%20valgytoj%c5%b3%20elitas%20-%20tai%20ka%c5%bekas%20turi%20pasitraukti.%0aB%c5%abna%2c%20paleidus%20gazelle%20kompas%20pakimba%20ir%20atsigauna%20po%20ka%c5%bekiek%20laiko.%20B%c5%abna%20atsigauna%20su%20baltu%20Slack%26rsquo%3bo%20langu%20%28nes%20tam%20pritr%c5%abko%20atminties%20ka%c5%bek%c4%85%20sukramtyt%29." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-11-10%2f&name=Linux%20RAM%20kompresija%20su%20zram&description=%3cp%3e%3alinux%3a%3c%2fp%3e%0a%3cp%3eDarbinis%20kompiuteris%20vargsta%20d%c4%97l%20atminties%20tr%c5%abkumo.%20Mat%20turi%20tik%2016G%20RAM%26rsquo%3bo.%0aDirbame%20su%20monorepo%20ir%20tam%20tikri%20monolitin%c4%97s%20repozitorijos%20%c4%afrankiai%20kaip%0a%3ccode%3egazelle%3c%2fcode%3e%20arba%20%3ccode%3egopls%3c%2fcode%3e%20reikalauja%20nema%c5%beai%20atminties%20ir%20kartais%20skubiai.%20Jei%20dar%0afone%20paleistas%20koks%20Spotify%2c%20Goole%20Chrome%2c%20Slack%26rsquo%3bas%20-%20visas%20RAM%26rsquo%3bo%20valgytoj%c5%b3%0aelitas%20-%20tai%20ka%c5%bekas%20turi%20pasitraukti.%3c%2fp%3e%0a%3cp%3eB%c5%abna%2c%20paleidus%20%3ccode%3egazelle%3c%2fcode%3e%20kompas%20pakimba%20ir%20atsigauna%20po%20ka%c5%bekiek%20laiko.%20B%c5%abna%0aatsigauna%20su%20baltu%20Slack%26rsquo%3bo%20langu%20%28nes%20tam%20pritr%c5%abko%20atminties%20ka%c5%bek%c4%85%20sukramtyt%29.%0aB%c5%abna%20nu%c5%beudomas%20%3ccode%3egopls%3c%2fcode%3e%20language%20serveris%20%28kas%20labai%20u%c5%beknisa%2c%20nes%20indeksavimas%0au%c5%betrunka%29.%20Arba%20kartais%20i%c5%a1vis%20nebesulaukiu%20kol%20kompas%20atsigaus%20ir%20tenka%20j%c4%af%0aperkrauti.%20Kokius%205%20kartus%20per%20dien%c4%85.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>

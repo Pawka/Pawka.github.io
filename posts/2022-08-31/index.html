@@ -14,20 +14,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="TIL: Open URL in VIM" />
-<meta property="og:description" content=":til: :vim:
+  <meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2022-08-31/">
+  <meta property="og:site_name" content="Pawka&#39;s diary">
+  <meta property="og:title" content="TIL: Open URL in VIM">
+  <meta property="og:description" content=":til: :vim:
 Move cursor on the URL and type gx to open the URL in browser.
 The gx actually calls open or OS equivalent command for given resource (it can be URL, image, other type of file). Then open command decides what to do with the object, e.g. if it is URL - open it in a browser.
-I often use VIM to format text, e.g. generate multiple URLs and wanted to open all of them in a browser." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2022-08-31/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-08-31T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-08-31T00:00:00+00:00" />
+I often use VIM to format text, e.g. generate multiple URLs and wanted to open all of them in a browser. This can be done via macro e.g. qegxj will record macro e to run gx and go one line bellow. Then simply executing macro for each line opens all urls e.g.: 100@e.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-08-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-08-31T00:00:00+00:00">
+    <meta property="article:tag" content="Til">
+    <meta property="article:tag" content="Vim">
 
   
   
   
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/scss/style.scss" integrity="">
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
@@ -141,7 +146,7 @@ I often use VIM to format text, e.g. generate multiple URLs and wanted to open a
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-08-31%2f&name=TIL%3a%20Open%20URL%20in%20VIM&description=%3atil%3a%20%3avim%3a%0aMove%20cursor%20on%20the%20URL%20and%20type%20gx%20to%20open%20the%20URL%20in%20browser.%0aThe%20gx%20actually%20calls%20open%20or%20OS%20equivalent%20command%20for%20given%20resource%20%28it%20can%20be%20URL%2c%20image%2c%20other%20type%20of%20file%29.%20Then%20open%20command%20decides%20what%20to%20do%20with%20the%20object%2c%20e.g.%20if%20it%20is%20URL%20-%20open%20it%20in%20a%20browser.%0aI%20often%20use%20VIM%20to%20format%20text%2c%20e.g.%20generate%20multiple%20URLs%20and%20wanted%20to%20open%20all%20of%20them%20in%20a%20browser." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-08-31%2f&name=TIL%3a%20Open%20URL%20in%20VIM&description=%3cp%3e%3atil%3a%20%3avim%3a%3c%2fp%3e%0a%3cp%3eMove%20cursor%20on%20the%20URL%20and%20type%20%3ccode%3egx%3c%2fcode%3e%20to%20open%20the%20URL%20in%20browser.%3c%2fp%3e%0a%3cp%3eThe%20%3ccode%3egx%3c%2fcode%3e%20actually%20calls%20%3ccode%3eopen%3c%2fcode%3e%20or%20OS%20equivalent%20command%20for%20given%20resource%20%28it%0acan%20be%20URL%2c%20image%2c%20other%20type%20of%20file%29.%20Then%20%3ccode%3eopen%3c%2fcode%3e%20command%20decides%20what%20to%20do%0awith%20the%20object%2c%20e.g.%20if%20it%20is%20URL%20-%20open%20it%20in%20a%20browser.%3c%2fp%3e%0a%3cp%3eI%20often%20use%20VIM%20to%20format%20text%2c%20e.g.%20generate%20multiple%20URLs%20and%20wanted%20to%20open%0aall%20of%20them%20in%20a%20browser.%20This%20can%20be%20done%20via%20macro%20e.g.%20%3ccode%3eqegxj%3c%2fcode%3e%20will%20record%0amacro%20%3ccode%3ee%3c%2fcode%3e%20to%20run%20%3ccode%3egx%3c%2fcode%3e%20and%20go%20one%20line%20bellow.%20Then%20simply%20executing%20macro%20for%0aeach%20line%20opens%20all%20urls%20e.g.%3a%20%3ccode%3e100%40e%3c%2fcode%3e.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -281,7 +286,7 @@ each line opens all urls e.g.: <code>100@e</code>.</p>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-08-31%2f&name=TIL%3a%20Open%20URL%20in%20VIM&description=%3atil%3a%20%3avim%3a%0aMove%20cursor%20on%20the%20URL%20and%20type%20gx%20to%20open%20the%20URL%20in%20browser.%0aThe%20gx%20actually%20calls%20open%20or%20OS%20equivalent%20command%20for%20given%20resource%20%28it%20can%20be%20URL%2c%20image%2c%20other%20type%20of%20file%29.%20Then%20open%20command%20decides%20what%20to%20do%20with%20the%20object%2c%20e.g.%20if%20it%20is%20URL%20-%20open%20it%20in%20a%20browser.%0aI%20often%20use%20VIM%20to%20format%20text%2c%20e.g.%20generate%20multiple%20URLs%20and%20wanted%20to%20open%20all%20of%20them%20in%20a%20browser." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2022-08-31%2f&name=TIL%3a%20Open%20URL%20in%20VIM&description=%3cp%3e%3atil%3a%20%3avim%3a%3c%2fp%3e%0a%3cp%3eMove%20cursor%20on%20the%20URL%20and%20type%20%3ccode%3egx%3c%2fcode%3e%20to%20open%20the%20URL%20in%20browser.%3c%2fp%3e%0a%3cp%3eThe%20%3ccode%3egx%3c%2fcode%3e%20actually%20calls%20%3ccode%3eopen%3c%2fcode%3e%20or%20OS%20equivalent%20command%20for%20given%20resource%20%28it%0acan%20be%20URL%2c%20image%2c%20other%20type%20of%20file%29.%20Then%20%3ccode%3eopen%3c%2fcode%3e%20command%20decides%20what%20to%20do%0awith%20the%20object%2c%20e.g.%20if%20it%20is%20URL%20-%20open%20it%20in%20a%20browser.%3c%2fp%3e%0a%3cp%3eI%20often%20use%20VIM%20to%20format%20text%2c%20e.g.%20generate%20multiple%20URLs%20and%20wanted%20to%20open%0aall%20of%20them%20in%20a%20browser.%20This%20can%20be%20done%20via%20macro%20e.g.%20%3ccode%3eqegxj%3c%2fcode%3e%20will%20record%0amacro%20%3ccode%3ee%3c%2fcode%3e%20to%20run%20%3ccode%3egx%3c%2fcode%3e%20and%20go%20one%20line%20bellow.%20Then%20simply%20executing%20macro%20for%0aeach%20line%20opens%20all%20urls%20e.g.%3a%20%3ccode%3e100%40e%3c%2fcode%3e.%3c%2fp%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>

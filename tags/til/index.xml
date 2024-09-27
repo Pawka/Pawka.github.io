@@ -1,261 +1,166 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>til on Pawka&#39;s diary</title>
+    <title>Til on Pawka&#39;s diary</title>
     <link>https://pawka.notrollsallowed.com/tags/til/</link>
-    <description>Recent content in til on Pawka&#39;s diary</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Til on Pawka&#39;s diary</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pawka.notrollsallowed.com/tags/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL: tail log until process exit</title>
       <link>https://pawka.notrollsallowed.com/posts/2023-04-01/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2023-04-01/</guid>
-      <description>:til: :bash:
-The --pid flag for tail command can be used to run tail untill particular process exits. It works with -f flag only. Example:
-tail --pid &amp;lt;process_id&amp;gt; -f &amp;lt;file.txt&amp;gt; I have been in situation when particular tool was able to write contents to file only but not stdout. Of course it was possible to provide /dev/stdout instead of file but then piping started to fail with &amp;ldquo;Permission denied&amp;rdquo; error. I&amp;rsquo;ve solved problem in a such way:</description>
+      <description>&lt;p&gt;:til: :bash:&lt;/p&gt;&#xA;&lt;p&gt;The &lt;code&gt;--pid&lt;/code&gt; flag for &lt;code&gt;tail&lt;/code&gt; command can be used to run &lt;code&gt;tail&lt;/code&gt; untill particular&#xA;process exits. It works with &lt;code&gt;-f&lt;/code&gt; flag only. Example:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tail --pid &amp;lt;process_id&amp;gt; -f &amp;lt;file.txt&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I have been in situation when particular tool was able to write contents to file&#xA;only but not stdout. Of course it was possible to provide &lt;code&gt;/dev/stdout&lt;/code&gt; instead&#xA;of file but then piping started to fail with &amp;ldquo;Permission denied&amp;rdquo; error. I&amp;rsquo;ve&#xA;solved problem in a such way:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Download embeded Vimeo video with youtube-dl</title>
       <link>https://pawka.notrollsallowed.com/posts/2023-02-03/</link>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2023-02-03/</guid>
-      <description>:til: :youtube-dl:
-youtube-dl usually easily detects which content and how to download it from given URL. But if webpage contains embeded videos from Vimeo it might not work. I&amp;rsquo;m not sure if this is an issue for any embeded video or just for restricted ones. I needed to download some media from members-only area so I could watch those on a plane but was struggling.
-There is a workaround:
-Open &amp;ldquo;Network&amp;rdquo; tab on &amp;ldquo;Developers Tools&amp;rdquo; in a browser.</description>
+      <description>&lt;p&gt;:til: :youtube-dl:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;youtube-dl&lt;/code&gt; usually easily detects which content and how to download it from&#xA;given URL. But if webpage contains embeded videos from Vimeo it might not work.&#xA;I&amp;rsquo;m not sure if this is an issue for any embeded video or just for restricted&#xA;ones. I needed to download some media from members-only area so I could watch&#xA;those on a plane but was struggling.&lt;/p&gt;&#xA;&lt;p&gt;There is a workaround:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open &amp;ldquo;Network&amp;rdquo; tab on &amp;ldquo;Developers Tools&amp;rdquo; in a browser.&lt;/li&gt;&#xA;&lt;li&gt;Click video to play and pause it.&lt;/li&gt;&#xA;&lt;li&gt;New network request will appear wich contains &lt;code&gt;.json?base64_init=1&lt;/code&gt; in part&#xA;of URL. This is the request we need.&lt;/li&gt;&#xA;&lt;li&gt;Modify URL to replace the mentioned part to &lt;code&gt;.mpd&lt;/code&gt;. For example:&#xA;&lt;code&gt;https://site.com/something.json?base64_init=1&amp;amp;param=val&lt;/code&gt; should become&#xA;&lt;code&gt;https://site.com/something.mpd?param=val&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Use &lt;code&gt;youtube-dl &amp;lt;URL&amp;gt;&lt;/code&gt; to download video where &lt;code&gt;&amp;lt;URL&amp;gt;&lt;/code&gt; is modified URL.&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Open URL in VIM</title>
       <link>https://pawka.notrollsallowed.com/posts/2022-08-31/</link>
       <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2022-08-31/</guid>
-      <description>:til: :vim:
-Move cursor on the URL and type gx to open the URL in browser.
-The gx actually calls open or OS equivalent command for given resource (it can be URL, image, other type of file). Then open command decides what to do with the object, e.g. if it is URL - open it in a browser.
-I often use VIM to format text, e.g. generate multiple URLs and wanted to open all of them in a browser.</description>
+      <description>&lt;p&gt;:til: :vim:&lt;/p&gt;&#xA;&lt;p&gt;Move cursor on the URL and type &lt;code&gt;gx&lt;/code&gt; to open the URL in browser.&lt;/p&gt;&#xA;&lt;p&gt;The &lt;code&gt;gx&lt;/code&gt; actually calls &lt;code&gt;open&lt;/code&gt; or OS equivalent command for given resource (it&#xA;can be URL, image, other type of file). Then &lt;code&gt;open&lt;/code&gt; command decides what to do&#xA;with the object, e.g. if it is URL - open it in a browser.&lt;/p&gt;&#xA;&lt;p&gt;I often use VIM to format text, e.g. generate multiple URLs and wanted to open&#xA;all of them in a browser. This can be done via macro e.g. &lt;code&gt;qegxj&lt;/code&gt; will record&#xA;macro &lt;code&gt;e&lt;/code&gt; to run &lt;code&gt;gx&lt;/code&gt; and go one line bellow. Then simply executing macro for&#xA;each line opens all urls e.g.: &lt;code&gt;100@e&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: List of Family Radio Service (FRS) channels</title>
       <link>https://pawka.notrollsallowed.com/posts/2022-08-12/</link>
       <pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2022-08-12/</guid>
-      <description>:til: :hamradio:
-I have a few Baofeng BF-T3 walkie talkies purchased to my kids but always struggle to remember which frequencies they operate when I want to configure those to work with my personal radios.
-List of FRC channels Stolen from Wikipedia page &amp;ldquo;Family Radio Service&amp;rdquo;.
-Channel Frequency (MHz) FRS EIRP Restriction GMRS EIRP Restriction 1 462.5625 Up to 2 watt Up to 5 watts 2 462.5875 Up to 2 watt Up to 5 watts 3 462.</description>
+      <description>&lt;p&gt;:til: :hamradio:&lt;/p&gt;&#xA;&lt;p&gt;I have a few Baofeng BF-T3 walkie talkies purchased to my kids but always&#xA;struggle to remember which frequencies they operate when I want to configure&#xA;those to work with my personal radios.&lt;/p&gt;&#xA;&lt;h2 id=&#34;list-of-frc-channels&#34;&gt;List of FRC channels&lt;/h2&gt;&#xA;&lt;p&gt;Stolen from Wikipedia page &lt;a href=&#34;https://en.wikipedia.org/wiki/Family_Radio_Service&#34;&gt;&amp;ldquo;Family Radio Service&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Channel     Frequency (MHz)     FRS EIRP Restriction    GMRS EIRP Restriction&#xA;1           462.5625            Up to 2 watt            Up to 5 watts&#xA;2           462.5875            Up to 2 watt            Up to 5 watts&#xA;3           462.6125            Up to 2 watt            Up to 5 watts&#xA;4           462.6375            Up to 2 watt            Up to 5 watts&#xA;5           462.6625            Up to 2 watt            Up to 5 watts&#xA;6           462.6875            Up to 2 watt            Up to 5 watts&#xA;7           462.7125            Up to 2 watt            Up to 5 watts&#xA;8           467.5625            Up to 0.5 watt          Up to 0.5 watt&#xA;9           467.5875            Up to 0.5 watt          Up to 0.5 watt&#xA;10          467.6125            Up to 0.5 watt          Up to 0.5 watt&#xA;11          467.6375            Up to 0.5 watt          Up to 0.5 watt&#xA;12          467.6625            Up to 0.5 watt          Up to 0.5 watt&#xA;13          467.6875            Up to 0.5 watt          Up to 0.5 watt&#xA;14          467.7125            Up to 0.5 watt          Up to 0.5 watt&#xA;15          462.5500            Up to 2 watt            Up to 50 watts&#xA;16          462.5750            Up to 2 watt            Up to 50 watts&#xA;17          462.6000            Up to 2 watt            Up to 50 watts&#xA;18          462.6250            Up to 2 watt            Up to 50 watts&#xA;19          462.6500            Up to 2 watt            Up to 50 watts&#xA;20          462.6750            Up to 2 watt            Up to 50 watts&#xA;21          462.7000            Up to 2 watt            Up to 50 watts&#xA;22          462.7250            Up to 2 watt            Up to 50 watts&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Also those radios supports Continuous Tone Coded Squelch System (CTCSS) to&#xA;prevent receiving unvanted signals from other users.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Scale images in command line</title>
       <link>https://pawka.notrollsallowed.com/posts/2022-08-09/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2022-08-09/</guid>
-      <description>:til: :cli:
-To resize images in commandline imagemagick package is required. With the package convert command becomes available which could be used to resize or scale images.
-convert -resize 30% *.jpg convert-resize 200x200 *.jpg </description>
+      <description>&lt;p&gt;:til: :cli:&lt;/p&gt;&#xA;&lt;p&gt;To resize images in commandline &lt;code&gt;imagemagick&lt;/code&gt; package is required. With the&#xA;package &lt;code&gt;convert&lt;/code&gt; command becomes available which could be used to resize or&#xA;scale images.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;convert -resize 30% *.jpg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;convert-resize 200x200 *.jpg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Extract subdirectory with git history to another repository</title>
       <link>https://pawka.notrollsallowed.com/posts/2022-01-19/</link>
       <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2022-01-19/</guid>
-      <description>:til: :git:
-Today I needed to extract git history of particular subdirectory and move it to a separate repository. Source repository here contains original code from which we want to extract the history. Meanwhile target repo is new repository to which we want to import the history.
-Command below creates a branch named &amp;ldquo;kyria&amp;rdquo; on source repository with commits from specific path only:
-$ git subtree split --prefix=keyboards/kyria/pawka --branch=kyria Keep in mind that files in the new branch are displayed as those were created at the root of repository.</description>
+      <description>&lt;p&gt;:til: :git:&lt;/p&gt;&#xA;&lt;p&gt;Today I needed to extract git history of particular subdirectory and move it to&#xA;a separate repository. Source repository here contains original code from which&#xA;we want to extract the history. Meanwhile target repo is new repository to which&#xA;we want to import the history.&lt;/p&gt;&#xA;&lt;p&gt;Command below creates a branch named &amp;ldquo;kyria&amp;rdquo; on source repository with commits&#xA;from specific path only:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git subtree split --prefix=keyboards/kyria/pawka --branch=kyria&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Keep in mind that files in the new branch are displayed as those were created at&#xA;the root of repository. Let&amp;rsquo;s say if we had a file on source repo&#xA;&lt;code&gt;keyboards/kyria/pawka/config.h&lt;/code&gt;. On the &lt;code&gt;kyria&lt;/code&gt; branch it will be placed on the&#xA;root as &lt;code&gt;config.h&lt;/code&gt; only (no &lt;code&gt;keyboards/kyria/pawka/&lt;/code&gt; prefix). This is allows&#xA;treat a subdirectory as completely new repo if needed. But I needed to create a&#xA;new repo and place all files on specific path.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Configure Pulseaudio to not switch output to hot-plugged devices</title>
       <link>https://pawka.notrollsallowed.com/posts/2021-05-07/</link>
       <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2021-05-07/</guid>
-      <description>:til: :linux:
-Motivation I have Blue Yeti USB microphone which also has an audio output for monitoring. I do not use the output but once pluged-in - Ubuntu recognize it as new sound card and switch output to the microphone immediatelly. This drives me nuts because I always need to switch back audio output manually to previous device.
-Pulseaudio config Pulseaudio has a feature automatically switch to hot-plugged devices which is enabled by default.</description>
+      <description>&lt;p&gt;:til: :linux:&lt;/p&gt;&#xA;&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;&#xA;&lt;p&gt;I have Blue Yeti USB microphone which also has an audio output for monitoring.&#xA;I do not use the output but once pluged-in - Ubuntu recognize it as new sound&#xA;card and switch output to the microphone immediatelly. This drives me nuts&#xA;because I always need to switch back audio output manually to previous device.&lt;/p&gt;&#xA;&lt;h2 id=&#34;pulseaudio-config&#34;&gt;Pulseaudio config&lt;/h2&gt;&#xA;&lt;p&gt;Pulseaudio has a feature automatically switch to hot-plugged devices which is&#xA;enabled by default. All is needed - comment out this setting on the&#xA;configuration.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Replace string across multiple files in VIM</title>
       <link>https://pawka.notrollsallowed.com/posts/2021-03-16/</link>
       <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2021-03-16/</guid>
-      <description>:til: :vim:
-Only files which are in currently opened buffers are affected. Buffers can be populated in many ways what is out of scope of this post.
-Replace what to result in all currently opened buffers:
-:bufdo %s/what/result/g Write changes written to the disk:
-:bufdo w </description>
+      <description>&lt;p&gt;:til: :vim:&lt;/p&gt;&#xA;&lt;p&gt;Only files which are in currently opened buffers are affected. Buffers can be&#xA;populated in many ways what is out of scope of this post.&lt;/p&gt;&#xA;&lt;p&gt;Replace &lt;code&gt;what&lt;/code&gt; to &lt;code&gt;result&lt;/code&gt; in all currently opened buffers:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:bufdo %s/what/result/g&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Write changes written to the disk:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:bufdo w&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Call bash function via xargs</title>
       <link>https://pawka.notrollsallowed.com/posts/2021-03-05/</link>
       <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2021-03-05/</guid>
-      <description>:til: :cli: :bash:
-To run cli tools there is xargs. But what if I want to run certain part of bash script (a function) in parallel? One option is to extract function to a separate file and feed it into xargs. Another way - make xargs to execute the function:
-#!/bin/bash p() { echo &amp;#34;&amp;gt; $1&amp;#34; } main() { export -f p seq 10 | xargs -n 1 -I {} bash -c &amp;#34;p {}&amp;#34; } main &amp;#34;@$&amp;#34; Necesary line here is to export the function via export -f &amp;lt;function_name&amp;gt;.</description>
+      <description>&lt;p&gt;:til: :cli: :bash:&lt;/p&gt;&#xA;&lt;p&gt;To run cli tools there is &lt;code&gt;xargs&lt;/code&gt;. But what if I want to run certain part of&#xA;bash script (a function) in parallel? One option is to extract function to a&#xA;separate file and feed it into &lt;code&gt;xargs&lt;/code&gt;. Another way - make &lt;code&gt;xargs&lt;/code&gt; to execute&#xA;the function:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;p&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;gt; &lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;main&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    export -f p&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    seq &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; | xargs -n &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; -I &lt;span style=&#34;color:#f92672&#34;&gt;{}&lt;/span&gt; bash -c  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p {}&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;main &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@&lt;/span&gt;$&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Necesary line here is to export the function via &lt;code&gt;export -f &amp;lt;function_name&amp;gt;&lt;/code&gt;.&#xA;Once function is exported to the scope, &lt;code&gt;xargs&lt;/code&gt; can access it and execute call&#xA;to the function. The &lt;code&gt;p {}&lt;/code&gt; part means value from &lt;code&gt;seq&lt;/code&gt; command is provided to&#xA;function &lt;code&gt;p&lt;/code&gt;. E.g. &lt;code&gt;p 10&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Copy any request as CURL command from Chrome or Firefox</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-12-04/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-12-04/</guid>
-      <description>:til: :firefox: :chrome:
-Any HTTP request performed by Friefox or Chrome can be copied as CURL command. It is possible other browsers this supports too but I had a chance to test it with those two.
-Open &amp;ldquo;Network&amp;rdquo; tab on Developer tools or equivalent. Load the page. Right click on desired request and select &amp;ldquo;Copy &amp;gt; &amp;ldquo;Copy as CURL&amp;rdquo; or similar command. This will give you CURL with parameters included. Can be useful to debug some requests.</description>
+      <description>&lt;p&gt;:til: :firefox: :chrome:&lt;/p&gt;&#xA;&lt;p&gt;Any HTTP request performed by Friefox or Chrome can be copied as &lt;code&gt;CURL&lt;/code&gt; command.&#xA;It is possible other browsers this supports too but I had a chance to test it&#xA;with those two.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open &amp;ldquo;Network&amp;rdquo; tab on Developer tools or equivalent.&lt;/li&gt;&#xA;&lt;li&gt;Load the page.&lt;/li&gt;&#xA;&lt;li&gt;Right click on desired request and select &amp;ldquo;Copy &amp;gt; &amp;ldquo;Copy as CURL&amp;rdquo; or similar&#xA;command.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;This will give you &lt;code&gt;CURL&lt;/code&gt; with parameters included. Can be useful to debug some&#xA;requests.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Spotify media keys on Linux</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-09-07/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-09-07/</guid>
-      <description>:til: :linux:
-It seems Chrome is capturing media keys handling and Spotify can not be controlled with the keys. This can be solved by visiting chrome://flags/#hardware-media-key-handling and disabling &amp;ldquo;Hardware Media Key Handling&amp;rdquo; option.</description>
+      <description>&lt;p&gt;:til: :linux:&lt;/p&gt;&#xA;&lt;p&gt;It seems Chrome is capturing media keys handling and Spotify can not be&#xA;controlled with the keys. This can be solved by visiting&#xA;chrome://flags/#hardware-media-key-handling and disabling &amp;ldquo;Hardware Media Key&#xA;Handling&amp;rdquo; option.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: column -t command to format output</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-09-04/</link>
       <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-09-04/</guid>
-      <description>:til: :cli:
-column -t command can be used to pretty print output of files (e.g. database exports) by aligning columns nicely.
-Original content:
-pawka@kyloren &amp;gt; cat file.txt aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2nx 6154 bb/bbbbbb PHID-REPO-bampn53k6a7zwzr76rez 3235 cccc/ccccc-cccc-ccccccccc PHID-REPO-scvhcxnrs4nyrzrs64jc 2433 ddd-dddd PHID-REPO-uexvk77yeovy63fhokqw 1269 eeeeee/eee PHID-REPO-hmdgak5gad4rxiter65h 1266 Formatted content:
-pawka@kyloren &amp;gt; cat file.txt | column -t aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2nx 6154 bb/bbbbbb PHID-REPO-bampn53k6a7zwzr76rez 3235 cccc/ccccc-cccc-ccccccccc PHID-REPO-scvhcxnrs4nyrzrs64jc 2433 ddd-dddd PHID-REPO-uexvk77yeovy63fhokqw 1269 eeeeee/eee PHID-REPO-hmdgak5gad4rxiter65h 1266 `` </description>
+      <description>&lt;p&gt;:til: :cli:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;column -t&lt;/code&gt; command can be used to pretty print output of files (e.g. database&#xA;exports) by aligning columns nicely.&lt;/p&gt;&#xA;&lt;p&gt;Original content:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pawka@kyloren &amp;gt; cat file.txt&#xA;aa-aaaa PHID-REPO-qb3mtuk2we6ivy7xw2nx  6154&#xA;bb/bbbbbb       PHID-REPO-bampn53k6a7zwzr76rez  3235&#xA;cccc/ccccc-cccc-ccccccccc       PHID-REPO-scvhcxnrs4nyrzrs64jc  2433&#xA;ddd-dddd        PHID-REPO-uexvk77yeovy63fhokqw  1269&#xA;eeeeee/eee      PHID-REPO-hmdgak5gad4rxiter65h  1266&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Formatted content:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pawka@kyloren &amp;gt; cat file.txt | column -t&#xA;aa-aaaa                    PHID-REPO-qb3mtuk2we6ivy7xw2nx  6154&#xA;bb/bbbbbb                  PHID-REPO-bampn53k6a7zwzr76rez  3235&#xA;cccc/ccccc-cccc-ccccccccc  PHID-REPO-scvhcxnrs4nyrzrs64jc  2433&#xA;ddd-dddd                   PHID-REPO-uexvk77yeovy63fhokqw  1269&#xA;eeeeee/eee                 PHID-REPO-hmdgak5gad4rxiter65h  1266&#xA;``&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Swap panes on TMUX</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-07-15/</link>
       <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-07-15/</guid>
-      <description>:til: :tmux:
-To move pane left or right &amp;lt;prefix&amp;gt; { or &amp;lt;prefix&amp;gt; } key sequence can be used.</description>
+      <description>&lt;p&gt;:til: :tmux:&lt;/p&gt;&#xA;&lt;p&gt;To move pane left or right &lt;code&gt;&amp;lt;prefix&amp;gt; {&lt;/code&gt; or &lt;code&gt;&amp;lt;prefix&amp;gt; }&lt;/code&gt; key sequence can be&#xA;used.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Delete lines matching pattern in VIM</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-06-15/</link>
       <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-06-15/</guid>
-      <description>:til: :vim:
-To remove lines of oppened file which contains the pattern run following command:
-:g/pattern/d The g! can be used to remove lines which do not match the pattern:
-:g!/pattern/d g! is the same as v:
-:v/pattern/d Source: https://vim.fandom.com/wiki/Delete_all_lines_containing_a_pattern</description>
+      <description>&lt;p&gt;:til: :vim:&lt;/p&gt;&#xA;&lt;p&gt;To remove lines of oppened file which contains the &lt;code&gt;pattern&lt;/code&gt; run following&#xA;command:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:g/pattern/d&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The &lt;code&gt;g!&lt;/code&gt; can be used to remove lines which do not match the pattern:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:g!/pattern/d&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;g!&lt;/code&gt; is the same as &lt;code&gt;v&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:v/pattern/d&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Source: &lt;a href=&#34;https://vim.fandom.com/wiki/Delete_all_lines_containing_a_pattern&#34;&gt;https://vim.fandom.com/wiki/Delete_all_lines_containing_a_pattern&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: =QUERY function on Google Spreadsheets</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-05-05/</link>
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-05-05/</guid>
-      <description>:til:
-I&amp;rsquo;ve found Google Spreadsheets has =QUERY function which accepts SQL-like query and can produce grouped results. This is especially useful form summary tabes For example having following data on the spreadsheet:
-A 10 B 5 A 5 C 1 Function =QUERY(A1:B4,&amp;quot;select A, sum(B) group by A&amp;quot;) will produce:
-A 15 B 5 C 1 </description>
+      <description>&lt;p&gt;:til:&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve found Google Spreadsheets has &lt;code&gt;=QUERY&lt;/code&gt; function which accepts SQL-like&#xA;query and can produce grouped results. This is especially useful form summary&#xA;tabes For example having following data on the spreadsheet:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A 10&#xA;B 5&#xA;A 5&#xA;C 1&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Function &lt;code&gt;=QUERY(A1:B4,&amp;quot;select A, sum(B) group by A&amp;quot;)&lt;/code&gt; will produce:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A 15&#xA;B 5&#xA;C 1&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Forward data to CURL from STDIN</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-05-04/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-05-04/</guid>
-      <description>:til: :curl: :cli:
-curl can read data from STDIN when --data @- is provided as parameter:
-$ echo &amp;#34;Hi&amp;#34; | curl http://theurl.com -d @- </description>
+      <description>&lt;p&gt;:til: :curl: :cli:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;curl&lt;/code&gt; can read data from STDIN when &lt;code&gt;--data @-&lt;/code&gt; is provided as parameter:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ echo &amp;#34;Hi&amp;#34; | curl http://theurl.com -d @-&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Make timelapse video with ffmpeg</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-04-24/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-04-24/</guid>
-      <description>:til: :ffmpeg: :cli:
-Jau kažkadaise esu su ffmpeg gaminęs video iš paveiksliukų ir atvirkščiai, tad šis būdas manęs nenustebino. Tiesiog ffmpeg turi krūvą parametrų kurių tikrai neįmanoma prisiminti dažnai neredaguojant vaizdinės medžiagos.
-Sukūriau tokį Makefile, kuris iš paveikslų sudėlioja geros kokybės video:
-# Build timelapse video from images timelapse.mp4: ffmpeg -r 24 -pattern_type glob -i &amp;#39;*.JPG&amp;#39; -s hd1080 -vcodec libx264 \ -crf 18 -preset slow timelapse.mp4 To list available encoders run ffmpeg -encoders.</description>
+      <description>&lt;p&gt;:til: :ffmpeg: :cli:&lt;/p&gt;&#xA;&lt;p&gt;Jau kažkadaise esu su &lt;code&gt;ffmpeg&lt;/code&gt; gaminęs video iš paveiksliukų ir atvirkščiai, tad&#xA;šis būdas manęs nenustebino. Tiesiog &lt;code&gt;ffmpeg&lt;/code&gt; turi krūvą parametrų kurių tikrai&#xA;neįmanoma prisiminti dažnai neredaguojant vaizdinės medžiagos.&lt;/p&gt;&#xA;&lt;p&gt;Sukūriau tokį &lt;code&gt;Makefile&lt;/code&gt;, kuris iš paveikslų sudėlioja geros kokybės video:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Build timelapse video from images&#xA;timelapse.mp4:&#xA;        ffmpeg -r 24 -pattern_type glob -i &amp;#39;*.JPG&amp;#39; -s hd1080 -vcodec libx264 \&#xA;        -crf 18 -preset slow timelapse.mp4&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To list available encoders run &lt;code&gt;ffmpeg -encoders&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Jump to previous directory on bash/zsh</title>
       <link>https://pawka.notrollsallowed.com/posts/2019-12-31/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2019-12-31/</guid>
-      <description>:til: :cli:
-$ cd - </description>
+      <description>&lt;p&gt;:til: :cli:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ cd -&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Create and apply git patch</title>
       <link>https://pawka.notrollsallowed.com/posts/2019-12-30/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2019-12-30/</guid>
-      <description>:til: :git:
-To create git patch execute git format-patch HEAD^. To apply patch run git apply file.patch. </description>
+      <description>&lt;p&gt;:til: :git:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;To create git patch execute &lt;code&gt;git format-patch HEAD^&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;To apply patch run &lt;code&gt;git apply file.patch&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>TIL: TMUX pane management</title>
       <link>https://pawka.notrollsallowed.com/posts/2019-09-25/</link>
       <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2019-09-25/</guid>
-      <description>:til: :tmux:
-Inside any pane, press &amp;lt;Prefix&amp;gt;! and tmux will create a new window from your pane, removing the original pane.
-Now, to move the first window into a pane in the second window, press &amp;lt;Prefix&amp;gt;: to enter Command mode, and type this:
-:join-pane -s panes:1 or
-:join-pane -s :1 You can use this technique to move panes around as well. If your first window had two panes, you could specify the source pane like this:</description>
+      <description>&lt;p&gt;:til: :tmux:&lt;/p&gt;&#xA;&lt;p&gt;Inside any pane, press &lt;code&gt;&amp;lt;Prefix&amp;gt;!&lt;/code&gt; and tmux will create a new window from your&#xA;pane, removing the original pane.&lt;/p&gt;&#xA;&lt;p&gt;Now, to move the first window into a pane in the second window, press&#xA;&lt;code&gt;&amp;lt;Prefix&amp;gt;:&lt;/code&gt; to enter Command mode, and type this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-viml&#34; data-lang=&#34;viml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;join&lt;/span&gt;-&lt;span style=&#34;color:#a6e22e&#34;&gt;pane&lt;/span&gt; -&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;panes&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-viml&#34; data-lang=&#34;viml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;join&lt;/span&gt;-&lt;span style=&#34;color:#a6e22e&#34;&gt;pane&lt;/span&gt; -&lt;span style=&#34;color:#a6e22e&#34;&gt;s&lt;/span&gt; :&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can use this technique to move panes around as well. If your first window&#xA;had two panes, you could specify the source pane like this:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: Copy TMUX pane contents to buffer</title>
       <link>https://pawka.notrollsallowed.com/posts/2019-09-24/</link>
       <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2019-09-24/</guid>
-      <description>:til: :tmux:
-Tmux has a handy shortcut that copies the entire visible contents of a pane to a paste buffer. Enter tmux’s Command mode with &amp;lt;Prefix&amp;gt;:capture-pane. The contents of the pane will be in a paste buffer. You can then paste that content into another pane or window by pressing &amp;lt;Prefix&amp;gt;].</description>
+      <description>&lt;p&gt;:til: :tmux:&lt;/p&gt;&#xA;&lt;p&gt;Tmux has a handy shortcut that copies the entire visible contents of a pane to&#xA;a paste buffer. Enter tmux’s Command mode with &lt;code&gt;&amp;lt;Prefix&amp;gt;:capture-pane&lt;/code&gt;.&#xA;The contents of the pane will be in a paste buffer. You can then paste that&#xA;content into another pane or window by pressing &lt;code&gt;&amp;lt;Prefix&amp;gt;]&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TIL: What .editorconfig is?</title>
       <link>https://pawka.notrollsallowed.com/posts/2019-09-15/</link>
       <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2019-09-15/</guid>
-      <description>:til:
-.editorconfig is almost defacto standard to store project configuration settings such as indentation, encoding etc. It is supposed to be supported by multiple editors (including VIM via plugins). Settings in .editorconfig file will take a precedence over any settings in vim configuration.</description>
+      <description>&lt;p&gt;:til:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://editorconfig.org/&#34;&gt;.editorconfig&lt;/a&gt; is almost defacto standard to store project configuration&#xA;settings such as indentation, encoding etc. It is supposed to be supported by&#xA;multiple editors (including VIM via plugins).&#xA;Settings in &lt;code&gt;.editorconfig&lt;/code&gt; file will take a precedence over any settings in vim&#xA;configuration.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vilniusphp on Pawka&#39;s diary</title>
+    <title>Vilniusphp on Pawka&#39;s diary</title>
     <link>https://pawka.notrollsallowed.com/tags/vilniusphp/</link>
-    <description>Recent content in vilniusphp on Pawka&#39;s diary</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Vilniusphp on Pawka&#39;s diary</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/vilniusphp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pawka.notrollsallowed.com/tags/vilniusphp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vilnius PHP: ateinantis sezonas ir kaip motyvuoti pranešėjus?</title>
       <link>https://pawka.notrollsallowed.com/posts/2020-12-06/</link>
       <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2020-12-06/</guid>
-      <description>:vilniusphp:
-Prieš kelias dienas atšventėme 8-ąjį Vilnius PHP gimtadienį. Atsitiktinai, gerai susidėliojo planetos, kad po kiekvieno Vilnius PHP gimtadienio prasideda nauji metai ir naujas Vilnius PHP sezonas. Naujas sezonas - nauji (arba tie patys) rėmėjai, nauji pranešėjai ir vėl tas pats klausimas - ką kitais metais daryti kitaip, kad būtų geriau.
-2020-ieji Vilnius PHP buvo kitokie - dėl COVID-19 daug susitikimų vyko virtualioje erdvėje. Panašu, kad ateinančiais metais, bent jau pirmojoje pusėje, dauguma susitikimų taip pat bus virtualūs.</description>
+      <description>&lt;p&gt;:vilniusphp:&lt;/p&gt;&#xA;&lt;p&gt;Prieš kelias dienas atšventėme 8-ąjį Vilnius PHP gimtadienį. Atsitiktinai, gerai&#xA;susidėliojo planetos, kad po kiekvieno Vilnius PHP gimtadienio prasideda nauji&#xA;metai ir naujas Vilnius PHP sezonas. Naujas sezonas - nauji (arba tie patys)&#xA;rėmėjai, nauji pranešėjai ir vėl tas pats klausimas - ką kitais metais daryti&#xA;kitaip, kad būtų geriau.&lt;/p&gt;&#xA;&lt;p&gt;2020-ieji Vilnius PHP buvo kitokie - dėl COVID-19 daug susitikimų vyko&#xA;virtualioje erdvėje. Panašu, kad ateinančiais metais, bent jau pirmojoje pusėje,&#xA;dauguma susitikimų taip pat bus virtualūs. Nors gyvai susitikti yra smagu, bet&#xA;virtualūs susitikimai taip pat turi savo pliusų:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

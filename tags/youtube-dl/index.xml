@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>youtube-dl on Pawka&#39;s diary</title>
+    <title>Youtube-Dl on Pawka&#39;s diary</title>
     <link>https://pawka.notrollsallowed.com/tags/youtube-dl/</link>
-    <description>Recent content in youtube-dl on Pawka&#39;s diary</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Youtube-Dl on Pawka&#39;s diary</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/youtube-dl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pawka.notrollsallowed.com/tags/youtube-dl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL: Download embeded Vimeo video with youtube-dl</title>
       <link>https://pawka.notrollsallowed.com/posts/2023-02-03/</link>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://pawka.notrollsallowed.com/posts/2023-02-03/</guid>
-      <description>:til: :youtube-dl:
-youtube-dl usually easily detects which content and how to download it from given URL. But if webpage contains embeded videos from Vimeo it might not work. I&amp;rsquo;m not sure if this is an issue for any embeded video or just for restricted ones. I needed to download some media from members-only area so I could watch those on a plane but was struggling.
-There is a workaround:
-Open &amp;ldquo;Network&amp;rdquo; tab on &amp;ldquo;Developers Tools&amp;rdquo; in a browser.</description>
+      <description>&lt;p&gt;:til: :youtube-dl:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;youtube-dl&lt;/code&gt; usually easily detects which content and how to download it from&#xA;given URL. But if webpage contains embeded videos from Vimeo it might not work.&#xA;I&amp;rsquo;m not sure if this is an issue for any embeded video or just for restricted&#xA;ones. I needed to download some media from members-only area so I could watch&#xA;those on a plane but was struggling.&lt;/p&gt;&#xA;&lt;p&gt;There is a workaround:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open &amp;ldquo;Network&amp;rdquo; tab on &amp;ldquo;Developers Tools&amp;rdquo; in a browser.&lt;/li&gt;&#xA;&lt;li&gt;Click video to play and pause it.&lt;/li&gt;&#xA;&lt;li&gt;New network request will appear wich contains &lt;code&gt;.json?base64_init=1&lt;/code&gt; in part&#xA;of URL. This is the request we need.&lt;/li&gt;&#xA;&lt;li&gt;Modify URL to replace the mentioned part to &lt;code&gt;.mpd&lt;/code&gt;. For example:&#xA;&lt;code&gt;https://site.com/something.json?base64_init=1&amp;amp;param=val&lt;/code&gt; should become&#xA;&lt;code&gt;https://site.com/something.mpd?param=val&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Use &lt;code&gt;youtube-dl &amp;lt;URL&amp;gt;&lt;/code&gt; to download video where &lt;code&gt;&amp;lt;URL&amp;gt;&lt;/code&gt; is modified URL.&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>

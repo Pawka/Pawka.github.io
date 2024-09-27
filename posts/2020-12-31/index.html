@@ -14,20 +14,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="Solving Advent of Code 2019" />
-<meta property="og:description" content=":coding:
-After solving AoC 2020, it became so empty inside so I&rsquo;ve decided to look into tasks from 2019. But the real truth is that I&rsquo;ve heard AoC 2019 consist series of CPU-emulator problems named Intcode. This sounds very interesting for me and I wanted to check.
-I&rsquo;ll keep updating this while solving the problems.
-Problems Day 1 (easy): Arithmetic. Day 2 (easy): Basic emulator (Intcode). I&rsquo;ve decided to build and reuse the same CPU class." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2020-12-31/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-12-31T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-12-31T00:00:00+00:00" />
+  <meta property="og:url" content="https://pawka.notrollsallowed.com/posts/2020-12-31/">
+  <meta property="og:site_name" content="Pawka&#39;s diary">
+  <meta property="og:title" content="Solving Advent of Code 2019">
+  <meta property="og:description" content=":coding:
+After solving AoC 2020, it became so empty inside so I’ve decided to look into tasks from 2019. But the real truth is that I’ve heard AoC 2019 consist series of CPU-emulator problems named Intcode. This sounds very interesting for me and I wanted to check.
+I’ll keep updating this while solving the problems.
+Problems Day 1 (easy): Arithmetic. Day 2 (easy): Basic emulator (Intcode). I’ve decided to build and reuse the same CPU class. Though not sure if that won’t require introducing some hooks later to solve further problems. Day 3 (easy): Coordinates. Day 4 (easy): Arithmetic. Simple Brute force works. Day 5 (medium): Intcode. Very interesting task. Added few more opcodes such as reading from user input and printing to stdout, and few jmp functions. Day 6 (easy): Graphs. Depth first and breadth first algorithms. Links https://dhconnelly.com/advent-of-code-2019-commentary.html ">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-12-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2020-12-31T00:00:00+00:00">
+    <meta property="article:tag" content="Coding">
 
   
   
   
-  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/scss/style.scss" integrity="">
+  <link rel="stylesheet" href="https://pawka.notrollsallowed.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
   
@@ -141,7 +145,7 @@ Problems Day 1 (easy): Arithmetic. Day 2 (easy): Basic emulator (Intcode). I&rsq
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-31%2f&name=Solving%20Advent%20of%20Code%202019&description=%3acoding%3a%0aAfter%20solving%20AoC%202020%2c%20it%20became%20so%20empty%20inside%20so%20I%26rsquo%3bve%20decided%20to%20look%20into%20tasks%20from%202019.%20But%20the%20real%20truth%20is%20that%20I%26rsquo%3bve%20heard%20AoC%202019%20consist%20series%20of%20CPU-emulator%20problems%20named%20Intcode.%20This%20sounds%20very%20interesting%20for%20me%20and%20I%20wanted%20to%20check.%0aI%26rsquo%3bll%20keep%20updating%20this%20while%20solving%20the%20problems.%0aProblems%20Day%201%20%28easy%29%3a%20Arithmetic.%20Day%202%20%28easy%29%3a%20Basic%20emulator%20%28Intcode%29.%20I%26rsquo%3bve%20decided%20to%20build%20and%20reuse%20the%20same%20CPU%20class." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-31%2f&name=Solving%20Advent%20of%20Code%202019&description=%3cp%3e%3acoding%3a%3c%2fp%3e%0a%3cp%3eAfter%20solving%20AoC%202020%2c%20it%20became%20so%20empty%20inside%20so%20I%26rsquo%3bve%20decided%20to%20look%20into%0atasks%20from%202019.%20But%20the%20real%20truth%20is%20that%20I%26rsquo%3bve%20heard%20AoC%202019%20consist%20series%0aof%20CPU-emulator%20problems%20named%20Intcode.%20This%20sounds%20very%20interesting%20for%20me%20and%0aI%20wanted%20to%20check.%3c%2fp%3e%0a%3cp%3eI%26rsquo%3bll%20keep%20updating%20this%20while%20solving%20the%20problems.%3c%2fp%3e%0a%3ch2%20id%3d%22problems%22%3eProblems%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3e%3cstrong%3eDay%201%3c%2fstrong%3e%20%28easy%29%3a%20Arithmetic.%3c%2fli%3e%0a%3cli%3e%3cstrong%3eDay%202%3c%2fstrong%3e%20%28easy%29%3a%20Basic%20emulator%20%28Intcode%29.%20I%26rsquo%3bve%20decided%20to%20build%20and%20reuse%20the%0asame%20CPU%20class.%20Though%20not%20sure%20if%20that%20won%26rsquo%3bt%20require%20introducing%20some%20hooks%0alater%20to%20solve%20further%20problems.%3c%2fli%3e%0a%3cli%3e%3cstrong%3eDay%203%3c%2fstrong%3e%20%28easy%29%3a%20Coordinates.%3c%2fli%3e%0a%3cli%3e%3cstrong%3eDay%204%3c%2fstrong%3e%20%28easy%29%3a%20Arithmetic.%20Simple%20Brute%20force%20works.%3c%2fli%3e%0a%3cli%3e%3cstrong%3eDay%205%3c%2fstrong%3e%20%28medium%29%3a%20Intcode.%20Very%20interesting%20task.%20Added%20few%20more%20opcodes%0asuch%20as%20reading%20from%20user%20input%20and%20printing%20to%20stdout%2c%20and%20few%20jmp%20functions.%3c%2fli%3e%0a%3cli%3e%3cstrong%3eDay%206%3c%2fstrong%3e%20%28easy%29%3a%20Graphs.%20Depth%20first%20and%20breadth%20first%20algorithms.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22links%22%3eLinks%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3e%3ca%20href%3d%22https%3a%2f%2fdhconnelly.com%2fadvent-of-code-2019-commentary.html%22%3ehttps%3a%2f%2fdhconnelly.com%2fadvent-of-code-2019-commentary.html%3c%2fa%3e%3c%2fli%3e%0a%3c%2ful%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -301,7 +305,7 @@ such as reading from user input and printing to stdout, and few jmp functions.</
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-31%2f&name=Solving%20Advent%20of%20Code%202019&description=%3acoding%3a%0aAfter%20solving%20AoC%202020%2c%20it%20became%20so%20empty%20inside%20so%20I%26rsquo%3bve%20decided%20to%20look%20into%20tasks%20from%202019.%20But%20the%20real%20truth%20is%20that%20I%26rsquo%3bve%20heard%20AoC%202019%20consist%20series%20of%20CPU-emulator%20problems%20named%20Intcode.%20This%20sounds%20very%20interesting%20for%20me%20and%20I%20wanted%20to%20check.%0aI%26rsquo%3bll%20keep%20updating%20this%20while%20solving%20the%20problems.%0aProblems%20Day%201%20%28easy%29%3a%20Arithmetic.%20Day%202%20%28easy%29%3a%20Basic%20emulator%20%28Intcode%29.%20I%26rsquo%3bve%20decided%20to%20build%20and%20reuse%20the%20same%20CPU%20class." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fpawka.notrollsallowed.com%2fposts%2f2020-12-31%2f&name=Solving%20Advent%20of%20Code%202019&description=%3cp%3e%3acoding%3a%3c%2fp%3e%0a%3cp%3eAfter%20solving%20AoC%202020%2c%20it%20became%20so%20empty%20inside%20so%20I%26rsquo%3bve%20decided%20to%20look%20into%0atasks%20from%202019.%20But%20the%20real%20truth%20is%20that%20I%26rsquo%3bve%20heard%20AoC%202019%20consist%20series%0aof%20CPU-emulator%20problems%20named%20Intcode.%20This%20sounds%20very%20interesting%20for%20me%20and%0aI%20wanted%20to%20check.%3c%2fp%3e%0a%3cp%3eI%26rsquo%3bll%20keep%20updating%20this%20while%20solving%20the%20problems.%3c%2fp%3e%0a%3ch2%20id%3d%22problems%22%3eProblems%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3e%3cstrong%3eDay%201%3c%2fstrong%3e%20%28easy%29%3a%20Arithmetic.%3c%2fli%3e%0a%3cli%3e%3cstrong%3eDay%202%3c%2fstrong%3e%20%28easy%29%3a%20Basic%20emulator%20%28Intcode%29.%20I%26rsquo%3bve%20decided%20to%20build%20and%20reuse%20the%0asame%20CPU%20class.%20Though%20not%20sure%20if%20that%20won%26rsquo%3bt%20require%20introducing%20some%20hooks%0alater%20to%20solve%20further%20problems.%3c%2fli%3e%0a%3cli%3e%3cstrong%3eDay%203%3c%2fstrong%3e%20%28easy%29%3a%20Coordinates.%3c%2fli%3e%0a%3cli%3e%3cstrong%3eDay%204%3c%2fstrong%3e%20%28easy%29%3a%20Arithmetic.%20Simple%20Brute%20force%20works.%3c%2fli%3e%0a%3cli%3e%3cstrong%3eDay%205%3c%2fstrong%3e%20%28medium%29%3a%20Intcode.%20Very%20interesting%20task.%20Added%20few%20more%20opcodes%0asuch%20as%20reading%20from%20user%20input%20and%20printing%20to%20stdout%2c%20and%20few%20jmp%20functions.%3c%2fli%3e%0a%3cli%3e%3cstrong%3eDay%206%3c%2fstrong%3e%20%28easy%29%3a%20Graphs.%20Depth%20first%20and%20breadth%20first%20algorithms.%3c%2fli%3e%0a%3c%2ful%3e%0a%3ch2%20id%3d%22links%22%3eLinks%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3e%3ca%20href%3d%22https%3a%2f%2fdhconnelly.com%2fadvent-of-code-2019-commentary.html%22%3ehttps%3a%2f%2fdhconnelly.com%2fadvent-of-code-2019-commentary.html%3c%2fa%3e%3c%2fli%3e%0a%3c%2ful%3e" aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
