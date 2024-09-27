@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Pawka&#39;s diary</title>
+    <link>https://pawka.notrollsallowed.com/tags/blog/</link>
+    <description>Recent content in blog on Pawka&#39;s diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://pawka.notrollsallowed.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vimwiki dienoraščio perkėlimas į Github Pages naudojant Hugo</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-10-28/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-10-28/</guid>
+      <description>:vim: :blog:
+Šita idėja galvoje sukosi jau seniai. Teksto redagavimui naudoju VIM. Ilgai ieškojau įrankio, kuris būtų patogus užrašams. Naudojau Evernote, Synology Notes, vim oultiner, vim notes, kol galiausiai apsistojau prie vimwiki. Vimwiki turiu dvi atskiras kolekcijas - vieną darbui, o kitą asmeniniams užrašams. Tekstą rašau Markdown formatu. Tuo pačiu vimwiki turi dienoraščio funkciją, kuri tiesiog sukuria naują failą, skritą įrašams, su dienos data ir generuoja indeksinį puslapį, kuriame saugomos nuorodos į visus šiuos failus.</description>
+    </item>
+    
+    <item>
+      <title>Asmeninis puslapis naudojant Vimwiki</title>
+      <link>https://pawka.notrollsallowed.com/posts/2020-04-20/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pawka.notrollsallowed.com/posts/2020-04-20/</guid>
+      <description>:vim: :blog:
+Jau kurį laiką galvoju apie asmeninį puslapį, kuriam atnaujint pakaktų išsaugoti tekstą Markdown formatu. Vartotojui neturėtų rūpėti:
+Kaip ir kur prisijungti Koks prisijungimo slaptažodis Puslapio sistemos atnaujinimai Ar yra prisijungimas prie interneto Naršyklės paleidimas Idealiu atveju šovus idėjai apie ką rašyt - pakaktų redaktoriuje sukurti irašą ir jį išsaugoti. Baigus rašyti - toliau testi programavimo darbus.
+Išsaugojus straipsnį kodas (tekstas) turėtų būti išsaugomas kodo versijavimo sistemoje, sukeliamas į repozitoriją, sugeneruojamas statinis HTML ir atnaujinamas puslapis.</description>
+    </item>
+    
+  </channel>
+</rss>
